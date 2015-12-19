@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title data-i18n="title"></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src="velocity.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.onscreen.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/i18next-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body id='subpage-body'>
+
+<nav>
+	<div class="nav-warp">
+		<a href="index.html"><div class="logo-inverted"></div></a>
+		<ul id='lang-selection'>
+			<li class='lang-switch' id='switchCes'></li>
+			<li class='lang-switch' id='switchEng'></li>
+		</ul>
+		<ul>
+			<li data-i18n='html.nav.home' class="selected-menu click" data-jump="video-warp-1"></li>
+			<li data-i18n='html.nav.story'class="click" data-jump="video-warp-2"></li>
+			<li data-i18n='html.nav.service'class="click" data-jump="sluzba-click"></li>
+			<li data-i18n='html.nav.contact' class="click" data-jump="kontakt-click"></li>
+		</ul>
+	</div>
+</nav>
+
+<div class='subpage-content-wrap'>
+	<div class='subpage-navigation'>
+		<p><a href="index.html" data-i18n='name'>United Data</a> > <a href="#"></a> <span data-i18n='subpages.company.name'>O společnosti</span></p>
+	</div>
+
+	<h1 class='subpage-heading1' data-i18n='subpages.company.name'>O společnosti</h1>
+
+	<p class='subpage-article' data-i18n='subpages.company.article1'>UnitedData a.s. je společnost poskytující svým zákazníkům nový a vysoce efektivní model správy, provozu a pořizování kapacit infrastruktury IT. Impulsem pro vznik společnosti UnitedData bylo uvědomění si, že tradiční a většinově využívaný způsob plánování, pořizování, správy a účtování kapacit infrastruktury IT přestává být pro současné organizace IT nedostačující, a velice často nesplňuje očekávání vedení společností ani správců IT. Proto jsme se rozhodli vytvořit zcela nový způsob poskytování a řízení kapacity IT, a nabídnout tak potřebnou alternativu při správě kapacit infrastruktury IT.</p>
+
+	<p class='subpage-article'  data-i18n='subpages.company.article2'>Náš přístup je jedinečný v tom, že důsledně dodržujeme několik klíčových faktorů předurčujících úspěch správy kapacit IT. Společně s našimi zákazníky velice pečlivě analyzujeme konkrétní kapacitní a výkonností požadavky, a společně s nimi definujeme optimální technologické řešení, stejně jako způsob čerpání kapacit v čase. Protože správa kapacit musí být nákladově efektivní, je čerpání kapacit účtováno na základě reálně spotřebovávaných kapacitních jednotek (např. GB, port, ethalon, apod.). Využitá účtovací metodika je analogická metodikám tradičních poskytovatelů cloudových kapacitních služeb, jako např. Google či Amazon.</p>
+	
+	<p class='subpage-article'  data-i18n='subpages.company.article3'>Nicméně - je zde jeden zásadní rozdíl: v případě služeb UnitedData si může zákazník zvolit preferovanou platformu využitých technologií (zejména pak s ohledem na již využívané technologie, interní znalost apod.), což ve svém důsledku zkracuje čas nutný na zavedení služby a také iniciační náklady, které jsou často spojeny právě s integrací nové technologie do prostředí zákazníka.</p>
+	
+	<p class='subpage-article' data-i18n='subpages.company.article4'>Vedle účtování pouze a jenom za reálně spotřebovanou kapacitu je velkou výhodou služeb UnitedData i fakt, že samotná infrastruktura je umístěna přímo v prostředí zákazníka (příp. v jím odsouhlaseném hostingovém centru), čím se eliminují obvyklá bezpečnostní a právní rizika spojená s využíváním globálních cloudových služeb.</p>
+
+	<b class='subpage-bold'  data-i18n='subpages.catch-line'>Pomáháme našim zákazníkům porozumět. Pomáháme našim zákazníkům rozhodovat se správně.</b>
+
+	<div class="contact-info" style='float: none !important;'>
+		<h3>Fakturační údaje</h3>
+		<ul class='subpage-ul'>
+			<li class='subpage-li'>IČO: 04201094</li>
+			<li class='subpage-li'>DIČ: CZ 04201094</li>
+			<li class='subpage-li'>ID datové schránky: trd52mj</li>
+			<li class='subpage-li'></li>
+			<li class='subpage-li'>Spisová značka v OR:  B 20769 <br>vedená u Městského soudu v Praze</li>
+		</ul>
+	</div>
+	
+
+</div>
+
+<div class="footer">
+		<div class="footer-links">
+			<div class="links">
+				<h3 data-i18n='html.footer.left-heading'></h3>
+				<ul>
+					<a href="company.html" title=""><li  data-i18n='html.footer.about-comp'></li></a>
+					<a href="service.html" title=""><li  data-i18n='html.footer.about-service'></li></a>
+					<a href="" title=""><li  data-i18n='html.footer.vision'></li></a>
+					<a href="" title=""><li  data-i18n='html.footer.cm'></li></a>
+				</ul>
+			</div>
+			<div class="contact-info">
+				<h3 data-i18n='html.footer.right-heading'></h3>
+				<ul>
+					<li>uniteddata@gmail.com</li>
+					<li>Jan Kučera</li>
+					<li>605 405 780</li>
+				</ul>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.914425962655!2d14.42788491503927!3d50.08788902130449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ead230636d%3A0xad46195be731ff2d!2sASB+Prague%2C+s.r.o.!5e0!3m2!1scs!2scz!4v1449502009414" width="400" height="200" frameborder="0" style="border:0; float:right;" allowfullscreen></iframe>
+		</div>
+		<div class='partners'>
+			<a href="http://sg-consulting.cz/"><div class='partner' id='sng'></div></a>
+			<a href="http://www.visionit.sk/"><div class='partner' id='vit'></div></a>
+			<a href="http://www.commvault.com/"><div class='partner' id='com'></div></a>
+			<a href="http://www.hp-enterprisesolutions.com/"><div class='partner' id='hpe'></div></a>
+		</div>
+		<div class='partners'>
+			<a href="http://hp.com/"><div class='partner' id='hp'></div></a>
+			<a href="http://www.dell.com/"><div class='partner' id='dell'></div></a>
+			<a href="https://www.veeam.com/"><div class='partner' id='veeam'></div></a>
+			<a href="http://www.netapp.com/us/"><div class='partner' id='net'></div></a>
+		</div>
+		<div class="logo-footer"></div>
+		<div class="Nineroads"></div>
+	</div>
+
+<script type="text/javascript" src="company.js"></script>
+<script type="text/javascript" src="checkLang.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title  data-i18n='title'></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="i18next-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="velocity.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body id='subpage-body'>
+	<div class='mobile-nav' data-hiden='true'>
+		<ul>
+			<li><a class="click mobile-nav-click" data-jump="image1" data-i18n='html.nav.home'></a></li>
+			<li><a class="click mobile-nav-click" data-jump="image2" data-i18n='html.nav.story'></a></li>
+			<li><a class="click mobile-nav-click" data-jump="image-service" data-i18n='html.nav.service'></a></li>
+			<li><a class="click mobile-nav-click" data-jump="form-warp" data-i18n='html.nav.contact'></a></li>
+		</ul>
+	</div>
+	<nav>
+		<a href="index.html"><div class="hamburger-menu"></div></a>
+		<div class="logo"></div>
+
+		<ul id='lang-selection'>
+			<li class='lang-switch' id='switchCes'></li>
+			<li class='lang-switch' id='switchEng'></li>
+		</ul>
+	</nav>
+
+	<div class='subpage-content-wrap'>
+	<div class='subpage-navigation'>
+		<p><a href="index.html" data-i18n='name'>United Data</a> > <a href="#"></a><span data-i18n='subpages.company.name'>O společnosti</span></p>
+	</div>
+
+	<h1 class='subpage-heading1' data-i18n='subpages.company.name'>O společnosti</h1>
+
+	<p class='subpage-article' data-i18n='subpages.company.article1'>UnitedData a.s. je společnost poskytující svým zákazníkům nový a vysoce efektivní model správy, provozu a pořizování kapacit infrastruktury IT. Impulsem pro vznik společnosti UnitedData bylo uvědomění si, že tradiční a většinově využívaný způsob plánování, pořizování, správy a účtování kapacit infrastruktury IT přestává být pro současné organizace IT nedostačující, a velice často nesplňuje očekávání vedení společností ani správců IT. Proto jsme se rozhodli vytvořit zcela nový způsob poskytování a řízení kapacity IT, a nabídnout tak potřebnou alternativu při správě kapacit infrastruktury IT.</p>
+
+	<p class='subpage-article' data-i18n='subpages.company.article2'>Náš přístup je jedinečný v tom, že důsledně dodržujeme několik klíčových faktorů předurčujících úspěch správy kapacit IT. Společně s našimi zákazníky velice pečlivě analyzujeme konkrétní kapacitní a výkonností požadavky, a společně s nimi definujeme optimální technologické řešení, stejně jako způsob čerpání kapacit v čase. Protože správa kapacit musí být nákladově efektivní, je čerpání kapacit účtováno na základě reálně spotřebovávaných kapacitních jednotek (např. GB, port, ethalon, apod.). Využitá účtovací metodika je analogická metodikám tradičních poskytovatelů cloudových kapacitních služeb, jako např. Google či Amazon.</p>
+	
+	<p class='subpage-article' data-i18n='subpages.company.article3'>Nicméně - je zde jeden zásadní rozdíl: v případě služeb UnitedData si může zákazník zvolit preferovanou platformu využitých technologií (zejména pak s ohledem na již využívané technologie, interní znalost apod.), což ve svém důsledku zkracuje čas nutný na zavedení služby a také iniciační náklady, které jsou často spojeny právě s integrací nové technologie do prostředí zákazníka.</p>
+	
+	<p class='subpage-article' data-i18n='subpages.company.article4'>Vedle účtování pouze a jenom za reálně spotřebovanou kapacitu je velkou výhodou služeb UnitedData i fakt, že samotná infrastruktura je umístěna přímo v prostředí zákazníka (příp. v jím odsouhlaseném hostingovém centru), čím se eliminují obvyklá bezpečnostní a právní rizika spojená s využíváním globálních cloudových služeb.</p>
+
+	<b class='subpage-bold' data-i18n='subpages.catch-line'>Pomáháme našim zákazníkům porozumět. Pomáháme našim zákazníkům rozhodovat se správně.</b>
+</div>
+
+	<div class="footer">
+		<div class="footer-links">
+			<div class="links">
+				<h3 data-i18n='html.footer.left-heading'></h3>
+				<ul>
+					<a href="#" title=""><li><p class='link' data-i18n='html.footer.about-comp'></p></li></a>
+					<a href="service.html" title=""><li><p class='link' data-i18n='html.footer.about-service'></p></li></a>
+					<a href="#" title=""><li><p class='link' data-i18n='html.footer.vision'></p></li></a>
+					<a href="#" title=""><li><p class='link' data-i18n='html.footer.cm'></p></li></a>
+				</ul>
+			</div>
+			<div class="contact-info">
+				<h3 data-i18n='html.footer.right-heading'></h3>
+				<ul>
+					<li><a href="mailto:uniteddata@gmail.com">uniteddata@gmail.com</a></li>
+					<li>Jan Kučera</li>
+					<li><a href="tel:+420605405780">605 405 780</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class='partners'>
+			<div class='partners-heading'>
+				<h3 data-i18n='html.footer.partners-heading'></h3>
+			</div>
+			<a href="http://sg-consulting.cz/"><div class='partner' id='sng'></div></a>
+			<a href="http://www.visionit.sk/"><div class='partner' id='vit'></div></a>
+			<a href="http://www.commvault.com/"><div class='partner' id='com'></div></a>
+			<a href="http://www.dell.com/"><div class='partner' id='dell'></div></a>
+			<a href="http://www.hp-enterprisesolutions.com/"><div class='partner' id='hpe'></div></a>
+			<a href="http://hp.com/"><div class='partner' id='hp'></div></a>
+			<a href="http://www.netapp.com/us/"><div class='partner' id='net'></div></a>
+			<a href="https://www.veeam.com/"><div class='partner' id='veeam'></div></a>
+		</div>
+		<div class='logo-container'>
+			<div class="logo-footer"></div>
+			<div class="Nineroads"></div>
+		</div>
+	</div>
+	<script src="main.js" type="text/javascript"></script>
+	<script src="company.js" type="text/javascript"></script>
+	<script type="text/javascript" src="checkLang.js"></script>
+</body>
+</html>

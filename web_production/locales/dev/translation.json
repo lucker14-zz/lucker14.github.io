@@ -1,0 +1,11 @@
+{
+	"app": {
+    	"name": "Czech"
+  	},
+
+  	"title" : "Czech",
+
+  	"nav": {
+  		"test": "Czech"
+  	}
+}

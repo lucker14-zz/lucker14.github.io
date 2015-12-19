@@ -1,0 +1,93 @@
+{
+	"app": {
+    	"name": "Czech"
+  	},
+
+  	"title" : "United Data | infrastrukturní kapacity",
+
+  	"html" : {
+  		"loading" : "Ještě chvilku. Ale bude to stát za to.",
+  		"nav": {
+  			"home": "Domů",
+  			"story": "Příběh",
+        "service": "Služba",
+  			"contact": "Kontakt"
+  		},
+  		"video1": {
+  			"heading": "Proč platit za IT infrastrukturní kapacitu kterou nevyužijete? Nevíte? My také ne!",
+  			"text" : "Proto poskytujeme flexibilní infrastrukturní služby IT zaměřené na vyváženou a účinnou správu kapacit, kdy platíte pouze za to, co skutečně potřebujete. Navíc s trvalým on-line přehled o čerpané kapacitě, trendech a platbách za reálně využitou kapacitu.",
+  			"cta": "A tenhle příběh znáte?",
+  			"timeline-start": "Začátek příběhu",
+  			"timeline-end": "Konec příběhu"
+  		},
+  		"video2": {
+  			"bubble1": "Přátelé, tak kolikpak budeme zase potřebovat kapacity v příštím roce ?",
+        "bubble2": "A kolikpak nás to bude stát?"
+  		},
+  		"video3": {
+  			"bubble1" : "Nóóóóó, to se nedá tak přesně říct....100TB, možná 120 TB…" ,
+        "bubble2": "I když… spíš asi trochu víc… takových… ale víc určitě ne…"
+  		},
+  		"video4": {
+  			"bubble1": "Tak kolik budeme potřebovat ? 120? 130? 200TB?",
+        "bubble2": "A kolik to teda bude stát?!"
+  		},
+  		"video5" : {
+  			"bubble1" :"Ehm… vlastně radši 130TB… no spíš 200TB… to bude asi stačit…",
+        "bubble2": "A kolik? No to bude asi podle toho, kolik budeme potřebovat…"
+  		},
+  		"video6": {
+  			"bubble1": "Tak už mi proboha řekněte kolik!"
+  		},
+      "video7": {
+        "bubble1": "4 908 502. Stačí?",
+        "bubble2": "Super! To je konečně jasná řeč!"
+      },
+  		"video17": {
+  			"heading": "Abyste byli schopni efektivně plánovat kapacitní potřeby své infrastruktury a s tím spojené finanční náklady, nepotřebujete vlastnit křišťálovou kouli.",
+  			"list-heading": "Od nás dostanete vždy přesnou odpověď na otázky:",
+  			"ws": "Proč? Co? Kdy? Jak? a Za kolik?"
+  		},
+  		"last-screen": {
+  			"help": "vám pomáhá vědět.",
+  			"help2": "Vědět a řídit.",
+  			"help3": "Jak to funguje?"
+  		},
+      "proof": {
+        "desc": "Uspořeno našim zákazníkům:"
+      },
+  		"service-cycle": {
+  			"scroll": "Skroluj dolů",
+  			"life-cycle": "Životní eko-system služby",
+  			"step1-name": "Analýza",
+  			"step2-name": "Návrh a optimalizace",
+  			"step3-name": "Implementace",
+  			"step4-name": "Monitorování",
+        "more": "Více",
+  			"step1-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
+  			"step2-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
+  			"step3-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
+  			"step4-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám."
+  		},
+  		"email-gather": {
+  			"heading": "Chcete vědět více?",
+  			"bite": "Nechte nám email, my se vám ozveme.",
+  			"bite2": "nebo nám zavolejte",
+  			"tel": "605 405 780"
+  		},
+      "footer": {
+        "left-heading": "Více",
+        "about-comp": "O společnosti",
+        "about-service": "O službe",
+        "vision": "Vize",
+        "cm": "Capactiy Monitor",
+        "right-heading": "Kontakt",
+        "last-heading": "Technická podpora"
+      },
+      "caption": {
+        "chief": "Ředitel",
+        "duster": "Uklízečka",
+        "manager": "IT Manager"
+      }
+  	}	
+}

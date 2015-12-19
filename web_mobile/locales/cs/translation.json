@@ -1,0 +1,120 @@
+{
+	"app": {
+    	"name": "Czech"
+  	},
+
+  	"title" : "United Data | infrastrukturní kapacity",
+    "name": "United Data",
+
+  	"html" : {
+  		"loading" : "Ještě chvilku. Ale bude to stát za to.",
+  		"nav": {
+  			"home": "Domů",
+  			"story": "Příběh",
+        "service": "Služba",
+  			"contact": "Kontakt"
+  		},
+  		"video1": {
+  			"heading": "Proč platit za IT infrastrukturní kapacitu kterou nevyužijete? Nevíte? My také ne!",
+  			"text" : "Proto poskytujeme flexibilní infrastrukturní služby IT zaměřené na vyváženou a účinnou správu kapacit, kdy platíte pouze za to, co skutečně potřebujete. Navíc s trvalým on-line přehled o čerpané kapacitě, trendech a platbách za reálně využitou kapacitu.",
+  			"cta": "A tenhle příběh znáte?",
+  			"timeline-start": "Začátek příběhu",
+  			"timeline-end": "Konec příběhu"
+  		},
+  		"video2": {
+  			"bubble1": "Přátelé, tak kolikpak budeme zase potřebovat kapacity v příštím roce ?",
+        "bubble2": "A kolikpak nás to bude stát?"
+  		},
+  		"video3": {
+  			"bubble1" : "Nóóóóó, to se nedá tak přesně říct....100TB, možná 120 TB…" ,
+        "bubble2": "I když… spíš asi trochu víc… takových… ale víc určitě ne…"
+  		},
+  		"video4": {
+  			"bubble1": "Tak kolik budeme potřebovat ? 120? 130? 200TB?",
+        "bubble2": "A kolik to teda bude stát?!"
+  		},
+  		"video5" : {
+  			"bubble1" :"Ehm… vlastně radši 130TB… no spíš 200TB… to bude asi stačit…",
+        "bubble2": "A kolik? No to bude asi podle toho, kolik budeme potřebovat…"
+  		},
+  		"video6": {
+  			"bubble1": "Tak už mi proboha řekněte kolik!"
+  		},
+      "video7": {
+        "bubble1": "4 908 502. Stačí?",
+        "bubble2": "Super! To je konečně jasná řeč!"
+      },
+  		"video17": {
+  			"heading": "Abyste byli schopni efektivně plánovat kapacitní potřeby své infrastruktury a s tím spojené finanční náklady, nepotřebujete vlastnit křišťálovou kouli.",
+  			"list-heading": "Od nás dostanete vždy přesnou odpověď na otázky:",
+  			"ws": "Proč? Co? Kdy? Jak? a Za kolik?"
+  		},
+  		"last-screen": {
+  			"help": "vám pomáhá vědět.",
+  			"help2": "Vědět a řídit.",
+  			"help3": "Jak to funguje?"
+  		},
+      "proof": {
+        "desc": "Uspořeno našim zákazníkům:"
+      },
+  		"service-cycle": {
+  			"scroll": "Skroluj dolů",
+  			"life-cycle": "Eko-system služby",
+  			"step1-name": "Analýza",
+  			"step2-name": "Návrh a optimalizace",
+  			"step3-name": "Implementace",
+  			"step4-name": "Monitorování",
+        "more": "Více",
+  			"step1-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
+  			"step2-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
+  			"step3-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
+  			"step4-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám."
+  		},
+  		"email-gather": {
+  			"heading": "Chcete vědět více?",
+  			"bite": "Nechte nám email, my se vám ozveme.",
+  			"bite2": "nebo nám zavolejte",
+  			"tel": "605 405 780"
+  		},
+      "footer": {
+        "left-heading": "Více",
+        "about-comp": "O společnosti",
+        "about-service": "O službe",
+        "vision": "Vize",
+        "cm": "Capactiy Monitor",
+        "right-heading": "Kontaktní údaje",
+        "another-heading": "Fakturační údaje",
+        "last-heading": "Technická podpora"
+      },
+      "caption": {
+        "chief": "Ředitel:",
+        "manager": "IT manager:",
+        "duster": "Uklízečka:"
+      }
+  	}	,
+    "subpages": {
+      "catch-line": "Pomáháme našim zákazníkům porozumět. Pomáháme našim zákazníkům rozhodovat se správně.",
+      "company": {
+        "name": "O společnosti",
+        "article1": "UnitedData a.s. je společnost poskytující svým zákazníkům nový a vysoce efektivní model správy, provozu a pořizování kapacit infrastruktury IT. Impulsem pro vznik společnosti UnitedData bylo uvědomění si, že tradiční a většinově využívaný způsob plánování, pořizování, správy a účtování kapacit infrastruktury IT přestává být pro současné organizace IT nedostačující, a velice často nesplňuje očekávání vedení společností ani správců IT. Proto jsme se rozhodli vytvořit zcela nový způsob poskytování a řízení kapacity IT, a nabídnout tak potřebnou alternativu při správě kapacit infrastruktury IT.",
+        "article2": "Náš přístup je jedinečný v tom, že důsledně dodržujeme několik klíčových faktorů předurčujících úspěch správy kapacit IT. Společně s našimi zákazníky velice pečlivě analyzujeme konkrétní kapacitní a výkonností požadavky, a společně s nimi definujeme optimální technologické řešení, stejně jako způsob čerpání kapacit v čase. Protože správa kapacit musí být nákladově efektivní, je čerpání kapacit účtováno na základě reálně spotřebovávaných kapacitních jednotek (např. GB, port, ethalon, apod.). Využitá účtovací metodika je analogická metodikám tradičních poskytovatelů cloudových kapacitních služeb, jako např. Google či Amazon.",
+        "article3": "Nicméně - je zde jeden zásadní rozdíl: v případě služeb UnitedData si může zákazník zvolit preferovanou platformu využitých technologií (zejména pak s ohledem na již využívané technologie, interní znalost apod.), což ve svém důsledku zkracuje čas nutný na zavedení služby a také iniciační náklady, které jsou často spojeny právě s integrací nové technologie do prostředí zákazníka.",
+        "article4": "Vedle účtování pouze a jenom za reálně spotřebovanou kapacitu je velkou výhodou služeb UnitedData i fakt, že samotná infrastruktura je umístěna přímo v prostředí zákazníka (příp. v jím odsouhlaseném hostingovém centru), čím se eliminují obvyklá bezpečnostní a právní rizika spojená s využíváním globálních cloudových služeb."
+      },
+      "service": {
+        "name": "O Službě",
+        "article1": "Pro zajištění maximální efektivity a účinnosti využívaných kapacitních služeb, využíváme vlastní monitorovací aplikační systém/platformu – Capacity Monitor. Díky této aplikaci můžeme našim zákazníkům poskytnout on-line pohled na čerpání kapacit v časech, kontrolu finančních aspektů souvisejících s čerpáním kapacit, přehled budoucího vývoje čerpání kapacit a interaktivní řešení požadavků souvisejících s řízením a provozem infrastruktury IT, a souvisejících služeb.",
+        "article2": "Flexibilita služby zároveň umožňuje využít team certifikovaných profesionálů poskytující reaktivní i proaktivní expertní služby v oblasti datových center, které souvisejí  s:",
+        "article3": "Naším cílem je poskytování všech typů infrastrukturní kapacity, a to formou vysoce efektivních a profesionálních služeb tak, abychom uspokojili dynamicky se měnící kapacitní potřeby našich zákazníků, a poskytli jim ucelený a současně transparentní pohled na čerpání kapacit a s tím související náklady (vč. nákladů na energie apod.) v čase.",
+        "li1": "návrhem a optimalizací hardwarové infrastruktury",
+        "li2": "virtualizací",
+        "li3": "cloud computingem",
+        "li4": "zálohováním a archivací",
+        "li5": "správou dohledových systémů",
+        "li6": "správou mobilních zařízení",
+        "li7": "správou tiskových řešení",
+        "li8": "projektovým řízením",
+        "li9": "správou softwarových aktiv"
+      }
+    }
+}

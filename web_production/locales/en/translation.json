@@ -1,0 +1,118 @@
+{
+  "app": {
+      "name": "English"
+    },
+
+    "title" : "United Data | infrastructure capacity management",
+    "name": "United Data",
+
+    "html" : {
+      "loading" : "Sit back, it'll be worth it.",
+      "nav": {
+        "home": "Home",
+        "story": "Story",
+        "service": "Service",
+        "contact": "Contact"
+      },
+      "video1": {
+        "heading": "Why you should pay unnecessary IT infrastructure capacities?",
+        "text" : "We provide flexible infrastructure service focused on balanced and effective capacity management, where you pay only what you need. Featuring on-line overview of your capacities and spendings.",
+        "cta": "You know this story?",
+        "timeline-start": "Story begining",
+        "timeline-end": "Story end"
+      },
+      "video2": {
+        "bubble1": "What's assumed capacity increase for the next year, sweethearts?",
+        "bubble2": "And how much will it cost? "
+      },
+      "video3": {
+        "bubble1" : "So... let's say... Approx...100, 120... maybe 200TB",
+        "bubble2": "But the price tag is slightly long." 
+      },
+      "video4": {
+        "bubble1": "Ok, again... How many TB?",
+        "bubble2": "And how much will it cost?!"
+      },
+      "video5" : {
+        "bubble1" :"So those 120TB... Or maybe 200?",
+        "bubble2": "Well it depends on the amount of capacities"
+      },
+      "video6": {
+        "bubble1": "Can you goddamn tell me how much money?!"
+      },
+      "video7": {
+        "bubble1": "What 'bout 4 890 233. Enough?",
+        "bubble2": "Great! Finally a smooth talk!"
+      },
+      "video17": {
+        "heading": "You don't have to puzzle, just to manage your IT infrastructure capacities.",
+        "list-heading": "We'll answer you these questions:",
+        "ws": "Why? What? When? How? and Cost?"
+      },
+      "last-screen": {
+        "help": "helps you know.",
+        "help2": "To know and to think.",
+        "help3": "How it works?"
+      },
+      "proof": {
+        "desc": "We saved our customers:"
+      },
+      "service-cycle": {
+        "scroll": "Scroll down",
+        "life-cycle": "Service life-cycle",
+        "step1-name": "Analysis",
+        "step2-name": "Draft and optimisation",
+        "step3-name": "Implementation",
+        "step4-name": "Monitoring",
+        "more": "More",
+        "step1-desc": "After a precise analysis we offer you solution that fits you perfectly.",
+        "step2-desc": "After a precise analysis we offer you solution that fits you perfectly.",
+        "step3-desc": "After a precise analysis we offer you solution that fits you perfectly.",
+        "step4-desc": "After a precise analysis we offer you solution that fits you perfectly."
+      },
+      "email-gather": {
+        "heading": "Want to know more?",
+        "bite": "Leave us email, an we'll inform you further.",
+        "bite2": "or give us a call",
+        "tel": "605 405 780"
+      },
+      "footer": {
+        "left-heading": "More",
+        "about-comp": "About company",
+        "about-service": "About service",
+        "vision": "Vision",
+        "cm": "Capactiy Monitor",
+        "right-heading": "Contact"
+      },
+      "caption": {
+        "chief": "CEO:",
+        "manager": "IT manager:",
+        "duster": "Janitor:"
+      }
+    } ,
+    "subpages": {
+      "catch-line": "We help our customers to understand. We help our customers to decide well.",
+      "company": {
+        "name": "About company",
+        "article1": "UnitedData Inc. is the company providing new and highly effective model of a management, operation and purchasing of IT infrastructure capacity. The main impetus for establishing of the UnitedData company was the realization that the traditional and major manner of the IT capacity planning, purchasing, operating and accounting becomes insufficient for today's IT organizations. And very often it does not meet an expectation of management as well as of the IT admins. Therefore, we decided to create a completely new mechanism for provisioning and management of IT capacity, and so provide a necessary alternative for IT capacity management.",
+        "article2": "Our approach is unique in the way we thoroughly adhere several key factors determining a success of the IT capacity Management. Together with our customers we carefully analyze the specific capacity and performance requirements, and together with them we define the optimal technology solution as well as the way how to effectively consume the capacity over time.",
+        "article3": "Because the capacity management MUST be cost effective, the capacity utilization is billed based on real consumed capacity units (e.g. GB, ports, etalon etc.). The used billing method is analogous to methods used by traditional cloud providers like Google or Amazon. However - there is one crucial difference: in case of UnitedData services the customer may choose the preferred platform of used technology (especially with regard to currently used technology, knowledge of internal staff, compatibility and so on), which consequently significantly reduces time required for service deployment and the initial costs related to integration of the service to the customer environment.",
+        "article4": "Another advantage of the UnitedData services, beside the billing of just actually consumed capacity, is a fact that the used infrastructure is located in the customer environment (or in agreed hosting center), which eliminates the usual security and legal risks associated with use of global cloud services."
+      },
+      "service": {
+        "name": "About service",
+        "article1": "In order to ensure a maximal effectiveness and efficiency of used capacity services, we use our custom monitoring application/platform - the Capacity Monitor. Thanks to this application we are able to provide our customers with online overview on capacity consumption over time, its trend and financial aspects related to capacity utilization. The application is also used as a platform for an interactive resolution of our customer requirements.",
+        "article2": "A flexible design of the service enables our customer to use a team of certified experts providing the reactive as well as proactive consultancy in following areas:",
+        "article3": "Our goal is provisioning of all types of the infrastructure capacity in form of highly effective and professional services in order to satisfy dynamically changing capacity requirements of our customers, and to provide them with comprehensive and transparent view on capacity consumption over time (incl. costs for energy etc.) and relating costs.",
+        "li1": "design and optimization of the hardware infrastructure",
+        "li2": "virtualization",
+        "li3": "cloud computing",
+        "li4": "data backup and archiving",
+        "li5": "management of monitoring systems",
+        "li6": "management of mobile devices",
+        "li7": "management of printing solutions",
+        "li8": "software asset management",
+        "li9": "project management"
+      }
+    }
+}
