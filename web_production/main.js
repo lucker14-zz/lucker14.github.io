@@ -753,8 +753,6 @@ function positionTimeline(count){
 	};
 }
 
-//Tady jsou veci pro zobrazeni popupu
-
 $(window).resize(function() {
 	var count = videoWarpArray.length + 1;
 	
@@ -764,6 +762,9 @@ $(window).resize(function() {
 
 	positionTimeline(count);
 });
+
+
+
 
 $('.click').on('click', function(e) {
 	$('.click').removeClass('selected-menu');
@@ -776,6 +777,7 @@ $('.click').on('click', function(e) {
 	$('html').velocity('scroll',{duration: 2000, offset: offset + 'px'});
 });
 
+//Tady jsou veci pro zobrazeni popupu
 var popupActive = false;
 
 $('.button-odkaz').on('click', function(e) {
@@ -784,7 +786,9 @@ $('.button-odkaz').on('click', function(e) {
 		'overflow-x': 'hidden',
 		'overflow-y': 'hidden'
 	});
-	$('.popup-warp').css('display', 'block');
+	var warpId = '#popup-warp-' + $(this).data('id');
+	console.log(warpId)
+	$(warpId).css('display', 'block');
 	popupActive = true;
 });
 

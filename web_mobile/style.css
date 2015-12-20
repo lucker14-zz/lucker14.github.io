@@ -75,7 +75,7 @@ nav {
 }
 
 .first-text-warp h1 {
-	font-size: 20px;
+	font-size: 1em;
 	line-height: 1.5em;
 	font-weight: 700;
 }
@@ -144,7 +144,8 @@ nav {
 }
 
 .image10 {
-	background: url('img/10.png') no-repeat;
+	background: url('img/10.png') no-repeat;background-size: 75% auto;
+	background-position: center center;
 }
 
 .image11 {
@@ -190,6 +191,22 @@ nav {
 .image19 {
 	background: url('img/19.png') no-repeat;background-size: 75% auto;
 	background-position: center center;
+}
+
+#caption-duster{
+
+}
+
+#bubble-duster{
+
+}
+
+#caption-last{
+	top:185px;
+}
+
+#bubble-last{
+	margin-top: 35vh;
 }
 
 .button {
@@ -315,7 +332,7 @@ p.inverted{
     top: -80vh;
     left: 0;
     z-index: 7;
-    opacity: 0.25;
+    opacity: 0;
 }
 
 .white-text {
@@ -637,6 +654,7 @@ p.inverted{
     left: 8%;
     font-size: 18px;
     color: #fff;
+    font-weight: bold;
     text-shadow: 0 7px 15.1px rgba(0, 0, 0, 0.2);
 }
 
