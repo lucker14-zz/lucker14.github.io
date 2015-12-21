@@ -92,7 +92,7 @@ nav {
 
 .image {
 	width: 100vw;
-	height: 100vh;
+	height: 190vw;
 	overflow: hidden;
 	background-size: 75% auto;
 	background-position: center center;
@@ -100,21 +100,11 @@ nav {
 
 .image1 {
 	background: url('img/1.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
+	background-position: center 45%;
 }
 
 .image2 {
 	background: url('img/2.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image3 {
-	background: url('img/3.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image4 {
-	background: url('img/4.png') no-repeat;background-size: 75% auto;
 	background-position: center center;
 }
 
@@ -123,23 +113,8 @@ nav {
 	background-position: center center;
 }
 
-.image6 {
-	background: url('img/6.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image7 {
-	background: url('img/7.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
 .image8 {
 	background: url('img/8.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image9 {
-	background: url('img/9.png') no-repeat;background-size: 75% auto;
 	background-position: center center;
 }
 
@@ -153,36 +128,6 @@ nav {
 	background-position: center center;
 }
 
-.image12 {
-	background: url('img/12.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image13 {
-	background: url('img/13.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image14 {
-	background: url('img/14.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image15 {
-	background: url('img/15.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image16 {
-	background: url('img/16.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
-.image17 {
-	background: url('img/17.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
-}
-
 .image18 {
 	background: url('img/18.png') no-repeat;background-size: 75% auto;
 	background-position: center center;
@@ -190,7 +135,8 @@ nav {
 
 .image19 {
 	background: url('img/19.png') no-repeat;background-size: 75% auto;
-	background-position: center center;
+	background-position: center 25%;
+	background-color: #92ab91;
 }
 
 #caption-duster{
@@ -206,7 +152,7 @@ nav {
 }
 
 #bubble-last{
-	margin-top: 35vh;
+	margin-top: 55vw;
 }
 
 .button {
@@ -237,7 +183,7 @@ nav {
 	font-size: 14px;
 	text-align: center;
 	margin-left: 13px;
-	margin-top: 15px;
+	margin-top: 12px;
 }
 
 .button-last{
@@ -281,7 +227,7 @@ nav {
 	background: url('img/bubble.png') no-repeat;
 	background-size: cover;
 	margin: 3% auto;
-	margin-top: 5px;
+	margin-top: 50px;
 	width: 290px;
 	background-position: center;
 }
@@ -293,7 +239,7 @@ nav {
 }
 
 .bubble-second{
-	margin-top: 120px !important;
+	margin-top: 180px !important;
 }
 
 p.inverted{
@@ -316,7 +262,8 @@ p.inverted{
 .text-bubble {
 	position: relative;
 	top: -7px;
-
+    padding-left: 10px;
+    padding-right: 10px;
 	/*padding-top: 7%;
 	width: 100%;
 	text-align: center;
@@ -346,9 +293,9 @@ p.inverted{
     margin: 0 auto;
 }
 
-#white-text1{margin-top: 10vh;}
-#white-text3{margin-top: 17vh;}
-#white-text7{margin-top: 5vh;}
+#white-text1{margin-top: 20vw;}
+#white-text3{margin-top: 33vw;}
+#white-text7{margin-top: 10vw;}
 
 .last-image-content{
 	margin-top: 40px;
@@ -358,7 +305,7 @@ p.inverted{
 
 .image-service {
 	width: 100vw;
-	height: 93vh;
+	height: 168vw;
 	overflow: hidden;
 }
 
@@ -391,7 +338,7 @@ p.inverted{
 
 .service-heading-box{
 	width: 100vw;
-    height: 14vh;
+    height: 27vw;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -457,7 +404,7 @@ p.inverted{
 
 .form-warp {
 	width: 100%;
-	height: 50vh;
+	height: 95vw;
 	float: left;
 
 	background: #f5f5fa; 
@@ -654,6 +601,7 @@ p.inverted{
 .bubble-caption {
     position: relative;
     left: 8%;
+    top: 45px;
     font-size: 18px;
     color: #fff;
     font-weight: bold;
@@ -836,7 +784,7 @@ iframe{
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
 	.image{ 
-		height: 140vh;
+		height: 70vw;
 	}
 
 	.image1{
@@ -862,12 +810,12 @@ iframe{
 	}
 
 	.overlay{
-		height: 140vh;
-		top: -128vh;
+		height: 70vw;
+		top: -64vw;
 	}
 
 	.image-service{
-		height: 140vh;
+		height: 70vw;
 	}
 
 	.service-img-container img{
@@ -875,7 +823,7 @@ iframe{
 	}
 
 	.form-warp{
-		height: 113vh;
+		height: 60vw;
 	}
 }
 

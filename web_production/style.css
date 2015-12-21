@@ -1038,7 +1038,7 @@ ul li {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 900;
+	z-index: 9999;
 }
 
 .popup {
@@ -1072,6 +1072,10 @@ ul li {
 	padding-top: 2%;
   line-height: 1.4em;
   color: #464646;
+}
+
+.popup-last-p{
+	margin-bottom: 10% !important;
 }
 
 .go-back-button {
@@ -1114,7 +1118,7 @@ ul li {
   background-size: cover;
   position: absolute;
 	z-index: 100;
-	width: 200px;
+	width: 210px;
   text-align: center;
 }
 
