@@ -166,7 +166,7 @@ function getWeekNumber(d) {
 
 //nacita texty a elementy do pole ktere se pak pouzije jako parallax element. Je to dynamicky podle poctu video elementu na strance. Pokud upravis pocet v html musis i tady.
 var elementCountPlusOne = 8;
-for (var i = 1; i < elementCountPlusOne; i++) {
+for (var i = 1; i <= elementCountPlusOne; i++) {
 	//priprava video elementu a jejich vlastosti
 	var video = $('#video' + i);
 	var videoWarp = $('#video-warp-' + i);
