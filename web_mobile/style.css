@@ -451,6 +451,8 @@ p.inverted{
 
 .service-desc{
 	font-size: 13px;
+	margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .form-warp {
