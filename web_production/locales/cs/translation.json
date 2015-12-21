@@ -120,33 +120,33 @@
     "warps":{
       "analysis":{
         "heading": "Analýza",
-        "p1": "A careful detailed analysis of requirements for IT performance, capacity and architecture makes up a critical basis for correct setup of capacity and performance parameters of the IT components, and for cost effective operation of the infrastructure capacity service",
-        "p2": "a) For a continuous monitoring of the capacity demands, their trends and management we use our custom analytical application - the Capacity Monitor, which continuously monitors and evaluates key capacity parameters of the service. In case of proactive services, we utilize the monitoring tools and APIs provided by the vendors, which helps us to identify and collect all required inputs, which are used for optimization of currently consumed capacity and for management of new capacity requirements.",
-        "p3": "b) All collected data is continuously analyzed by the team of senior experts, who - in accordance with ITIL principles - define the configuration or system changes to be done, with regard to defined capacity requirements, actual data consumption. When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real collected data."
+        "p1": "Důkladná, detailní analýza požadavků pro výkon, kapacitu a architekturu je důležitý základ, pro správné nastavení IT komponent a pro finančně efektivní fungování kapacitního systému.",
+        "p2": "a) Pro stálý monitoring požadavků na kapacitu používáme vlastní nástroj - Capacity Monitor. V případě poraktivních služeb,  In case of proactive services, upravujeme monitorovací nástroje a API, což nám pomáhá sbírat a analyzovat všechny potřebné informace. Ty jsou používánypro optimalizaci aktuálně požadované kapacity a správu nových kapacit.",
+        "p3": "b) Všechna nasbíraná data jsou analyzována týmem specialistů na podnikové kapacity, kteří - v souladu s ITIL principy - definují konfiguraci, nebo nutné změny v systému, s náhledem na definované kapacitní požadavky a aktuální spotřbu dat. Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty."
       },
       "designandoptimization":{
-        "heading": "Design and optimization",
-        "p1": "When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real capacity and performance data gathered from the environment.Main aim of this step is a continuous optimization of capacity resources utilization in order to ensure that the capacity requirements of the service consumer are always satisfied.",
-        "p2": "a) The proposed changes are evaluated within the steering committee that solves the questions relating to operation of the infrastructure, its performance, capacity and administration.",
-        "p3": "b) The capacity solution and entire delivery process are set up to ensure an optimal usage of financial and capacity resources over the whole service usage time, and to be able absorb planned as well as unplanned capacity requirements.",
-        "p4": "Based on the mutually agreed and approved technical solution is then defined a price for the capacity unit with fixation from 3 to 5 years (GB, port, etalon etc.)."
+        "heading": "Návrh a optimalizace",
+        "p1": "Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty. Hlavní cíl tohoto krokuje postupná optimalizace kapacitních zdrojův záměru zajištění satisfakce na straně klienta.",
+        "p2": "a) Navrhované změny jsou vyhodnoceny řídící komisí která otázky spadající do operací infrastruktury, její výkonnosti, kapacity a administrace.",
+        "p3": "b) Kapacitní řešení a celý proces zavedení služby jsou nastaveny k zajištění optimálního využití kapacitních i finančních zdrojů skrz celou dobu použití služby, a aby byla schopna zahrnout i neplánované kapacitní požadavky.",
+        "p4": "Založena na vzájemně schválené a uzavřené dohodě, je následně definována cena za kapacitní jednotku s fixací od 3 do 5 let (GB, port, etalon etc.)"
       },
       "implementation": {
-        "heading": "Implementation",
-        "p1": "A deployment of the capacity service is realized in a project form, with clearly defined milestones, deadlines and responsibilities.",
-        "p2": "A scope of the service, its parameters, delivery mode, change procedures (for service parameters or scope of the service, incl. provided support) are documented in the service level agreement (SLA).",
-        "p3": "Installation and provisioning of the capacity systems and resources is always made by the certified professionals. In close cooperation with the customer and its responsible employees. Entire installation and launching of the service is documented in written form. The documentation serves as a basis for the service transition to operation and as a technical documentation for administrators.",
-        "p4": "In case of any change of the service and its configuration it is written down to the documentation in order to be able trace what was changed over time or what is the actual setup/configuration of the service."
+        "heading": "Implementace",
+        "p1": "Nasazení kapacitní služby je realizováno formou projektu s jasně danými milníky, dead-line a odpovědností.",
+        "p2": "Rozsah služby, její parametry, způsob doručení, procedury změn (pro úpravy parametrů služby) jsou dokumentovány v Smlouvě o úrovni poskytovaných služeb (SLA)",
+        "p3": "Instalace a dohled nad kapacitnímy systémy je vždy vykonávána certifikovanými profesionály, v úzké spolupráci s klientem a jeho odpovednými zaměstnanci. Celá instalace a spuštění systému je dokumentována v psané formě. Dokumentace slouží jako základ pro přenos služby a jako technická dokumentace pro administrátory.",
+        "p4": "V případě jakýhkolic změn služby a její konfigurace, je sepsána dokumentace s cílem sledovat co bylo změněno v průběhu času nebo jaká je aktuální nastavení službzy."
       },
       "monitoring": {
         "heading": "Monitoring",
-        "p1": "A continuous monitoring of capacity resource consumption constitutes a key part of the efficient management of the capacity services. The capacity monitoring provided within the service provides the customers/service consumers with information on service status, actual and historical capacity consumption, future trends, and on related monthly costs for capacity.",
-        "p2": "Thanks to precise information on future trends and with knowledge of actual usage of capacity, there is possible to refine capacity requirements and prioritize them as needed. This then helps to better manage a consumption of capacity over time in accordance to the changing requirements.",
-        "p3": "The following example shows a basic information related with a management and monitoring of storage array capacity, which is typically monitored. The parameters to be monitored are:",
-        "p4": "1. Nominal capacity provided",
-        "p5": "2. Allocated vs. available capacity (capacity utilization)",
-        "p6": "3. Overprovisioning percentage",
-        "p7": "These basic metrics represent just the key parameters of the service. There are other specific attributes and metrics monitored for each capacity service. Their utilization is dependent on the specific type of infrastructure capacity service."
+        "p1": "Nepřetržitý monitoring spotřeby kapacitních zdrojů tvoří klíčovou část efektivní správy kapacitní služby. Monitoring kapacitní služby poskytovaný ve službě samotné, poskytuje klientovy informace o stavu služby, budoucí trendy a odpovídající mesíční ceny za službu.",
+        "p2": "Díky preciznímu odhadu budoucích trendů a znalosti aktuálního využití kapacit, je možnost upravovat kapacitní požadavky a prioritizovat je jak je potřeba. To následně pomáhá lépe spravovat spotřebu kapacit v průběhu času a návaznosti na změny požadavků.",
+        "p3": "Následující příklad ukazuje základní informace spojené se správou a monitoringem kapacit. Parametry monitoringu jsou:",
+        "p4": "1. Poskytovaná nominální kapacita",
+        "p5": "2. Alokovaná x volná kapacita (uzpůsobení kapacit)",
+        "p6": "3. Přesah služby",
+        "p7": "Tyto základní veličiny representují pouze klíčové parametry služby. Pro každou kapacitní službu sledujeme spoustu dalších veličin a faktorů. Jejich uspůsobení záleží na specifickém typu infrastruktury kapacitní služby."
       }
     }
 }
