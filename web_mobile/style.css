@@ -869,6 +869,11 @@ iframe{
 	margin-top: 60px; 
 }
 
+.subpage-heading2{
+	color: #666;
+	font-weight: normal; 
+}
+
 .subpage-article{
 	font-weight: normal;
     color: #666;

@@ -76,7 +76,7 @@ function Minutelly(){
 
 	var rnd = Math.random() * 10;
 
-	if (rnd <= 2) {
+	if (rnd <= 3.5) {
 		dataRndChange *= -1;
 		cashRndChange *= -1;
 	};

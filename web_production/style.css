@@ -692,6 +692,7 @@ ul li {
 }
 
 .circle-img {
+	cursor: pointer;
 	width: 150px;
 	height: 150px;
 	position: absolute;
@@ -1600,7 +1601,7 @@ form {
     position: relative;
     left: 45vw;
     top: 26vh;
-    background-image: url('img/billboard-icons.png');
+    /*background-image: url('img/billboard-icons.png');*/
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -1853,6 +1854,11 @@ form {
 	color: #60B86A;
 	font-weight: normal;
 	margin-top: 60px; 
+}
+
+.subpage-heading2{
+	color: #666;
+	font-weight: normal; 
 }
 
 .subpage-article{
