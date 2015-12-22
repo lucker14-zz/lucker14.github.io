@@ -11,12 +11,14 @@
   		"nav": {
   			"home": "Domů",
   			"story": "Příběh",
+        "about": "O nás",
         "service": "Služba",
   			"contact": "Kontakt"
   		},
   		"video1": {
   			"heading": "Proč platit za IT infrastrukturní kapacitu kterou nevyužijete? Nevíte? My také ne!",
-  			"text" : "Proto poskytujeme flexibilní infrastrukturní služby IT zaměřené na vyváženou a účinnou správu kapacit, kdy platíte pouze za to, co skutečně potřebujete. Navíc s trvalým on-line přehled o čerpané kapacitě, trendech a platbách za reálně využitou kapacitu.",
+  			"text1" : "Poskytujeme IT infrastrukturní kapacitní služby, které pružně reágují na vaše aktuální  kapacitní potřeby.",
+        "text2": "Služby jsou řízeny on-line pomocí aplikace, která je k dispozici 24 hodin denně.",
   			"cta": "A tenhle příběh znáte?",
   			"timeline-start": "Začátek příběhu",
   			"timeline-end": "Konec příběhu"
@@ -59,7 +61,7 @@
       },
   		"service-cycle": {
   			"scroll": "Skroluj dolů",
-  			"life-cycle": "Eko-system služby",
+  			"life-cycle": "Eko-systém služby",
   			"step1-name": "Analýza",
   			"step2-name": "Návrh a optimalizace",
   			"step3-name": "Implementace",
@@ -71,7 +73,7 @@
   			"step4-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám."
   		},
   		"email-gather": {
-  			"heading": "Chcete vědět více?",
+  			"heading": "Zodpovíme všechny vaše dotazy.",
   			"bite": "Nechte nám email, my se vám ozveme.",
   			"bite2": "nebo nám zavolejte",
   			"tel": "+ 420 724 12 16 18"

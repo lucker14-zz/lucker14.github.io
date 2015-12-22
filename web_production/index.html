@@ -27,6 +27,7 @@
 		</ul>
 		<ul>
 			<li data-i18n='html.nav.home' class="selected-menu click" data-jump="video-warp-1"></li>
+			<li data-i18n='html.nav.about'class="href-about"></li>
 			<li data-i18n='html.nav.story'class="click" data-jump="video-warp-2"></li>
 			<li data-i18n='html.nav.service'class="click" data-jump="sluzba-click"></li>
 			<li data-i18n='html.nav.contact' class="click" data-jump="kontakt-click"></li>
@@ -39,7 +40,8 @@
 	<div class='billboard'>
 		<div class="last-screen-warp first-screen">
 			<h2 id='first-billboard-heading' data-i18n='html.video1.heading' class="first-screen-nadpis" style='    line-height: 40px;color: white;font-size: 31px;font-weight: 200; text-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);'></h2><br>
-			<p data-i18n='html.video1.text' class="popis-first-screen"></p>
+			<p data-i18n='html.video1.text1' class="popis-first-screen"></p>
+			<p data-i18n='html.video1.text2' class="popis-first-screen"></p>
 		</div>
 	</div>
 	<!-- <div class="button button-first"><p data-i18n='html.video1.cta'></p><div class="icon-button"></div></div> -->
@@ -162,23 +164,6 @@
 		<div class="down-cta"></div>
 	</div>
 </div>
-<div class='proof'>
-	<div class='proof-part'>
-		<p class='proof-desc' data-i18n='html.proof.desc' style='float: none;display:block;margin: 0 auto;'></p>
-	</div>
-	<div class='proof-part'>
-		<div class='proof-container'>
-			<div class='proof-icon' id='proof-cash'></div>
-			<p data-int='0' class='proof-placeholder' id='proof-cash-val'>7,834,219 Kč</p>
-		</div>
-	</div>
-	<div class='proof-part'>
-		<div class='proof-container'>
-			<div class='proof-icon' id='proof-storage'></div>
-			<p  data-int='0' class='proof-placeholder' id='proof-storage-val'>1,902,168,909 MB</p>
-		</div>
-	</div>
-</div>
 <div class="cycle-warp" id="sluzba-click">
 	<div class="break-point">
 	<div class="short-line">
@@ -233,9 +218,26 @@
 	</div>
 	</div>
 </div>
+<div class='proof'>
+	<div class='proof-part'>
+		<p class='proof-desc' data-i18n='html.proof.desc' style='float: none;display:block;margin: 0 auto;'></p>
+	</div>
+	<div class='proof-part'>
+		<div class='proof-container'>
+			<div class='proof-icon' id='proof-cash'></div>
+			<p data-int='0' class='proof-placeholder' id='proof-cash-val'>7,834,219 Kč</p>
+		</div>
+	</div>
+	<div class='proof-part'>
+		<div class='proof-container'>
+			<div class='proof-icon' id='proof-storage'></div>
+			<p  data-int='0' class='proof-placeholder' id='proof-storage-val'>1,902,168,909 MB</p>
+		</div>
+	</div>
+</div>
 <div id="kontakt-click" class="black-background">
-	<div id='knowMore' class="nadpis-cycle nadpis-sluzba" style="width:345px;">
-		<h2 class=""  data-i18n='html.email-gather.heading'></h2>
+	<div id='knowMore' class="nadpis-cycle nadpis-sluzba">
+		<h2 class="" style='float: none;display: block;margin: 0 auto;text-align: center;' data-i18n='html.email-gather.heading'></h2>
 	</div>
 	<div class="form-warp">
 		<p data-i18n='html.email-gather.bite' style="color:#60B86A;"></p>
@@ -268,10 +270,8 @@
 					<li>UnitedData a.s.</li>
 					<li>V celnici 1031/4</li>
 					<li>Nové Město, 110 00 Praha 1</li>
-					<li>+420 724 12 16 18</li>
 					<li>+420 775 03 30 75</li>
 					<li>info@uniteddata.eu</li>
-					<li>www.uniteddata.eu</li>
 				</ul>
 			</div>
 			<div class="contact-info">

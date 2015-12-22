@@ -852,6 +852,10 @@ $('.circle-img').on('click', function() {
 
 $(document).ready(function() {
 
+	$('.href-about').on('click', function(){
+		window.location = 'company.html';
+	});
+
 	Daily();
 	Minutelly();
 
@@ -958,7 +962,7 @@ $(document).ready(function() {
 			$('html').i18n();
 		});
 
-		$('#knowMore').css('width', '375px');	
+		$('#knowMore').css('width', '605px');	
 		setCookie('lang', 'en', 30);
 		// $('#billboard2').css('padding-bottom', '30px');
 	});
@@ -969,7 +973,7 @@ $(document).ready(function() {
 			$('html').i18n();
 		});
 
-		$('#knowMore').css('width', '345px');
+		$('#knowMore').css('width', '605px');
 		setCookie('lang', 'cs', 30);	
 		// $('#billboard2').css('padding-bottom', '90px');
 

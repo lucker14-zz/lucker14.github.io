@@ -161,12 +161,12 @@ nav ul {
 }
 
 .logo-inverted {
-	float: left;
-	width: 63px;
-	height: 47px;
-	background: url('logo-small.png');
-	background-size: 63px 47px;
-	margin-top: 17px;
+    float: left;
+    width: 63px;
+    height: 35px;
+    background: url('logo-small.png');
+    background-size: 63px 35px;
+    margin-top: 22px;
 }
 
 nav ul li {
@@ -923,6 +923,7 @@ ul li {
 
 .black-background {
 	width: 100%;
+	float: left;
 }
 
 .stick {
@@ -948,6 +949,7 @@ ul li {
 	        -ms-transform: translateX(0%);
 	    transform: translateX(0%);
 	margin: 75px auto;
+	width: 605px;
 }
 
 .warp-input {
@@ -1591,8 +1593,12 @@ form {
 	background-image: url('img/veeam.png');
 }
 .billboard{
-	height: 30vh;
-    width: 39vw;
+	/*height: 30vh;
+    width: 39vw;*/
+    min-height: 30vh;
+    min-width: 40vw;
+    max-height: 30vh;
+    max-width: 40vw;
     padding-top: 0px;
     padding-bottom: 40px;
     padding-right: 25px;
@@ -1601,7 +1607,7 @@ form {
     position: relative;
     left: 45vw;
     top: 26vh;
-    /*background-image: url('img/billboard-icons.png');*/
+    background-image: url('img/billboard-icons.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -1609,11 +1615,16 @@ form {
 }
 
 .billboard2{
-	height: 28vh;
+	/*height: 28vh;*/
+	min-height: 30vh;
+    min-width: 40vw;
+    max-height: 30vh;
+    max-width: 40vw;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	background-image: url('img/logo-great.png');
     background-size: 65%;
+    background-image: url('img/billboard-icons.png');
     background-repeat: no-repeat;
     background-position-x: 85%;
     background-position-y: 65%;
@@ -1689,15 +1700,22 @@ form {
 @media screen and (max-width: 1460px) {
 	.billboard{
 		padding-bottom: 90px;
+	    min-height: 40vh;
+	    min-width: 40vw;
+	    max-height: 50vh;
+	    max-width: 40vw;
 	}
 
 	#billboard2{
 		padding-bottom: 35px;
-		height: 35vh;
+	    min-height: 40vh;
+	    min-width: 40vw;
+	    max-height: 50vh;
+	    max-width: 40vw;
 	}
 
 	.new-button{
-		top: 45vh;
+		top: 34vh;
 	}
 
 	.bubble-container{

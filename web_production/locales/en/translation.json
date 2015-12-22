@@ -10,13 +10,15 @@
       "loading" : "Sit back, it'll be worth it.",
       "nav": {
         "home": "Home",
+        "about": "About",
         "story": "Story",
         "service": "Service",
         "contact": "Contact"
       },
       "video1": {
         "heading": "Why you should pay unnecessary IT infrastructure capacities?",
-        "text" : "We provide flexible infrastructure service focused on balanced and effective capacity management, where you pay only what you need. Featuring on-line overview of your capacities and spendings.",
+        "text1" : "We offer IT infrastructure capacity service, which flexibly react to current capacity requirements.",
+        "text2": "Services are controlled through online application available 24/7.",
         "cta": "You know this story?",
         "timeline-start": "Story begining",
         "timeline-end": "Story end"
@@ -71,7 +73,7 @@
         "step4-desc": "After a precise analysis we offer you solution that fits you perfectly."
       },
       "email-gather": {
-        "heading": "Want to know more?",
+        "heading": "We'll answer all of your questions.",
         "bite": "Leave us email, an we'll inform you further.",
         "bite2": "or give us a call",
         "tel": "+ 420 724 12 16 18"

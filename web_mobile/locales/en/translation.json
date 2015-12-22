@@ -10,6 +10,7 @@
       "loading" : "Sit back, it'll be worth it.",
       "nav": {
         "home": "Home",
+        "about": "About",
         "story": "Story",
         "service": "Service",
         "contact": "Contact"
@@ -71,7 +72,7 @@
         "step4-desc": "After a precise analysis we offer you solution that fits you perfectly."
       },
       "email-gather": {
-        "heading": "Want to know more?",
+        "heading": "We'll answer all of your questions.",
         "bite": "Leave us email, an we'll inform you further.",
         "bite2": "or give us a call",
         "tel": "+ 420 724 12 16 18"
