@@ -557,13 +557,17 @@ p.inverted{
 }
 
 .contact-info ul{
-    margin-top: 7px;
     line-height: 27px;
 }
 
 .contact-info, .links{ 
 	width: 50%;
 	float: left;
+}
+
+.links li{
+	text-decoration: none;
+	line-height: 27px;
 }
 
 .contact-contact-info{
@@ -898,4 +902,76 @@ iframe{
 .subpage-bold{
 	font-size: 15px;
     color: #333;
+}
+
+.contact-box{
+	width: 90vw;
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.contact-box-smaller ul, .contact-box ul{
+	padding: 0 !important;
+	margin: 0;
+}
+
+.contact-box h3{
+    margin-bottom: 0px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #60B86A;
+    line-height: 32px;
+    text-shadow: none;
+}
+
+.contact-box#id2{
+	height: 71vw;
+}
+
+.contact-box li{
+	list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 32px;
+    text-shadow: none;
+}
+
+.contact-box li a:link, .contact-box li a:visited, .contact-box li a:active, .contact-box li a:hover{
+	text-decoration: none;
+	color: #999;
+}
+
+.partner-img{
+	width: 100%;
+    height: 200px;
+    background-size: 62% auto;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center center;
+}
+
+.partner-name{
+	display: none;
+	width: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.7em;
+    color: #60B86A;
+}
+
+.partner-img#sng-subpage{background-image: url('img/partners_backup/partner-placeholder.png');}
+.partner-img#vit-subpage{background-image: url('img/partners_backup/visionit-logo.png');}
+.partner-img#com-subpage{background-image: url('img/partners_backup/commvault-logo.png');}
+.partner-img#hpe-subpage{background-image: url('img/partners_backup/HPE.png');}
+.partner-img#hp-subpage{background-image: url('img/partners_backup/HPLOGOpng.png');    background-size: 30% auto;}
+.partner-img#dell-subpage{background-image: url('img/partners_backup/dell-logo.png');}
+.partner-img#veeam-subpage{background-image: url('img/partners_backup/veeam.png');}
+.partner-img#net-subpage{background-image: url('img/partners_backup/netapp-logo.png');}
+
+#subpage-content-wrap-contact{
+	padding-bottom: 35px !important;
 }

@@ -131,7 +131,10 @@
         "li9": "správou softwarových aktiv"
       },
       "contact": {
-        "name": "Kontakt",
+        "name": "Kontakt"
+      },
+      "partners": {
+        "name": "Partneři"
       }
     },
     "warps":{

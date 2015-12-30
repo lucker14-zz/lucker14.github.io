@@ -129,6 +129,12 @@
         "li7": "správou tiskových řešení",
         "li8": "projektovým řízením",
         "li9": "správou softwarových aktiv"
+      },
+      "contact": {
+        "name": "Kontakt"
+      },
+      "partners": {
+        "name": "Partneři"
       }
     }
 }

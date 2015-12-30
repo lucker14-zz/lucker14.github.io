@@ -1005,6 +1005,12 @@ $(document).ready(function() {
      }
  });
 
+$('.blank-link').on('click', function(){
+ 	console.log('clicked');
+ 	var win = window.open($(this).data('url'), '_blank');
+	win.focus();
+});
+
 });
 
 

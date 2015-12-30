@@ -138,7 +138,7 @@ body {
 
 nav {
 	width: 100vw;
-	height: 80px;
+	height: 75px;
 	background: #60b86a;
 	z-index: 9888;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -1141,14 +1141,24 @@ ul li {
 	overflow: hidden;
 	max-width: 1200px;
   margin: 0% auto;
-  padding-top: 6%;
+  padding-top: 3%;
   width: 80%;
   position: relative;
 }
 
 .footer-links a {
 	text-decoration: none;
+	color: inherit;
 }
+
+.footer-links a:visited, .footer-links a:link{
+	color: #d5dadf;
+} 
+
+
+.footer-links a:hover, .footer-links a:active{
+	color:#F1F2F4
+} 
 
 .footer-links li {
 	color: #d5dadf;
@@ -1175,11 +1185,14 @@ ul li {
 
 .links {
 	float: left;
+    width: 50%;
+    text-align: center;
 }
 
 .contact-info {
 	float: left;
-	margin-left: 2.5%;
+    width: 50%;
+    text-align: center;
 }
 
 .logo-footer {
@@ -1200,7 +1213,6 @@ ul li {
 
 .Nineroads {
 	position: relative;
-	top: 0%;
 	left: 90%;
 	-webkit-transform: translateX(-50%);
 	        -ms-transform: translateX(-50%);
@@ -1622,12 +1634,8 @@ form {
     max-width: 40vw;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background-image: url('img/logo-great.png');
-    background-size: 65%;
     background-image: url('img/billboard-icons.png');
     background-repeat: no-repeat;
-    background-position-x: 85%;
-    background-position-y: 65%;
 }
 
 .ws{
@@ -1669,6 +1677,17 @@ form {
         -ms-filter: "FlipV";
         top: 99vh;
 }
+
+.subpage-image{
+	height: 100px;
+	width: 100px;
+	background-size: contain;contain;
+}
+
+.subpage-image#analysis{ background-image: url('img/analyze_colored.png'); }
+.subpage-image#desandopt{ background-image: url('img/measuring_colored.png'); }
+.subpage-image#implementation{ background-image: url('img/implementation_colored.png'); }
+.subpage-image#monitoring{ background-image: url('img/monitoring_colored.png'); }
 
 @media (min-aspect-ratio: 16/9) {
   video {
@@ -1851,6 +1870,8 @@ form {
 	float: none;
 	display: block;
 	margin: 0 auto;
+
+	overflow: hidden;
 }
 
 .subpage-navigation{
@@ -1877,6 +1898,7 @@ form {
 .subpage-heading2{
 	color: #666;
 	font-weight: normal; 
+	margin-top: 35px;
 }
 
 .subpage-article{
@@ -1903,8 +1925,81 @@ form {
     color: #333;
 }
 
+.contact-box{
+	height: 50%;
+	width: 50%;
+	float: left;
+}
+
+.contact-box-smaller li {
+	font-size: 18px !important;
+	line-height: 32px !important;
+}
+
+.contact-box-smaller ul, .contact-box ul{
+	padding: 0 !important;
+}
+
+.contact-box li{
+	list-style: none;
+	font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 44px;
+    letter-spacing: 1px;
+    text-shadow: none;
+}
+
+.contact-box li a:link, .contact-box li a:visited, .contact-box li a:active, .contact-box li a:hover{
+	text-decoration: none;
+	color: #999;
+}
+
+.partner-img{
+	width: 100%;
+    height: 250px;
+    background-size: 62% auto;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center center;
+}
+
+.partner-name{
+	width: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.7em;
+    color: #60B86A;
+}
+
+.partner-img#sng-subpage{background-image: url('img/partners_backup/partner-placeholder.png');}
+.partner-img#vit-subpage{background-image: url('img/partners_backup/visionit-logo.png');}
+.partner-img#com-subpage{background-image: url('img/partners_backup/commvault-logo.png');}
+.partner-img#hpe-subpage{background-image: url('img/partners_backup/HPE.png');}
+.partner-img#hp-subpage{background-image: url('img/partners_backup/HPLOGOpng.png');    background-size: 30% auto;}
+.partner-img#dell-subpage{background-image: url('img/partners_backup/dell-logo.png');}
+.partner-img#veeam-subpage{background-image: url('img/partners_backup/veeam.png');}
+.partner-img#net-subpage{background-image: url('img/partners_backup/netapp-logo.png');}
+
+
 @media screen and (max-width: 767px){
 	.subpage-content-wrap{
 		width: 95%;
+	}
+}
+
+@media print{
+	.footer{
+		display: none;
+	}
+
+	nav{
+		display: none;
+	}
+
+	.subpage-content-wrap{
+		padding-top: 25px;
+		padding-bottom: 25px;
+		width: 80%;
 	}
 }

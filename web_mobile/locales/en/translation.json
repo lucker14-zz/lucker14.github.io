@@ -83,6 +83,7 @@
         "about-service": "About service",
         "vision": "Vision",
         "cm": "Capactiy Monitor",
+        "another-heading": "Billing information",
         "right-heading": "Contact",
         "last-heading": "Tech Support"
       },
@@ -127,6 +128,12 @@
         "li7": "management of printing solutions",
         "li8": "software asset management",
         "li9": "project management"
+      },
+      "contact": {
+        "name": "Contact"
+      },
+      "partners": {
+        "name": "Partners"
       }
     }
 }

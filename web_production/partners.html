@@ -32,40 +32,43 @@
 
 <div class='subpage-content-wrap'>
 	<div class='subpage-navigation'>
-		<p><a href="index.html" data-i18n='name'>United Data</a> > <a href="#"></a><span data-i18n='subpages.contact.name'>Kontakt</span></p>
+		<p><a href="index.html" data-i18n='name'>United Data</a> > <a href="#"></a><span data-i18n='subpages.partners.name'>Partneři</span></p>
 	</div>
-	<div class='contact-box' style='height: 300px;'>
-				<ul>
-					<li style='color: #60B86A; font-weight: bold;'>UnitedData a.s.</li>
-					<li>V celnici 1031/4</li>
-					<li>Nové Město, 110 00 Praha 1</li>
-					<li>+420 775 03 30 75</li>
-					<li><a href="mailto:info@uniteddata.eu">info@uniteddata.eu</a></li>
-				</ul>
-		</div>
-		<div class='contact-box' style='height: 300px;'>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.914425962672!2d14.427884915203284!3d50.087889021304285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ead69b1ab1%3A0x4df51ffee31bfbbd!2sV+Celnici+1031%2F4%2C+110+00+Praha-Praha+1!5e0!3m2!1scs!2scz!4v1450779138631" width="450" height="250" frameborder="0" style="border:0; float:right;" allowfullscreen></iframe>
-		</div>
-		<div class='contact-box contact-box-smaller' style='height: 300px;'>
-				<h3 data-i18n='html.footer.last-heading'></h3>
-				<ul>
-					<li>+ 420 603 283 342</li>
-					<li><a href="mailto:supprot@uniteddata.eu">support@uniteddata.eu</a></li>
-				</ul>
-		</div>
-
-		<div class='contact-box contact-box-smaller' style='height: 300px;'>
-				<h3 data-i18n='html.footer.another-heading'></h3>
-				<ul>
-					<li>IČO: 04201094</li>
-					<li>DIČ: CZ 04201094</li>
-					<li>ID datové schránky: trd52mj</li>
-					<li>Spisová značka v OR:  B 20769 vedená u Městského soudu v Praze</li>
-				</ul>
-		</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='http://sg-consulting.cz/' id='sng-subpage'></div>
+		<div class='partner-name' id='sng-subpage'>S&G Consulting</div>
+	</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='http://www.visionit.sk/' id='vit-subpage'></div>
+		<div class='partner-name' id='vit-subpage'>Vision IT</div>
+	</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='http://www.commvault.com/' id='com-subpage'></div>
+		<div class='partner-name' id='com-subpage'>Commvault</div>
+	</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='http://www.hp-enterprisesolutions.com/' id='hpe-subpage'></div>
+		<div class='partner-name' id='hpe-subpage'>Hewlett Packard Enterprise</div>
+	</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='http://hp.com/' id='hp-subpage'></div>
+		<div class='partner-name' id='hp-subpage'>Hewlett Packard</div>
+	</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='http://www.dell.com/' id='dell-subpage'></div>
+		<div class='partner-name' id='dell-subpage'>Dell</div>
+	</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='https://www.veeam.com/' id='veeam-subpage'></div>
+		<div class='partner-name' id='veeam-subpage'>Veeam</div>
+	</div>
+	<div class='contact-box'>
+		<div class='partner-img blank-link' data-url='http://www.netapp.com/us/' id='net-subpage'></div>
+		<div class='partner-name' id='net-subpage'>NetApp</div>
+	</div>
 </div>
 
-	<div class="footer">
+<div class="footer">
 		<div class="footer-links">
 			<div class="links">
 				<h3 data-i18n='html.footer.left-heading'></h3>
@@ -90,8 +93,14 @@
 		<div class="logo-footer"></div>
 		<div class="Nineroads"></div>
 	</div>
-
-
+	
+<script type="text/javascript">
+$('.blank-link').on('click', function(){
+ 	console.log('clicked');
+ 	var win = window.open($(this).data('url'), '_blank');
+	win.focus();
+});
+</script>
 <script type="text/javascript" src="company.js"></script>
 <script type="text/javascript" src="checkLang.js"></script>
 </body>
