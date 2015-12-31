@@ -36,6 +36,15 @@ nav {
 	line-height: 40px;
 }
 
+.mobile-nav ul a:link, .mobile-nav ul a:visited{
+	color: #666;
+	text-decoration: none;
+}
+
+.mobile-nav ul a:active, .mobile-nav ul a:hover{
+	color: #999;
+}  
+
 .hamburger-menu {
 	width: 17px;
 	height: 16px;
@@ -202,8 +211,8 @@ nav {
 	height: 22px;
 	background: url('img/icon_button.png')no-repeat;
 	background-size: 22px 22px;
-	float: left;
-	margin-left: 10px;
+	float: right;
+    margin-right: 10px;
   margin-top: 11px;
 }
 
@@ -876,7 +885,28 @@ iframe{
 .subpage-heading2{
 	color: #666;
 	font-weight: normal; 
+	padding-left: 55px;
 }
+
+.subpage-image{
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    float: left;
+    position: relative;
+    top: -9px;
+}
+
+.service-heading-container{
+	width: 100%;
+	margin-top: 100px;
+}
+
+.subpage-image#analysis{ background-image: url('img/analyze_colored.png'); }
+.subpage-image#desandopt{ background-image: url('img/measuring_colored.png'); }
+.subpage-image#implementation{ background-image: url('img/implementation_colored.png'); }
+.subpage-image#monitoring{ background-image: url('img/monitoring_colored.png'); }
+
 
 .subpage-article{
 	font-weight: normal;

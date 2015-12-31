@@ -852,6 +852,12 @@ $('.circle-img').on('click', function() {
 
 $(document).ready(function() {
 
+
+	if (screen.width <= 500) {
+		window.location.href = '../web_mobile/index.html';
+	};
+
+
 	$('.href-about').on('click', function(){
 		window.location = 'company.html';
 	});

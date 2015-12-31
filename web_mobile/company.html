@@ -12,16 +12,16 @@
 <body id='subpage-body'>
 	<div class='mobile-nav' data-hiden='true'>
 		<ul>
-			<li><a class="click mobile-nav-click" data-jump="image1" data-i18n='html.nav.home'></a></li>
-			<li><a href='company.html' class="click mobile-nav-click" data-i18n='html.nav.about'></a></li>
-			<li><a class="click mobile-nav-click" data-jump="image2" data-i18n='html.nav.story'></a></li>
-			<li><a class="click mobile-nav-click" data-jump="image-service" data-i18n='html.nav.service'></a></li>
-			<li><a class="click mobile-nav-click" data-jump="form-warp" data-i18n='html.nav.contact'></a></li>
+			<li><a class="mobile-nav-click" href='index.html#image1' data-i18n='html.nav.home'></a></li>
+			<li><a href='company.html' href='index.html#mobile-nav-click' data-i18n='html.nav.about'></a></li>
+			<li><a class="mobile-nav-click" href='index.html#image2' data-i18n='html.nav.story'></a></li>
+			<li><a class="mobile-nav-click" href='service.html' data-i18n='html.nav.service'></a></li>
+			<li><a class="mobile-nav-click" href='contact.html'data-i18n='html.nav.contact'></a></li>
 		</ul>
 	</div>
 	<nav>
-		<a href="index.html"><div class="hamburger-menu"></div></a>
-		<div class="logo"></div>
+		<div class="hamburger-menu"></div>
+		<a href="index.html"><div class="logo"></a></div>
 
 		<ul id='lang-selection'>
 			<li class='lang-switch' id='switchCes'></li>
@@ -70,39 +70,27 @@
 			<div class="links">
 				<h3 data-i18n='html.footer.left-heading'></h3>
 				<ul>
-					<a href="#" title=""><li><p class='link' data-i18n='html.footer.about-comp'></p></li></a>
-					<a href="service.html" title=""><li><p class='link' data-i18n='html.footer.about-service'></p></li></a>
-					<!-- <a href="#" title=""><li><p class='link' data-i18n='html.footer.vision'></p></li></a> -->
-					<a href="#" title=""><li><p class='link' data-i18n='html.footer.cm'></p></li></a>
+					<a href="company.html" title=""><li  data-i18n='html.footer.about-comp'></li></a>
+					<a href="service.html" title=""><li  data-i18n='html.footer.about-service'></li></a>
+					<a href="partners.html" title=""><li data-i18n='subpages.partners.name'></li><a>
+					<a href="http://capacitymonitor.cz/" title=""><li  data-i18n='html.footer.cm'></li></a>
 				</ul>
 			</div>
 			<div class="contact-info">
 				<h3 data-i18n='html.footer.right-heading'></h3>
 				<ul>
-					<li><a href="mailto:uniteddata@gmail.com">uniteddata@gmail.com</a></li>
-					<li>Jan Kučera</li>
-					<li><a href="tel:+420605405780">605 405 780</a></li>
+					<li>UnitedData a.s.</li>
+					<li>V celnici 1031/4</li>
+					<li>Nové Město, 110 00 Praha 1</li>
+					<li>+420 775 03 30 75</li>
+					<li><a href="mailto:info@uniteddata.eu">info@uniteddata.eu</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class='partners'>
-			<div class='partners-heading'>
-				<h3 data-i18n='html.footer.partners-heading'></h3>
-			</div>
-			<a href="http://sg-consulting.cz/"><div class='partner' id='sng'></div></a>
-			<a href="http://www.visionit.sk/"><div class='partner' id='vit'></div></a>
-			<a href="http://www.commvault.com/"><div class='partner' id='com'></div></a>
-			<a href="http://www.dell.com/"><div class='partner' id='dell'></div></a>
-			<a href="http://www.hp-enterprisesolutions.com/"><div class='partner' id='hpe'></div></a>
-			<a href="http://hp.com/"><div class='partner' id='hp'></div></a>
-			<a href="http://www.netapp.com/us/"><div class='partner' id='net'></div></a>
-			<a href="https://www.veeam.com/"><div class='partner' id='veeam'></div></a>
-		</div>
-		<div class='logo-container'>
-			<div class="logo-footer"></div>
-			<div class="Nineroads"></div>
-		</div>
+		<div class="logo-footer"></div>
+		<div class="Nineroads"></div>
 	</div>
+
 	<script src="main.js" type="text/javascript"></script>
 	<script src="company.js" type="text/javascript"></script>
 	<script type="text/javascript" src="checkLang.js"></script>

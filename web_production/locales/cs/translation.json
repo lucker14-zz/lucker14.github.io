@@ -19,7 +19,7 @@
   			"heading": "Proč platit za IT infrastrukturní kapacitu kterou nevyužijete? Nevíte? My také ne!",
         "text1" : "Poskytujeme IT infrastrukturní kapacitní služby, které pružně reágují na vaše aktuální  kapacitní potřeby.",
         "text2": "Služby jsou řízeny on-line pomocí aplikace, která je k dispozici 24 hodin denně.",
-  			"cta": "A tenhle příběh znáte?",
+  			"cta": "Příběh z IT oddělení",
   			"timeline-start": "Začátek příběhu",
   			"timeline-end": "Konec příběhu"
   		},
@@ -67,10 +67,10 @@
   			"step3-name": "Implementace",
   			"step4-name": "Monitorování",
         "more": "Více",
-  			"step1-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
-  			"step2-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
-  			"step3-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
-  			"step4-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám."
+        "step1-desc": "Důkladná detailní analýza požadavků kapacity, architektury a výkonu IT jako komplexu.",
+        "step2-desc": "Cíl: Postupná optimalizace kapacitních zdrojů.",
+        "step3-desc": "Nasazení kapacitní služby, provedené formou projektu.",
+        "step4-desc": "Monitoring spotřeby kapacitních zdrojů skrz aplikaci Capacity monitor.A continuous monitoring of capacity resource consumption through app Capacity Monitor."
   		},
   		"email-gather": {
   			"heading": "Zodpovíme všechny vaše dotazy.",

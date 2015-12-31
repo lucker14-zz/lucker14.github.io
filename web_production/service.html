@@ -21,11 +21,11 @@
 			<li class='lang-switch' id='switchEng'></li>
 		</ul>
 		<ul>
-			<li data-i18n='html.nav.home' class="selected-menu click" data-jump="video-warp-1"></li>
-			<li data-i18n='html.nav.about'class="click href-about"></li>
-			<li data-i18n='html.nav.story'class="click" data-jump="video-warp-2"></li>
-			<li data-i18n='html.nav.service'class="click" data-jump="sluzba-click"></li>
-			<li data-i18n='html.nav.contact' class="click" data-jump="kontakt-click"></li>
+			<li class="selected-menu" data-jump="video-warp-1"><a href="index.html#video-warp-1" data-i18n='html.nav.home'></a></li>
+			<li class="href-about"><a href="company.html" data-i18n='html.nav.about'></a></li>
+			<li><a href="index.html#video-warp-2" data-i18n='html.nav.story'></a></li>
+			<li><a href="index.html#sluzba-click"  data-i18n='html.nav.service'></a></li>
+			<li><a href="contact.html" data-i18n='html.nav.contact'></a></li>
 		</ul>
 	</div>
 </nav>
@@ -37,9 +37,10 @@
 
 	<h1 class='subpage-heading1'  data-i18n='subpages.service.name'>O službě</h1>
 
-	<h2 class='subpage-heading2' data-i18='warps.analysis.heading'>Analýza</h2>
-
-	<div class='subpage-image' id='analysis'></div>
+	<div class='service-heading-container' style='margin-top: 25px;'>
+		<div class='subpage-image' id='analysis'></div>
+		<h2 class='subpage-heading2' data-i18='warps.analysis.heading'>Analýza</h2>
+	</div>
 
 	<p class='subpage-article'  data-i18n='warps.analysis.p1'>Důkladná, detailní analýza požadavků pro výkon, kapacitu a architekturu je důležitý základ, pro správné nastavení IT komponent a pro finančně efektivní fungování kapacitního systému.</p>
 	
@@ -47,9 +48,10 @@
 
 	<p class='subpage-article'  data-i18n='warps.analysis.p3'>b) Všechna nasbíraná data jsou analyzována týmem specialistů na podnikové kapacity, kteří - v souladu s ITIL principy - definují konfiguraci, nebo nutné změny v systému, s náhledem na definované kapacitní požadavky a aktuální spotřbu dat. Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty.</p>
 
-	<h2 class='subpage-heading2' data-i18='warps.designandoptimization.heading'>Návrh a optimalizace</h2>
-
-	<div class='subpage-image' id='desandopt'></div>
+	<div class='service-heading-container'>
+		<div class='subpage-image' id='desandopt'></div>
+		<h2 class='subpage-heading2' data-i18='warps.designandoptimization.heading'>Návrh a optimalizace</h2>
+	</div>
 
 	<p class='subpage-article'  data-i18n='warps.designandoptimization.p1'>Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty. Hlavní cíl tohoto krokuje postupná optimalizace kapacitních zdrojův záměru zajištění satisfakce na straně klienta.</p>
 	
@@ -59,9 +61,10 @@
 
 	<p class='subpage-article'  data-i18n='warps.designandoptimization.p4'>Založena na vzájemně schválené a uzavřené dohodě, je následně definována cena za kapacitní jednotku s fixací od 3 do 5 let (GB, port, etalon etc.)</p>
 
-	<h2 class='subpage-heading2' data-i18='warps.implementation.heading'>Implementace</h2>
-
-	<div class='subpage-image' id='implementation'></div>
+	<div class='service-heading-container'>
+		<div class='subpage-image' id='implementation'></div>
+		<h2 class='subpage-heading2' data-i18='warps.implementation.heading'>Implementace</h2>
+	</div>
 
 	<p class='subpage-article'  data-i18n='warps.implementation.p1'>Nasazení kapacitní služby je realizováno formou projektu s jasně danými milníky, dead-line a odpovědností.</p>
 	
@@ -71,9 +74,10 @@
 
 	<p class='subpage-article'  data-i18n='warps.implementation.p4'>V případě jakýhkolic změn služby a její konfigurace, je sepsána dokumentace s cílem sledovat co bylo změněno v průběhu času nebo jaká je aktuální nastavení službzy.</p>
 
-	<h2 class='subpage-heading2' data-i18='warps.monitoring.heading'>Monitoring</h2>
-
-	<div class='subpage-image' id='monitoring'></div>
+	<div class='service-heading-container'>
+		<div class='subpage-image' id='monitoring'></div>
+		<h2 class='subpage-heading2' data-i18='warps.monitoring.heading'>Monitoring</h2>
+	</div>
 
 	<p class='subpage-article'  data-i18n='warps.monitoring.p1'>Nepřetržitý monitoring spotřeby kapacitních zdrojů tvoří klíčovou část efektivní správy kapacitní služby. Monitoring kapacitní služby poskytovaný ve službě samotné, poskytuje klientovy informace o stavu služby, budoucí trendy a odpovídající mesíční ceny za službu.</p>
 	
@@ -114,11 +118,13 @@
 					<li><a href="mailto:info@uniteddata.eu">info@uniteddata.eu</a></li>
 				</ul>
 			</div>
+			<div class='contact-info-map'>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.914425962672!2d14.427884915203284!3d50.087889021304285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ead69b1ab1%3A0x4df51ffee31bfbbd!2sV+Celnici+1031%2F4%2C+110+00+Praha-Praha+1!5e0!3m2!1scs!2scz!4v1450779138631" width="400" height="200" frameborder="0" style="border:0; float:right;" allowfullscreen></iframe>
+			</div>
 		</div>
 		<div class="logo-footer"></div>
 		<div class="Nineroads"></div>
 	</div>
-
 <script type="text/javascript" src="company.js"></script>
 <script type="text/javascript" src="checkLang.js"></script>
 </body>

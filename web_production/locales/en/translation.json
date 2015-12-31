@@ -19,7 +19,7 @@
         "heading": "Why you should pay unnecessary IT infrastructure capacities?",
         "text1" : "We offer IT infrastructure capacity service, which flexibly react to current capacity requirements.",
         "text2": "Services are controlled through online application available 24/7.",
-        "cta": "You know this story?",
+        "cta": "IT department story",
         "timeline-start": "Story begining",
         "timeline-end": "Story end"
       },
@@ -67,10 +67,10 @@
         "step3-name": "Implementation",
         "step4-name": "Monitoring",
         "more": "More",
-        "step1-desc": "After a precise analysis we offer you solution that fits you perfectly.",
-        "step2-desc": "After a precise analysis we offer you solution that fits you perfectly.",
-        "step3-desc": "After a precise analysis we offer you solution that fits you perfectly.",
-        "step4-desc": "After a precise analysis we offer you solution that fits you perfectly."
+        "step1-desc": "A careful detailed analysis of requirements for IT performance, capacity and architecture.",
+        "step2-desc": "Main aim of this step is a continuous optimization of capacity resources.",
+        "step3-desc": "A deployment of the capacity service realized in a form of project.",
+        "step4-desc": "A continuous monitoring of capacity resource consumption. Key part of the efficient management."
       },
       "email-gather": {
         "heading": "We'll answer all of your questions.",
@@ -85,6 +85,7 @@
         "vision": "Vision",
         "cm": "Capactiy Monitor",
         "another-heading": "Billing information",
+        "last-heading": "Tech Support",
         "right-heading": "Contact"
       },
       "caption": {

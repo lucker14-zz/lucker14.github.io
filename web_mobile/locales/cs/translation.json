@@ -19,7 +19,7 @@
   			"heading": "Proč platit za IT infrastrukturní kapacitu kterou nevyužijete? Nevíte? My také ne!",
   			"text1" : "Poskytujeme IT infrastrukturní kapacitní služby, které pružně reágují na vaše aktuální  kapacitní potřeby.",
         "text2": "Služby jsou řízeny on-line pomocí aplikace, která je k dispozici 24 hodin denně.",
-  			"cta": "A tenhle příběh znáte?",
+  			"cta": "Příběh z IT oddělení",
   			"timeline-start": "Začátek příběhu",
   			"timeline-end": "Konec příběhu"
   		},
@@ -67,10 +67,10 @@
   			"step3-name": "Implementace",
   			"step4-name": "Monitorování",
         "more": "Více",
-  			"step1-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
-  			"step2-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
-  			"step3-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám.",
-  			"step4-desc": "Po důkladné analýze vám navrhneme vhodné řešení, které je zároveň optimalizované a tak je flexibiní vašim potřebám."
+        "step1-desc": "Důkladná detailní analýza požadavků kapacity, architektury a výkonu IT jako komplexu.",
+        "step2-desc": "Cíl: Postupná optimalizace kapacitních zdrojů.",
+        "step3-desc": "Nasazení kapacitní služby, provedené formou projektu.",
+        "step4-desc": "Monitoring spotřeby kapacitních zdrojů skrz aplikaci Capacity monitor.A continuous monitoring of capacity resource consumption through app Capacity Monitor."
   		},
   		"email-gather": {
   			"heading": "Zodpovíme všechny vaše dotazy.",
@@ -135,6 +135,38 @@
       },
       "partners": {
         "name": "Partneři"
+      }
+    },
+    "warps":{
+      "analysis":{
+        "heading": "Analýza",
+        "p1": "Důkladná, detailní analýza požadavků pro výkon, kapacitu a architekturu je důležitý základ, pro správné nastavení IT komponent a pro finančně efektivní fungování kapacitního systému.",
+        "p2": "a) Pro stálý monitoring požadavků na kapacitu používáme vlastní nástroj - Capacity Monitor. V případě poraktivních služeb,  In case of proactive services, upravujeme monitorovací nástroje a API, což nám pomáhá sbírat a analyzovat všechny potřebné informace. Ty jsou používánypro optimalizaci aktuálně požadované kapacity a správu nových kapacit.",
+        "p3": "b) Všechna nasbíraná data jsou analyzována týmem specialistů na podnikové kapacity, kteří - v souladu s ITIL principy - definují konfiguraci, nebo nutné změny v systému, s náhledem na definované kapacitní požadavky a aktuální spotřbu dat. Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty."
+      },
+      "designandoptimization":{
+        "heading": "Návrh a optimalizace",
+        "p1": "Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty. Hlavní cíl tohoto krokuje postupná optimalizace kapacitních zdrojův záměru zajištění satisfakce na straně klienta.",
+        "p2": "a) Navrhované změny jsou vyhodnoceny řídící komisí která otázky spadající do operací infrastruktury, její výkonnosti, kapacity a administrace.",
+        "p3": "b) Kapacitní řešení a celý proces zavedení služby jsou nastaveny k zajištění optimálního využití kapacitních i finančních zdrojů skrz celou dobu použití služby, a aby byla schopna zahrnout i neplánované kapacitní požadavky.",
+        "p4": "Založena na vzájemně schválené a uzavřené dohodě, je následně definována cena za kapacitní jednotku s fixací od 3 do 5 let (GB, port, etalon etc.)"
+      },
+      "implementation": {
+        "heading": "Implementace",
+        "p1": "Nasazení kapacitní služby je realizováno formou projektu s jasně danými milníky, dead-line a odpovědností.",
+        "p2": "Rozsah služby, její parametry, způsob doručení, procedury změn (pro úpravy parametrů služby) jsou dokumentovány v Smlouvě o úrovni poskytovaných služeb (SLA)",
+        "p3": "Instalace a dohled nad kapacitnímy systémy je vždy vykonávána certifikovanými profesionály, v úzké spolupráci s klientem a jeho odpovednými zaměstnanci. Celá instalace a spuštění systému je dokumentována v psané formě. Dokumentace slouží jako základ pro přenos služby a jako technická dokumentace pro administrátory.",
+        "p4": "V případě jakýhkolic změn služby a její konfigurace, je sepsána dokumentace s cílem sledovat co bylo změněno v průběhu času nebo jaká je aktuální nastavení službzy."
+      },
+      "monitoring": {
+        "heading": "Monitoring",
+        "p1": "Nepřetržitý monitoring spotřeby kapacitních zdrojů tvoří klíčovou část efektivní správy kapacitní služby. Monitoring kapacitní služby poskytovaný ve službě samotné, poskytuje klientovy informace o stavu služby, budoucí trendy a odpovídající mesíční ceny za službu.",
+        "p2": "Díky preciznímu odhadu budoucích trendů a znalosti aktuálního využití kapacit, je možnost upravovat kapacitní požadavky a prioritizovat je jak je potřeba. To následně pomáhá lépe spravovat spotřebu kapacit v průběhu času a návaznosti na změny požadavků.",
+        "p3": "Následující příklad ukazuje základní informace spojené se správou a monitoringem kapacit. Parametry monitoringu jsou:",
+        "p4": "1. Poskytovaná nominální kapacita",
+        "p5": "2. Alokovaná x volná kapacita (uzpůsobení kapacit)",
+        "p6": "3. Přesah služby",
+        "p7": "Tyto základní veličiny representují pouze klíčové parametry služby. Pro každou kapacitní službu sledujeme spoustu dalších veličin a faktorů. Jejich uspůsobení záleží na specifickém typu infrastruktury kapacitní služby."
       }
     }
 }
