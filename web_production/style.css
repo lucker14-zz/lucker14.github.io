@@ -641,6 +641,7 @@ ul li {
 }
 
 .short-line {
+	display: none;
   width: 16px;
   height: 156px;
   background: url('short_line.png') center center no-repeat;
@@ -656,7 +657,7 @@ ul li {
 
 .circle-warp-img {
 	position: relative;
-	top: 0px;
+	top: 17vh;
 	max-width: 700px;
 	max-height: 700px;
   width:85vh;
@@ -1452,7 +1453,7 @@ form {
 	    z-index: 8;
     position: relative;
     left: 38vw;
-    top: -5vh;
+    /*top: -5vh;*/
     max-width: 100px;
 }
 
