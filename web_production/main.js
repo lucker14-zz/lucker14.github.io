@@ -254,14 +254,14 @@ var scroll = window.requestAnimationFrame ||
 //funkce co resi samotnej scroll.
 function loop() {
 
-	
+
 
 	if (shaked === false) {
 		var el = document.querySelector('.mouse');
 		if(isElementInViewport(el) == true){
 			$('.mouse').effect('shake', {times:'2', distance:'5', direction:'up'} , 'slow');
 			shaked = true;
-		} 
+		}
 	};
 
 	//if scroll position is different do something else do nothing.
@@ -277,7 +277,7 @@ function loop() {
 	switchToFixedCircle();
 	moveShortLine();
 
-	
+
 
   scroll(loop);
 };
@@ -303,7 +303,7 @@ function prepereParallax() {
 function switchToFixedCircle() {
 	//windowpos by se tady nemel vytvaret mas ho uz nahore. Very easy fix.
 	var windowpos = $(window).scrollTop() - 20;
-	if (windowpos >= positionBreakPoint.top && windowpos < maxvalue) {
+	if (windowpos >= positionBreakPoint.top && windowpos < (maxvalue - 100)) {
 			//var offset = s.offset().top - window.pageYOffset;
 			s.attr("style", ""); //kill absolute positioning
 			s.addClass("stick");
@@ -313,7 +313,7 @@ function switchToFixedCircle() {
 			s.removeClass('stick'); //un-stick
 			s.css({
 				position: "absolute",
-				top: maxvalue + "px",
+				top: (maxvalue - 100) + "px",
 				left: '50%',
 				transform: 'translateX(-50%)'
 			}); //set sticker right above the footer
@@ -377,13 +377,13 @@ function playVideo() {
 				// 		pTop = parseFloat(pTop) + step;
 				// 	} else if (i < lastVideo) {
 				// 		pTop = parseFloat(pTop) - step;
-				// 	}					
+				// 	}
 
 				// 	console.log('pTop: ' + pTop);
 
-				// 	$('.timeline-pointer').animate({top: pTop},'fast');	
+				// 	$('.timeline-pointer').animate({top: pTop},'fast');
 				// };
-				
+
 
 				// lastVideo = i;
 			}
@@ -397,10 +397,10 @@ function timelineRender (video_id) {
 
 	var id = '#timeline-point-' + (video_id + 1);
 
-	if ($(id).hasClass('actual') == false) 
-		$(id).toggleClass('actual'); 
-	if ($(id).hasClass('past')) 
-		$(id).removeClass('past'); 
+	if ($(id).hasClass('actual') == false)
+		$(id).toggleClass('actual');
+	if ($(id).hasClass('past'))
+		$(id).removeClass('past');
 
 	$('.timeline-point').each(function() {
 		if ($(this).data('id') > (video_id + 1)) {
@@ -438,7 +438,7 @@ function timelineCheck() {
 		// $('.timeline-wrap').hide();
 		$('.break-point').addClass('stick');
 
-	} 
+	}
 
 	if (window.pageYOffset < timelineOffset && window.pageYOffset > timelineStartOffset && $('.timeline-wrap').css('display') == 'none') {
 		$('.timeline-wrap').show();
@@ -446,7 +446,7 @@ function timelineCheck() {
 	} else if ((window.pageYOffset > timelineOffset || window.pageYOffset < timelineStartOffset) && $('.timeline-wrap').css('display') == 'block') {
 		$('.timeline-wrap').hide();
 		// $('.break-point').toggleClass('stick');
-	} 
+	}
 
 	// if(window.pageYOffset > timelineStartOffset && $('.timeline-wrap').css('display') == 'none'){
 	// 	$('.timeline-wrap').show();
@@ -458,7 +458,7 @@ function timelineCheck() {
 	// 	$('.cycle-warp').hide();
 	// } else if (window.pageYOffset > $(id).offset().top && $('.cycle-wrap').css('display') == 'block') {
 	// 	$('.cycle-warp').show();
-	// } 
+	// }
 }
 
 
@@ -755,7 +755,7 @@ function positionTimeline(count){
 
 $(window).resize(function() {
 	var count = videoWarpArray.length + 1;
-	
+
 	step = $('#timeline-point-2').css('margin-top');
 
 	step = parseFloat(step) + 9;
@@ -877,7 +877,7 @@ $(document).ready(function() {
 
 		if (i != 1 || i != videoWarpArray.length + 1) {
 			var ele = '<div class="timeline-point" data-id="' + i + '" id="timeline-point-'+ i +'"></div>';
-			
+
 			$('.timeline').append(ele);
 		};
 
@@ -912,7 +912,7 @@ $(document).ready(function() {
 
 		$("html").velocity("stop");
 		$("html").velocity("scroll", { offset: videoOffset + 'px', mobileHA: false });
-		
+
 	});
 
 	$('.timeline-point').mouseenter( function() {
@@ -934,9 +934,9 @@ $(document).ready(function() {
 
 
 	console.log('step: ' + step);
- 
- 	
-	//start shake on button enter viewport	
+
+
+	//start shake on button enter viewport
 
 	$('#button-odkaz-1').onScreen({
 	   container: window,
@@ -958,17 +958,17 @@ $(document).ready(function() {
 
 
 	//translation initialisation
-	i18n.init({ lng: 'cs' }, function(err, t) { 
+	i18n.init({ lng: 'cs' }, function(err, t) {
 		$('html').i18n();
 	});
-	
+
 	$('#switchEng').on('click', function(){
 		console.log('switch');
 		i18n.setLng('en',function(t){
 			$('html').i18n();
 		});
 
-		$('#knowMore').css('width', '605px');	
+		$('#knowMore').css('width', '605px');
 		setCookie('lang', 'en', 30);
 		// $('#billboard2').css('padding-bottom', '30px');
 	});
@@ -980,7 +980,7 @@ $(document).ready(function() {
 		});
 
 		$('#knowMore').css('width', '605px');
-		setCookie('lang', 'cs', 30);	
+		setCookie('lang', 'cs', 30);
 		// $('#billboard2').css('padding-bottom', '90px');
 
 	});
@@ -1046,7 +1046,7 @@ function looper(){
 	var id = '';
 
 	$.each($('.inside-text'),function() {
-		if ($(this).css('opacity') == 1) 
+		if ($(this).css('opacity') == 1)
 			id = '#button-odkaz-' + $(this).data('id');
 	});
 
@@ -1077,14 +1077,14 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 $(window).load(function() {
-	
+
 
 
 	// if (getCookie('lang') == '') {
 	// 	setCookie('lang', 'cs', 356);
 	// 	console.log('cookie lang:' + getCookie('lang'));
 
-		
+
 	// };
 });
 

@@ -43,7 +43,7 @@ nav {
 
 .mobile-nav ul a:active, .mobile-nav ul a:hover{
 	color: #999;
-}  
+}
 
 .hamburger-menu {
 	width: 17px;
@@ -165,7 +165,7 @@ nav {
 }
 
 #bubble-last p{
-    top: -10px !important;	
+    top: -10px !important;
 }
 
 .button {
@@ -181,7 +181,7 @@ nav {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     top: 90%;
-    box-shadow: 0px 3px 0px 0px rgb(60, 150, 70), 0px 8px 47px rgba(0,0,0,0.4);   
+    box-shadow: 0px 3px 0px 0px rgb(60, 150, 70), 0px 8px 47px rgba(0,0,0,0.4);
 }
 
 .button:hover {
@@ -420,7 +420,7 @@ p.inverted{
 	height: 95vw;
 	float: left;
 
-	background: #f5f5fa; 
+	background: #f5f5fa;
 }
 
 .form-warp p {
@@ -501,7 +501,9 @@ p.inverted{
 }
 
 .mobile-phone-contact{
-    width: 170px;
+		position: relative;
+		bottom: 20px
+    width: 200px;
     height: 50px;
     float: none;
     display: block;
@@ -519,6 +521,7 @@ p.inverted{
 	height: 50px;
 	background: url('img/phone-icon.png');
 	background-size: 50px 50px;
+	background-position-y: 5px;
 }
 
 .footer{
@@ -534,7 +537,7 @@ p.inverted{
 
 .footer a, .footer a:link, .footer a:hover, .footer a:visited {
 	color: #dfe3e7;
-}  
+}
 
 .contact-info a{
 	text-decoration: none;
@@ -544,7 +547,7 @@ p.inverted{
 .mobile-phone-contact a, .mobile-phone-contact a:link, .mobile-phone-contact a:hover, .mobile-phone-contact a:visited {
 	color: #66757F;
 	text-decoration: none;
-} 
+}
 
 
 .footer h3{
@@ -569,7 +572,7 @@ p.inverted{
     line-height: 27px;
 }
 
-.contact-info, .links{ 
+.contact-info, .links{
 	width: 50%;
 	float: left;
 }
@@ -604,7 +607,7 @@ p.inverted{
 	background: url('img/logo.png');
 	background-size: 70px 56px;
 	opacity: 0.15;
-	
+
 }
 
 .Nineroads {
@@ -670,11 +673,11 @@ iframe{
 }
 
 #switchCes{
-	background-image: url('img/cz-flag-icon.png');	
+	background-image: url('img/cz-flag-icon.png');
 }
 
 #switchEng{
-	background-image: url('img/en-flag-icon.jpg');	
+	background-image: url('img/en-flag-icon.jpg');
 }
 
 .proof{
@@ -690,7 +693,7 @@ iframe{
 }
 
 .proof-desc{
-	font-size: 20px;
+	font-size: 14px;
 }
 
 .proof-part{
@@ -800,7 +803,7 @@ iframe{
 /*--------------------------------------------------------*/
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
-	.image{ 
+	.image{
 		height: 70vw;
 	}
 
@@ -879,12 +882,12 @@ iframe{
 .subpage-heading1{
 	color: #60B86A;
 	font-weight: normal;
-	margin-top: 60px; 
+	margin-top: 60px;
 }
 
 .subpage-heading2{
 	color: #666;
-	font-weight: normal; 
+	font-weight: normal;
 	padding-left: 55px;
 }
 

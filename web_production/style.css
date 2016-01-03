@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	overflow-y: hidden;  
+	overflow-y: hidden;
 	font-family: 'Proxima Nova', sans-serif;
 	letter-spacing: 1px;`
 }
@@ -875,6 +875,7 @@ ul li {
 	height: 10565px;
 	background: url('noise_white.png');
 	background-size: 235px 235px;
+	padding-bottom: 100px;
 }
 
 .position-fixed {
@@ -1166,12 +1167,12 @@ ul li {
 
 .footer-links a:visited, .footer-links a:link{
 	color: #d5dadf;
-} 
+}
 
 
 .footer-links a:hover, .footer-links a:active{
 	color:#F1F2F4
-} 
+}
 
 .footer-links li {
 	color: #d5dadf;
@@ -1373,7 +1374,7 @@ form {
 	background-color: #f6f6f5;
 	/*opacity: 0.15;
 
-	-webkit-filter: blur(1px); 
+	-webkit-filter: blur(1px);
     filter: blur(1px); */
 
     border-radius: 2px;
@@ -1505,11 +1506,11 @@ form {
 }
 
 #switchCes{
-	background-image: url('img/cz-flag-icon.png');	
+	background-image: url('img/cz-flag-icon.png');
 }
 
 #switchEng{
-	background-image: url('img/en-flag-icon.jpg');	
+	background-image: url('img/en-flag-icon.jpg');
 }
 
 .proof{
@@ -1918,12 +1919,12 @@ form {
 .subpage-heading1{
 	color: #60B86A;
 	font-weight: normal;
-	margin-top: 60px; 
+	margin-top: 60px;
 }
 
 .subpage-heading2{
 	color: #666;
-	font-weight: normal; 
+	font-weight: normal;
 	margin-top: 35px;
     padding-left: 50px;
 }
