@@ -630,7 +630,7 @@ ul li {
 	    transform: translateX(-50%) translateY(30px);
   left: -20%;
   top: 0%;
-	box-shadow: 0 28px 79.8px -10.8px rgba(0, 0, 0, 0.46);
+	box-shadow: 0 14px 40.8px -5.8px rgba(0, 0, 0, 0.26)
 }
 
 .nadpis-cycle h2 {
@@ -936,7 +936,7 @@ ul li {
 
 .stick {
 	position:fixed;
-	top:60px;
+	top:20px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	        -ms-transform: translateX(-50%);
@@ -1762,6 +1762,10 @@ form {
 
 	.new-button{
 		top: 34vh;
+	}
+
+	.button-last{
+		top: 50vh;
 	}
 
 	.bubble-container{
