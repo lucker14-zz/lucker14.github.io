@@ -405,14 +405,18 @@ p.inverted{
 
 .service-heading{
 	font-weight: bold;
-	font-size: 19px;
+	font-size: 16px;
 	margin-bottom: 0px;
 }
 
 .service-desc{
 	font-size: 13px;
 	margin-top: 3px;
-    margin-bottom: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
 }
 
 .form-warp {
@@ -502,7 +506,7 @@ p.inverted{
 
 .mobile-phone-contact{
 		position: relative;
-		bottom: 20px
+		bottom: 20px;
     width: 200px;
     height: 50px;
     float: none;
@@ -556,7 +560,7 @@ p.inverted{
 }
 
 .footer ul{
-	font-size: 14px;
+	font-size: 12px;
 
 	list-style: none;
 	padding: 0;
