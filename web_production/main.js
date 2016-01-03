@@ -304,19 +304,23 @@ function switchToFixedCircle() {
 	//windowpos by se tady nemel vytvaret mas ho uz nahore. Very easy fix.
 	var windowpos = $(window).scrollTop() - 20;
 	if (windowpos >= (positionBreakPoint.top - 200) && windowpos < (maxvalue - 200)) {
-			//var offset = s.offset().top - window.pageYOffset;
-			s.attr("style", ""); //kill absolute positioning
-			s.addClass("stick");
-			var drawPosition = lastPosition - breakPointFirstOffset;
-			draw((drawPosition / 5000) + startValue);
+			if (s.hasClass('stick') == false) {
+				//var offset = s.offset().top - window.pageYOffset;
+				s.attr("style", ""); //kill absolute positioning
+				s.addClass("stick");
+				var drawPosition = lastPosition - breakPointFirstOffset;
+				draw((drawPosition / 5000) + startValue);
+			};
 		} else if (windowpos >= (maxvalue - 200)) {
-			s.removeClass('stick'); //un-stick
-			s.css({
-				position: "absolute",
-				top: (maxvalue - 100) + "px",
-				left: '50%',
-				transform: 'translateX(-50%)'
-			}); //set sticker right above the footer
+			if (s.hasClass('stick')) {
+				s.removeClass('stick'); //un-stick
+				s.css({
+					position: "absolute",
+					top: (maxvalue - 100) + "px",
+					left: '50%',
+					transform: 'translateX(-50%)'
+				}); //set sticker right above the footer
+			};
 		} else {
 			s.removeClass();
 	}

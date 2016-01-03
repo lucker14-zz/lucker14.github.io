@@ -274,9 +274,9 @@ p.inverted{
 
 .text-bubble {
 	position: relative;
-	top: -7px;
-    padding-left: 10px;
-    padding-right: 10px;
+	    top: -12px;
+    padding-left: 20px;
+    padding-right: 20px;
 	/*padding-top: 7%;
 	width: 100%;
 	text-align: center;
