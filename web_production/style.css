@@ -626,11 +626,11 @@ ul li {
 	margin: 20px auto;
 	font-size: 24px;
 	-webkit-transform: translateX(-50%) translateY(30px);
-	        -ms-transform: translateX(-50%) translateY(30px);
-	    transform: translateX(-50%) translateY(30px);
+  -ms-transform: translateX(-50%) translateY(30px);
+  transform: translateX(-50%) translateY(30px);
   left: -20%;
   top: 0%;
-	box-shadow: 0 14px 40.8px -5.8px rgba(0, 0, 0, 0.26)
+  box-shadow: 0 6px 21px rgba(22, 105, 33, 0.68);
 }
 
 .nadpis-cycle h2 {
