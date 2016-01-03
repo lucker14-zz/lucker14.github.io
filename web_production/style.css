@@ -3,7 +3,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: hidden;
 	font-family: 'Proxima Nova', sans-serif;
-	letter-spacing: 1px;`
+	letter-spacing: 1px;
 }
 
 
@@ -872,7 +872,7 @@ ul li {
 
 .cycle-warp {
 	box-shadow: inset -1px 64px 50px -63px rgba(0,0,0,0.73);
-	height: 10565px;
+	height: 10500px;
 	background: url('noise_white.png');
 	background-size: 235px 235px;
 	padding-bottom: 100px;
@@ -1471,7 +1471,7 @@ form {
 .mouse{
 	    z-index: 8;
     position: relative;
-    left: 38vw;
+    left: 48vw;
     /*top: -5vh;*/
     max-width: 100px;
 }

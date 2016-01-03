@@ -301,28 +301,52 @@ function prepereParallax() {
 
 //Prepne kruh z absolute na fixed a obracne pokud prejedes bod. Chtelo by to optimalizovat.
 function switchToFixedCircle() {
+	// var id = '#video-warp-' + videoWarpArray.length;
+	// var stickOffset = $(id).offset().top + ($(id).height()) * 3;
+	// if (window.pageYOffset < stickOffset) {
+	// 	// $('.timeline-wrap').show();
+	// 	if ($('.break-point').hasClass('stick')) {
+	// 		$('.break-point').removeClass('stick');
+	// 	};
+	// } else if (window.pageYOffset > stickOffset) {
+	// 	// $('.timeline-wrap').hide();
+	// 	if ($('.break-point').hasClass('stick') == false) {
+	// 		$('.break-point').addClass('stick');
+	// 	};
+	// }
+
 	//windowpos by se tady nemel vytvaret mas ho uz nahore. Very easy fix.
 	var windowpos = $(window).scrollTop() - 20;
-	if (windowpos >= (positionBreakPoint.top - 200) && windowpos < (maxvalue - 200)) {
+	if (windowpos >= (positionBreakPoint.top)  && windowpos < (maxvalue - 200)) {
 			if (s.hasClass('stick') == false) {
 				//var offset = s.offset().top - window.pageYOffset;
 				s.attr("style", ""); //kill absolute positioning
 				s.addClass("stick");
-				var drawPosition = lastPosition - breakPointFirstOffset;
-				draw((drawPosition / 5000) + startValue);
 			};
+			var drawPosition = lastPosition - breakPointFirstOffset;
+			draw((drawPosition / 5000) + startValue);
 		} else if (windowpos >= (maxvalue - 200)) {
 			if (s.hasClass('stick')) {
 				s.removeClass('stick'); //un-stick
 				s.css({
 					position: "absolute",
-					top: (maxvalue - 100) + "px",
+					top: (maxvalue - 200) + "px",
 					left: '50%',
 					transform: 'translateX(-50%)'
 				}); //set sticker right above the footer
 			};
-		} else {
-			s.removeClass();
+		} else if(windowpos <= (positionBreakPoint.top)) {
+			if (s.hasClass('stick')) {
+				s.removeClass('stick'); //un-stick
+				s.css({
+					position: "absolute",
+					top: (positionBreakPoint.top) + "px",
+					left: '50%',
+					transform: 'translateX(-50%)'
+				}); //set sticker right above the footer
+			};
+	} else {
+		s.removeClass();
 	}
 }
 
@@ -425,24 +449,8 @@ function timelineRender (video_id) {
 function timelineCheck() {
 	var id = '#video-warp-' + videoWarpArray.length;
 
-	// console.log($(id).height());
-	// console.log($(id).offset().top);
-	// console.log(window.pageYOffset);
-
-	var stickOffset = $(id).offset().top + ($(id).height()) * 3;
 	var timelineOffset = $(id).offset().top + ($(id).height()) / 2;
 	var timelineStartOffset = $('#video-warp-2').offset().top / 1.5;
-
-	// console.log(newOffset);
-
-	if (window.pageYOffset < stickOffset) {
-		// $('.timeline-wrap').show();
-		$('.break-point').removeClass('stick');
-	} else if (window.pageYOffset > stickOffset) {
-		// $('.timeline-wrap').hide();
-		$('.break-point').addClass('stick');
-
-	}
 
 	if (window.pageYOffset < timelineOffset && window.pageYOffset > timelineStartOffset && $('.timeline-wrap').css('display') == 'none') {
 		$('.timeline-wrap').show();
