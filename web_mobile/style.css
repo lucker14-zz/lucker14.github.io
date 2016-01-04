@@ -459,9 +459,11 @@ p.inverted{
 
 .input-email {
 	float: left;
-	height: 39px;
+	height: 35px;
 	border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   border: 1px solid #c5cbd2;
   font-size: 14px;
   padding-left: 15px;
@@ -470,7 +472,7 @@ p.inverted{
 
 .button-send {
 	color: white;
-	height: 43px;
+	height: 44px;
 	float: left;
 	background: #60B86A;
 	padding-top: 3px;
@@ -478,10 +480,14 @@ p.inverted{
 	font-weight: bold;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
 	border: none;
 	-webkit-appearance: none;
+	position: relative;
+	right: 4px;
 }
 
 .button-send:hover {
@@ -729,6 +735,7 @@ iframe{
 	height: 32px;
 	width: 32px;
 	background-size: contain;
+	background-repeat: no-repeat;
 
     position: relative;
     top: 4px;
