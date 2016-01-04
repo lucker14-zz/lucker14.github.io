@@ -301,20 +301,6 @@ function prepereParallax() {
 
 //Prepne kruh z absolute na fixed a obracne pokud prejedes bod. Chtelo by to optimalizovat.
 function switchToFixedCircle() {
-	// var id = '#video-warp-' + videoWarpArray.length;
-	// var stickOffset = $(id).offset().top + ($(id).height()) * 3;
-	// if (window.pageYOffset < stickOffset) {
-	// 	// $('.timeline-wrap').show();
-	// 	if ($('.break-point').hasClass('stick')) {
-	// 		$('.break-point').removeClass('stick');
-	// 	};
-	// } else if (window.pageYOffset > stickOffset) {
-	// 	// $('.timeline-wrap').hide();
-	// 	if ($('.break-point').hasClass('stick') == false) {
-	// 		$('.break-point').addClass('stick');
-	// 	};
-	// }
-
 	//windowpos by se tady nemel vytvaret mas ho uz nahore. Very easy fix.
 	var windowpos = $(window).scrollTop() - 20;
 	if (windowpos >= (positionBreakPoint.top)  && windowpos < (maxvalue - 200)) {
@@ -324,7 +310,7 @@ function switchToFixedCircle() {
 				s.addClass("stick");
 			};
 			var drawPosition = lastPosition - breakPointFirstOffset;
-			draw((drawPosition / 5000) + startValue);
+			draw((drawPosition / 1000) + startValue);
 		} else if (windowpos >= (maxvalue - 200)) {
 			if (s.hasClass('stick')) {
 				s.removeClass('stick'); //un-stick
@@ -392,28 +378,6 @@ function playVideo() {
 			if (videoArray[i].get(0).paused) {
 				videoArray[i].get(0).play();
 				timelineRender(i);
-
-
-				// if (i != lastVideo) {
-				// 	var pTop = String($('.timeline-pointer').css('top'));// + step * i;
-
-				// 	pTop = pTop.substr(0, pTop.length - 2);
-
-				// 	console.log(pTop);
-
-				// 	if (i > lastVideo) {
-				// 		pTop = parseFloat(pTop) + step;
-				// 	} else if (i < lastVideo) {
-				// 		pTop = parseFloat(pTop) - step;
-				// 	}
-
-				// 	console.log('pTop: ' + pTop);
-
-				// 	$('.timeline-pointer').animate({top: pTop},'fast');
-				// };
-
-
-				// lastVideo = i;
 			}
 		}
 	}
@@ -459,18 +423,6 @@ function timelineCheck() {
 		$('.timeline-wrap').hide();
 		// $('.break-point').toggleClass('stick');
 	}
-
-	// if(window.pageYOffset > timelineStartOffset && $('.timeline-wrap').css('display') == 'none'){
-	// 	$('.timeline-wrap').show();
-	// } else if (window.pageYOffset < timelineStartOffset && $('.timeline-wrap').css('display') == 'block'){
-	// 	$('.timeline-wrap').hide();
-	// }
-
-	// if (window.pageYOffset < newOffset && $('.cycle-wrap').css('display') == 'none') {
-	// 	$('.cycle-warp').hide();
-	// } else if (window.pageYOffset > $(id).offset().top && $('.cycle-wrap').css('display') == 'block') {
-	// 	$('.cycle-warp').show();
-	// }
 }
 
 
@@ -548,8 +500,8 @@ function checkLoading() {
 };
 
 //Canvas pro ten kruh.
-var startValue = 1.45;
-var endValue = 3.45;
+var startValue = 1.15;
+var endValue = 10000.05;
 
 var c=document.getElementById("canvas");
 var ctx=c.getContext("2d");
@@ -851,7 +803,7 @@ $('#formSubmit').submit(function(e) {
 
 $('.circle-img').on('click', function() {
 	var cycleWarpOffset = $('.cycle-warp').offset().top;
-	var cycleWarpJumpScroll = $('.cycle-warp').height() / 8;
+	var cycleWarpJumpScroll = $('.cycle-warp').height() / 12;
 
 	$('.circle-img').on('click', function() {
 		var jumpScroll = cycleWarpOffset + (cycleWarpJumpScroll * $(this).data('offset'));

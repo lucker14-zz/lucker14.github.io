@@ -10,7 +10,7 @@
   		"loading" : "Nahrávám stránku.... Prosím o chvíli strpení.",
   		"nav": {
   			"home": "Domů",
-        "about": "O nás",
+        "about": "O společnosti",
   			"story": "Příběh",
         "service": "Služba",
   			"contact": "Kontakt"
@@ -81,7 +81,7 @@
       "footer": {
         "left-heading": "Více",
         "about-comp": "O společnosti",
-        "about-service": "O službe",
+        "about-service": "O službě",
         "vision": "Vize",
         "cm": "Capactiy Monitor",
         "right-heading": "Kontaktní údaje",

@@ -141,7 +141,7 @@ nav {
 	height: 65px;
 	background: #60b86a;
 	z-index: 9888;
-	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 5px rgba(22, 105, 33, 0.68);
 	position: fixed;
 	top: 0;
 }
@@ -621,7 +621,7 @@ ul li {
 	position: absolute;
 	line-height: 1.3;
 	background-color: #60b86a;
-	padding: 20px;
+	padding: 15px 8px;
 	/*border-left: 25px solid #365f9d;*/
 	margin: 20px auto;
 	font-size: 24px;
@@ -636,7 +636,7 @@ ul li {
 .nadpis-cycle h2 {
 	font-weight: 600;
   	/*background-color: #365f9d;*/
-  	padding: 12px 0;
+  	padding:  0;
   	color: #fff;
   	display: inline;
 	margin: 0;
@@ -872,7 +872,7 @@ ul li {
 
 .cycle-warp {
 	box-shadow: inset -1px 64px 50px -63px rgba(0,0,0,0.73);
-	height: 10500px;
+	height: 2750px;
 	background: url('noise_white.png');
 	background-size: 235px 235px;
 	padding-bottom: 100px;
@@ -981,6 +981,13 @@ ul li {
   font-size: 18px;
   padding-left: 15px;
   margin-bottom: 5%;
+}
+
+.input-email:focus{
+	outline: none;
+	-webkit-box-shadow: inset 0px 0px 27px -10px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 0px 27px -10px rgba(0,0,0,1);
+	box-shadow: inset 0px 0px 27px -10px rgba(0,0,0,1);
 }
 
 .button-send {
@@ -1148,7 +1155,7 @@ ul li {
 	padding-bottom: 20px;
 	width: 100wv;
 	background: url('noise.png');
-	box-shadow: inset 1px 31px 56px -16px rgba(0,0,0,0.41);
+	box-shadow: inset 16px 34px 15px -25px rgba(0,0,0,0.3);
 }
 
 .footer-links {
@@ -1187,7 +1194,7 @@ ul li {
 }
 
 .footer-links ul {
-	list-style: none;
+	/*list-style: none;*/
 }
 
 .footer-links h3 {
@@ -1207,6 +1214,10 @@ ul li {
 	float: left;
     width: 33%;
     text-align: left;
+}
+
+.contact-info ul{
+	list-style: none;
 }
 
 .contact-info-map {
@@ -1762,10 +1773,6 @@ form {
 
 	.new-button{
 		top: 34vh;
-	}
-
-	.button-last{
-		top: 50vh;
 	}
 
 	.bubble-container{

@@ -11,7 +11,7 @@
   		"nav": {
   			"home": "Domů",
   			"story": "Příběh",
-        "about": "O nás",
+        "about": "O společnosti",
         "service": "Služba",
   			"contact": "Kontakt"
   		},
@@ -81,7 +81,7 @@
       "footer": {
         "left-heading": "Více",
         "about-comp": "O společnosti",
-        "about-service": "O službe",
+        "about-service": "O službě",
         "vision": "Vize",
         "cm": "Capactiy Monitor",
         "right-heading": "Kontaktní údaje",

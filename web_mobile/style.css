@@ -9,7 +9,7 @@ nav {
 	width: 100vw;
 	height: 40px;
 	background: #60B86A;
-	box-shadow: 0px 2px 2px gray;
+	box-shadow: 0px 1px 15px gray;
 	position: fixed;
 	z-index: 30;
 	top: 0;
@@ -162,10 +162,6 @@ nav {
 
 #bubble-last{
 	margin-top: 55vw;
-}
-
-#bubble-last p{
-    top: -10px !important;
 }
 
 .button {
@@ -364,7 +360,7 @@ p.inverted{
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #89CF91;
+    background: #60B86A;
     color: #FFFFFF;
 }
 
@@ -454,6 +450,7 @@ p.inverted{
 	margin-top: 10%;
 	margin-bottom: 10%;
 	font-size: 23px;
+	font-weight: bold;
 }
 
 .form-text-2{
@@ -907,6 +904,7 @@ iframe{
 .service-heading-container{
 	width: 100%;
 	margin-top: 100px;
+
 }
 
 .subpage-image#analysis{ background-image: url('img/analyze_colored.png'); }
