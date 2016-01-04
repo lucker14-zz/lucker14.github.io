@@ -409,6 +409,22 @@ function timelineRender (video_id) {
 	});
 }
 
+//kontroluje kdy swapnout nav highlight
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('nav #nav-menu li').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.data("ele"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('nav #nav-menu li').removeClass("selected-menu");
+            currLink.addClass("selected-menu");
+        }
+        else{
+            currLink.removeClass("selected-menu");
+        }
+    });
+}
+
 //kontroluje jestli se jeste ma zobrazit timeline
 function timelineCheck() {
 	var id = '#video-warp-' + videoWarpArray.length;
@@ -815,6 +831,8 @@ $('.circle-img').on('click', function() {
 //timeline initialisation
 
 $(document).ready(function() {
+
+	$(document).on("scroll", onScroll);
 
 
 	if (screen.width <= 500) {

@@ -11,6 +11,23 @@
 	<script src="velocity.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="jquery.onscreen.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/i18next-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff ">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff ">
 </head>
 <body>
 <div class="loading-screen">
@@ -25,12 +42,12 @@
 			<li class='lang-switch' id='switchCes'></li>
 			<li class='lang-switch' id='switchEng'></li>
 		</ul>
-		<ul>
-			<li data-i18n='html.nav.home' class="selected-menu click" data-jump="video-warp-1"></li>
-			<li data-i18n='html.nav.about'class="href-about"></li>
-			<li data-i18n='html.nav.story'class="click" data-jump="video-warp-2"></li>
-			<li data-i18n='html.nav.service'class="click" data-jump="sluzba-click"></li>
-			<li><a href="contact.html" data-i18n='html.nav.contact'></a></li>
+		<ul id='nav-menu'>
+			<li data-ele='#video-warp-1' data-i18n='html.nav.home' class="selected-menu click" data-jump="#video-warp-1"></li>
+			<li data-ele='.story-container' data-i18n='html.nav.story' class="click" data-jump="video-warp-2"></li>
+			<li data-ele='#video-warp-8' data-i18n='html.nav.about' class="href-about"></li>
+			<li data-ele='#sluzba-click' data-i18n='html.nav.service' class="click" data-jump="sluzba-click"></li>
+			<li data-ele='#kontakt-click'><a href="contact.html" data-i18n='html.nav.contact'></a></li>
 		</ul>
 	</div>
 </nav>
@@ -55,7 +72,10 @@
 	<p data-i18n='html.video1.timeline-end' class='timeline-caption' id='end'></p>	
 	</div>
 </div>
-<div class="video-warp" id="video-warp-2">
+
+<div class='story-container'>
+
+<div class="video-warp story-warp" id="video-warp-2">
 	<div class='gradient'></div>
 	<video id="video2" src="video/s02t01.mp4" autobuffer preload="auto" ></video>
 	<div class='bubble-container' id='bubble1'>
@@ -71,7 +91,7 @@
 	</div>
 	<div class="down-cta"></div>
 </div>
-<div class="video-warp" id="video-warp-3">
+<div class="video-warp story-warp" id="video-warp-3">
 	<video id="video3" src="video/s03t02.mp4" autobuffer  preload="auto" ></video>
 	<div class='bubble-container bubble-container-inverted' id='bubble2'>
 		<span class='bubble-caption' data-i18n='html.caption.manager'></span>
@@ -86,7 +106,7 @@
 	</div>
 	<div class="down-cta"></div>
 </div>
-<div class="video-warp" id="video-warp-4">
+<div class="video-warp story-warp" id="video-warp-4">
 	<video id="video4" src="video/s03t03.mp4" autobuffer  preload="auto" ></video>
 	<div class='bubble-container' id='bubble3'>
 		<span class='bubble-caption' data-i18n='html.caption.chief'></span>
@@ -101,7 +121,7 @@
 	</div>
 	<div class="down-cta"></div>
 </div>
-<div class="video-warp" id="video-warp-5">
+<div class="video-warp story-warp" id="video-warp-5">
 	<video id="video5" src="video/s03t04.mp4" autobuffer  preload="auto" ></video>
 	<div class='bubble-container bubble-container-inverted' id='bubble4'>
 		<span class='bubble-caption' data-i18n='html.caption.manager'></span>
@@ -116,7 +136,7 @@
 	</div>
 	<div class="down-cta"></div>
 </div>
-<div class="video-warp" id="video-warp-6">
+<div class="video-warp story-warp" id="video-warp-6">
 	<video id="video6" src="video/s05t03.mp4" autobuffer  preload="auto" ></video>
 	<div class='bubble-container' id='bubble5'>
 		<span class='bubble-caption' data-i18n='html.caption.chief'></span>
@@ -127,7 +147,7 @@
 	</div>
 	<div class="down-cta"></div>
 </div>
-<div class="video-warp" id="video-warp-7">
+<div class="video-warp story-warp" id="video-warp-7">
 	<div class='gradient invert'></div>
 	<video id="video7" src="video/s06t01.mp4" autobuffer  preload="auto" ></video>
 	<div class='bubble-container' id='bubble6'>
@@ -144,6 +164,9 @@
 	</div>
 	<div class="down-cta"></div>
 </div>
+
+</div>
+
 <div class="video-warp" id="video-warp-8">
 	<video id="video8" src="video/s06t02.mp4" autobuffer  preload="auto"></video>
 	<div class="noise-first-bg"></div>
