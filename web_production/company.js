@@ -9,6 +9,7 @@ $(document).ready(function(){
 			$('html').i18n();
 		});
 		setCookie('lang', 'en', 30);
+		$('.english-only').css('display', 'block');
 	});
 
 	$('#switchCes').on('click', function(){
@@ -17,6 +18,7 @@ $(document).ready(function(){
 			$('html').i18n();
 		});
 		setCookie('lang', 'cs', 30);
+		$('.english-only').css('display', 'none');
 	});
 
 	$('body').css('overflow-x', 'visible');

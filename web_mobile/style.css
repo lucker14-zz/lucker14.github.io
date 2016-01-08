@@ -690,7 +690,7 @@ iframe{
 .proof{
 	width: 100%;
 
-	background-color: #60B86A;
+	background-color: #585858;
 	float: left;
 
 	color: white;
@@ -736,6 +736,7 @@ iframe{
 	width: 32px;
 	background-size: contain;
 	background-repeat: no-repeat;
+	opacity: 0.2;
 
     position: relative;
     top: 4px;
@@ -857,6 +858,10 @@ iframe{
 
 /*  Subpage  */
 
+.bold-center{text-align: center; font-weight: 700;font-size: 18px;}
+
+.whitespacer{letter-spacing: 0.5em; opacity: 0;}
+
 #subpage-body{
 	background-color: #f8f9fe;
 }
@@ -942,8 +947,9 @@ iframe{
 }
 
 .subpage-bold{
-	font-size: 15px;
-    color: #333;
+	font-size: 18px;
+    color: #6E6E6E;
+    font-weight: 400;
 }
 
 .contact-box{
@@ -1016,4 +1022,112 @@ iframe{
 
 #subpage-content-wrap-contact{
 	padding-bottom: 35px !important;
+}
+
+.popup-warp {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(4, 4, 4, 0.54);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.popup {
+	overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+    border-radius: 2px;
+    box-shadow: -1px 3px 94px 1px rgba(0,0,0,0.75);
+}
+
+.popup h2 {
+	font-size: 22px;
+    width: 100%;
+    text-align: center;
+    color: #60B86A;
+    margin-top: 24%;
+}
+
+.popup p {
+	margin: 0 auto;
+    text-align: left;
+    width: 75%;
+    padding-top: 2%;
+    line-height: 1.5em;
+    color: #464646;
+    font-size: 0.9em;
+}
+
+.popup-last-p{
+	margin-bottom: 10% !important;
+}
+
+.popup-image{
+	width: 10vw;
+	height: 10vw;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+    opacity: 0.5;
+    top: -1vw;
+    left: -2vw;
+}
+
+.popup-image-great{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: 50%;
+    opacity: 0.25;
+    position: absolute;
+    background-position: center center;
+}
+
+.popup-image#img-popup-analysis{background-image: url('img/analyze_colored.png');}
+.popup-image#img-popup-des{background-image: url('img/measuring_colored.png');}
+.popup-image#img-popup-implementation{background-image: url('img/implementation_colored.png');}
+.popup-image#img-popup-monitoring{background-image: url('img/monitoring_colored.png');}
+
+.popup-image-great#img-popup-analysis{background-image: url('img/analyze_colored.png');}
+.popup-image-great#img-popup-des{background-image: url('img/measuring_colored.png');}
+.popup-image-great#img-popup-implementation{background-image: url('img/implementation_colored.png');}
+.popup-image-great#img-popup-monitoring{background-image: url('img/monitoring_colored.png');}
+
+.go-back-button {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+	-webkit-transform: translateX(-50%);
+	        -ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	border: 1px solid black;
+	border-radius: 100px;
+	width: 25px;
+	height: 25px;
+	padding-top: 11px;
+	padding-left: 13px;
+	-webkit-transition: 0.3s all;
+	transition: 0.3s all;
+}
+
+.go-back-button:hover {
+	cursor: pointer;
+	border: 1px solid #F34E4E;
+	background: #F34E4E;
+	color: white;
+	-webkit-transition: 0.3s all;
+	transition: 0.3s all;
 }

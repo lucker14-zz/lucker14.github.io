@@ -73,6 +73,13 @@ var shaked = false;
 function Minutelly(){
 	var dataRndChange = Math.random() * 1000;
 	var cashRndChange = Math.random() * 200;
+	var currency;
+
+	if ($('html').data('lang') == "en") 
+		currency = ' €';
+	else
+		currency = ' Kč';
+
 
 	var rnd = Math.random() * 10;
 
@@ -90,8 +97,8 @@ function Minutelly(){
 	var newDataStr = String(newData);
 	var newCashStr = String(newCash);
 
-	newDataStr = chunk(newDataStr, 3).join(' ') + " MB";
-	newCashStr = chunk(newCashStr, 3).join(' ') + " Kč";
+	newDataStr = newDataStr.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " MB";
+	newCashStr = newCashStr.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")  + currency;
 
 	setTimeout(function(){
 		$('#proof-cash-val').html(newCashStr);
@@ -101,38 +108,82 @@ function Minutelly(){
 		$('#proof-storage-val').data('int', newData);
 
 		Minutelly();
-	}, 5000);
+	}, 60000);
 }
 
 //Denni vypocet increase pro socialproof, na vsech zarizenich stejne
 function Daily(){
-	var savedCashCurrent = 364114;
+	var currency;
 	var savedDataCurrent = 376727345;
 	var devDayUTS = 1450271988086;
-
 	var dataIncrease = (Date.now() - devDayUTS) / 5000;
-	var cashIncrease = (Date.now() - devDayUTS) / 20000;
 
 	var cashClear;
 	var dataClear;
+
+	if ($('html').data('lang') == "en"){
+		console.log('en');
+		currency = ' €';
+		var savedCashCurrent = 13485;
+		var cashIncrease = (Date.now() - devDayUTS) / 540000;	
+	} 
+	else{
+		console.log('cz');
+		currency = ' Kč';
+		var savedCashCurrent = 364114;	
+		var cashIncrease = (Date.now() - devDayUTS) / 20000;
+	}
+
+	// chunk(savedDataCurrent, 3).join(' ')
+
+	console.log(cashIncrease);
 
 	savedCashCurrent += cashIncrease;
 	savedCashCurrent = savedCashCurrent.toFixed(0);
 	cashClear = savedCashCurrent;
 	savedCashCurrent = String(savedCashCurrent);
-	savedCashCurrent = chunk(savedCashCurrent, 3).join(' ') + " Kč";
+	savedCashCurrent = savedCashCurrent.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + currency;
 
 	savedDataCurrent += dataIncrease;
 	savedDataCurrent = savedDataCurrent.toFixed(0);
 	dataClear = savedDataCurrent;
 	savedDataCurrent = String(savedDataCurrent);
-	savedDataCurrent = chunk(savedDataCurrent, 3).join(' ') + " MB";
+	savedDataCurrent = savedDataCurrent.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")  + " MB";
 
 	$('#proof-cash-val').html(savedCashCurrent);
 	$('#proof-cash-val').data('int', cashClear);
 
 	$('#proof-storage-val').html(savedDataCurrent);
 	$('#proof-storage-val').data('int', dataClear);
+}
+
+//change currency with language
+function moneyExchange (lang) {
+	console.log(lang);
+	var actual_val = $('#proof-cash-val').html();
+	console.log('actual_val1: ' + actual_val );
+	actual_val = actual_val.replace(',', '');
+	console.log('actual_val2: ' + actual_val );
+	actual_val = parseInt(actual_val);
+	console.log('actual_val3: ' + actual_val );
+
+	if (lang == 'en') {
+		actual_val = parseInt(actual_val / 27);
+		console.log('test: ' + actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+		console.log('actual_val4en: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+		actual_val = actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " €";
+		console.log('actual_val5en: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+	} else {
+		actual_val = parseInt(actual_val * 27);
+		console.log('test: ' + actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+		console.log('actual_val4cs: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+		actual_val =  actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " Kč";
+		console.log('actual_val5cs: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+	}	
 }
 
 //rezac textu
@@ -142,7 +193,7 @@ function chunk(str, n) {
     var len;
 
     for(i = 0, len = str.length; i < len; i += n) {
-       ret.push(str.substr(i, n))
+       ret.push(str.substr(i, n));
     }
 
     return ret
@@ -210,6 +261,16 @@ $( window ).resize(function() {
 	lastPosition = window.pageYOffset;
 	scroll(loop);
 	textResize();
+
+	var count = videoWarpArray.length + 1;
+
+	step = $('#timeline-point-2').css('margin-top');
+
+	step = parseFloat(step) + 9;
+
+	positionTimeline(count);
+
+	sendToMobile();
 });
 
 //kdyz das refresh tak to skoci na top. Urcite nechat. Je to lepsi pro flow.
@@ -234,6 +295,12 @@ function textResize() {
 		left: '50%'
 	});
 };
+
+function sendToMobile () {
+	if ((screen.width <= 1024 && screen.height <= 768 && window.innerHeight < window.innerWidth) || (screen.width <= 768 && screen.height <= 1024 && window.innerHeight > window.innerWidth)) {
+		window.location.href = '../web_mobile/index.html';
+	};
+}
 
 textResize();
 
@@ -733,19 +800,6 @@ function positionTimeline(count){
 	};
 }
 
-$(window).resize(function() {
-	var count = videoWarpArray.length + 1;
-
-	step = $('#timeline-point-2').css('margin-top');
-
-	step = parseFloat(step) + 9;
-
-	positionTimeline(count);
-});
-
-
-
-
 $('.click').on('click', function(e) {
 	$('.click').removeClass('selected-menu');
 	e.preventDefault();
@@ -835,18 +889,13 @@ $(document).ready(function() {
 	$(document).on("scroll", onScroll);
 
 
-	if (screen.width <= 500) {
-		window.location.href = '../web_mobile/index.html';
-	};
-
-
 	$('.href-about').on('click', function(){
 		window.location = 'company.html';
 	});
 
 	Daily();
 	Minutelly();
-
+	sendToMobile();
 
 	var ofset = ($('.timeline').height() / (videoWarpArray.length + 1));
 
@@ -940,64 +989,100 @@ $(document).ready(function() {
 
 
 	//translation initialisation
-	i18n.init({ lng: 'cs' }, function(err, t) {
-		$('html').i18n();
-	});
+	if (getCookie('lang') != '' || typeof(getCookie('lang')) != undefined) {
+		i18n.init({ lng: 'cs' }, function(err, t) {
+			$('html').i18n();
+			setCookie('lang', 'cs', 30);
+			$('html').data('lang', 'cz');
+		});
+	} else {
+		i18n.init({ lng: getCookie('lang') }, function(err, t) {
+			$('html').i18n();
+			setCookie('lang', getCookie('lang'), 30);
+		});
+		if (getCookie('lang') == 'cs') {			
+			$('html').data('lang', 'cz');
+			$('.button-send').attr('value', 'Odeslat');
+		} else if (getCookie('lang') == 'en'){
+			$('html').data('lang', 'en');
+			$('.button-send').attr('value', 'Send');
+		}
+	}
+	
 
 	$('#switchEng').on('click', function(){
-		console.log('switch');
-		i18n.setLng('en',function(t){
-			$('html').i18n();
-		});
+		if (getCookie('lang') != 'en') {
+			console.log('switch');
+			i18n.setLng('en',function(t){
+				$('html').i18n();
+			});
 
-		$('#knowMore').css('width', '605px');
-		setCookie('lang', 'en', 30);
-		// $('#billboard2').css('padding-bottom', '30px');
+			$('#knowMore').css('width', '605px');
+			setCookie('lang', 'en', 30);
+			// $('#billboard2').css('padding-bottom', '30px');
+			$('html').data('lang', 'en');
+			$('.button-send').attr('value', 'Send');
+			moneyExchange('en');
+		};
 	});
 
 	$('#switchCes').on('click', function(){
-		console.log('switch');
-		i18n.setLng('cs',function(t){
-			$('html').i18n();
-		});
+		if (getCookie('lang') != 'cs') {	
+			console.log('switch');
+			i18n.setLng('cs',function(t){
+				$('html').i18n();
+			});
 
-		$('#knowMore').css('width', '605px');
-		setCookie('lang', 'cs', 30);
-		// $('#billboard2').css('padding-bottom', '90px');
-
+			$('#knowMore').css('width', '605px');
+			setCookie('lang', 'cs', 30);
+			// $('#billboard2').css('padding-bottom', '90px');
+			$('html').data('lang', 'cz');
+			$('.button-send').attr('value', 'Odeslat');
+			moneyExchange('cz');
+		};
 	});
 
-	//Firefox
- $('.cycle-warp').bind('DOMMouseScroll', function(e){
-     if(e.originalEvent.detail < 0) {
-         //scroll down
-         console.log('Down1');
-     }else {
-         //scroll up
-         console.log('Up1');
-         skipScrollUp();
-     }
- });
+		//Firefox
+	 $('.cycle-warp').bind('DOMMouseScroll', function(e){
+	     if(e.originalEvent.detail < 0) {
+	         //scroll down
+	         console.log('Down1');
+	     }else {
+	         //scroll up
+	         console.log('Up1');
+	         skipScrollUp();
+	     }
+	 });
 
- //IE, Opera, Safari
- $('.cycle-warp').bind('mousewheel', function(e){
-     if(e.originalEvent.wheelDelta < 0) {
-         //scroll down
-         console.log('Down2');
-     }else if(e.originalEvent.wheelDelta > 100) {
-         //scroll up
-         console.log('Up2');
-         skipScrollUp();
-     }else if(e.originalEvent.wheelDelta = 0){
-     	console.log('stay');
-     }
- });
+	 //IE, Opera, Safari
+	 $('.cycle-warp').bind('mousewheel', function(e){
+	     if(e.originalEvent.wheelDelta < 0) {
+	         //scroll down
+	         console.log('Down2');
+	     }else if(e.originalEvent.wheelDelta > 100) {
+	         //scroll up
+	         console.log('Up2');
+	         skipScrollUp();
+	     }else if(e.originalEvent.wheelDelta = 0){
+	     	console.log('stay');
+	     }
+	 });
 
-$('.blank-link').on('click', function(){
- 	console.log('clicked');
- 	var win = window.open($(this).data('url'), '_blank');
-	win.focus();
-});
+	$('.blank-link').on('click', function(){
+	 	console.log('clicked');
+	 	var win = window.open($(this).data('url'), '_blank');
+		win.focus();
+	});
+
+	$('.circle-img').mouseenter(function(){
+		console.log('enter');
+		$(this).children('h4').css('opacity', '1').addClass('strong-font');
+	});
+
+	$('.circle-img').mouseleave(function() {
+		console.log('leave');
+		$(this).children('h4').css('opacity', '0').removeClass('strong-font');
+	});
 
 });
 

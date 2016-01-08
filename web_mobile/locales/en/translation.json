@@ -59,7 +59,7 @@
         "desc": "Actual monthly savings of our customers:"
       },
       "service-cycle": {
-        "scroll": "Scroll down",
+        "scroll": "Scroll down, or click on an icon to continue",
         "life-cycle": "Service life-cycle",
         "step1-name": "Analysis",
         "step2-name": "Draft and optimisation",
@@ -72,8 +72,9 @@
         "step4-desc": "A continuous monitoring of capacity resource consumption. Key part of the efficient management."
       },
       "email-gather": {
+        "button": "Send",
         "heading": "We'll answer all of your questions.",
-        "bite": "Leave us email, an we'll inform you further.",
+        "bite": "Give us email, an we'll inform you further.",
         "bite2": "or give us a call",
         "tel": "+ 420 724 12 16 18"
       },
@@ -83,13 +84,13 @@
         "about-service": "About service",
         "vision": "Vision",
         "cm": "Capactiy Monitor",
-        "another-heading": "Billing information",
+        "another-heading": "",
         "right-heading": "Contact",
         "last-heading": "Tech Support"
       },
       "caption": {
         "chief": "CTO:",
-        "manager": "IT manager:",
+        "manager": "IT admin:",
         "duster": "Janitor:"
       }
     } ,
@@ -97,13 +98,13 @@
       "catch-line": "We help our customers to understand. We help our customers to decide well.",
       "company": {
         "name": "About company",
-        "article1": "UnitedData Inc. is the company providing new and highly effective model of a management, operation and purchasing of IT infrastructure capacity. The main impetus for establishing of the UnitedData company was the realization that the traditional and major manner of the IT capacity planning, purchasing, operating and accounting becomes insufficient for today's IT organizations. And very often it does not meet an expectation of management as well as of the IT admins. Therefore, we decided to create a completely new mechanism for provisioning and management of IT capacity, and so provide a necessary alternative for IT capacity management.",
-        "article2": "Our approach is unique in the way we thoroughly adhere several key factors determining a success of the IT capacity Management. Together with our customers we carefully analyze the specific capacity and performance requirements, and together with them we define the optimal technology solution as well as the way how to effectively consume the capacity over time.",
-        "article3": "Because the capacity management MUST be cost effective, the capacity utilization is billed based on real consumed capacity units (e.g. GB, ports, etalon etc.). The used billing method is analogous to methods used by traditional cloud providers like Google or Amazon. However - there is one crucial difference: in case of UnitedData services the customer may choose the preferred platform of used technology (especially with regard to currently used technology, knowledge of internal staff, compatibility and so on), which consequently significantly reduces time required for service deployment and the initial costs related to integration of the service to the customer environment.",
-        "article4": "Another advantage of the UnitedData services, beside the billing of just actually consumed capacity, is a fact that the used infrastructure is located in the customer environment (or in agreed hosting center), which eliminates the usual security and legal risks associated with use of global cloud services.",
-        "article5": "In order to ensure a maximal effectiveness and efficiency of used capacity services, we use our custom monitoring application/platform - the Capacity Monitor. Thanks to this application we are able to provide our customers with online overview on capacity consumption over time, its trend and financial aspects related to capacity utilization. The application is also used as a platform for an interactive resolution of our customer requirements.",
-        "article6": "A flexible design of the service enables our customer to use a team of certified experts providing the reactive as well as proactive consultancy in following areas:",
-        "article7": "Our goal is provisioning of all types of the infrastructure capacity in form of highly effective and professional services in order to satisfy dynamically changing capacity requirements of our customers, and to provide them with comprehensive and transparent view on capacity consumption over time (incl. costs for energy etc.) and relating costs.",
+        "article1": "UnitedData Inc. provides innovative and highly efficient model of a management, operation and acquisition of IT infrastructure capacity. Speaking with many clients, we realized today’s approaches to IT capacity planning, purchasing, operating and accounting become obsolete and are out of sync with customer’s changing business needs. Neither management, nor IT department expectations are often met. To help you we decided to create a completely new model of provisioning and management of IT capacity, and give you an alternative to established ways to IT capacity management.",
+        "article2": "1. YOU ARE SPECIAL. Each customer has its specific capacity and performance needs we carefully analyze to jointly architect the optimal technology solution, as well as the way to efficiently consume capacity over time.",
+        "article3": "2. YOU PAY FOR REAL CONSUMPTION. To maximize efficiency, the capacity utilization is billed based on real consumed capacity units (e.g. GB, ports, etalon etc.). The billing methods are similar to those of traditional cloud providers like Google or Amazon.",
+        "article4": "3. BUT YOU DECIDE the PLATFORM and TECHNOLOGY. Unlike other cloud providers we let you choose the preferred platform and technology (especially with regard to current infrastructure, knowledge and skills of internal staff, compatibility etc.), which consequently significantly reduces time required for the deployment of services and the initial costs related to integration of the service with customer’s environment.",
+        "article5": "4. SECURITY? COMPLIANCE? ALL AT YOUR PLACE! We deploy the chosen technology at your location (or at agreed hosting center). This eliminates the usual security and legal risks associated with use of global cloud services.",
+        "article6": "5. MONITOR and DECIDE, RIGHT AWAY! To maximize efficiency of the services you are in control of capacity consumption monitoring thanks to our unique Capacity Monitor application and platform. Get online overview of capacity consumption, trends and financial aspects and implications. The application also serves as a platform enabling customer specific leverage and deployment.",
+        "article7": "Our goal is to provision all types of IT infrastructure capacity in a form of highly effective, consumption based and professional services. We respond to dynamically changing capacity requirements of our customers, and provide them with comprehensive (incl. energy) and transparent view on capacity consumption and related costs.",
         "li1": "design and optimization of the hardware infrastructure",
         "li2": "virtualization",
         "li3": "cloud computing",
@@ -112,7 +113,11 @@
         "li6": "management of mobile devices",
         "li7": "management of printing solutions",
         "li8": "software asset management",
-        "li9": "project management"
+        "li9": "project management",
+        "english-only1": "We are unique thanks to the combination of the following principles:",
+        "english-only2": "Thanks to flexible design of our services you can benefit from our team of certified experts providing consultancy in the following areas:",
+        "english-only3": "WE HELP OUR CUSTOMERS MAKE DATA DRIVEN DECISIONS.",
+        "english-only4": "WE HELP OUR CUSTOMERS SAVE AND THRIVE IN DYNAMIC TIMES."
       },
       "service": {
         "name": "About service",
@@ -130,7 +135,11 @@
         "li9": "project management"
       },
       "contact": {
-        "name": "Contact"
+        "name": "Contact",
+        "billing1": "",
+        "billing2": "",
+        "billing3": "",
+        "billing4": ""
       },
       "partners": {
         "name": "Partners"
@@ -140,14 +149,14 @@
       "analysis":{
         "heading": "Analysis",
         "p1": "A careful detailed analysis of requirements for IT performance, capacity and architecture makes up a critical basis for correct setup of capacity and performance parameters of the IT components, and for cost effective operation of the infrastructure capacity service",
-        "p2": "a) For a continuous monitoring of the capacity demands, their trends and management we use our custom analytical application - the Capacity Monitor, which continuously monitors and evaluates key capacity parameters of the service. In case of proactive services, we utilize the monitoring tools and APIs provided by the vendors, which helps us to identify and collect all required inputs, which are used for optimization of currently consumed capacity and for management of new capacity requirements.",
-        "p3": "b) All collected data is continuously analyzed by the team of senior experts, who - in accordance with ITIL principles - define the configuration or system changes to be done, with regard to defined capacity requirements, actual data consumption. When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real collected data."
+        "p2": "For a continuous monitoring of the capacity demands, their trends and management we use our custom analytical application - the Capacity Monitor, which continuously monitors and evaluates key capacity parameters of the service. In case of proactive services, we utilize the monitoring tools and APIs provided by the vendors, which helps us to identify and collect all required inputs, which are used for optimization of currently consumed capacity and for management of new capacity requirements.",
+        "p3": "All collected data is continuously analyzed by the team of senior experts, who - in accordance with ITIL principles - define the configuration or system changes to be done, with regard to defined capacity requirements, actual data consumption. When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real collected data."
       },
       "designandoptimization":{
         "heading": "Design and optimization",
         "p1": "When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real capacity and performance data gathered from the environment.Main aim of this step is a continuous optimization of capacity resources utilization in order to ensure that the capacity requirements of the service consumer are always satisfied.",
-        "p2": "a) The proposed changes are evaluated within the steering committee that solves the questions relating to operation of the infrastructure, its performance, capacity and administration.",
-        "p3": "b) The capacity solution and entire delivery process are set up to ensure an optimal usage of financial and capacity resources over the whole service usage time, and to be able absorb planned as well as unplanned capacity requirements.",
+        "p2": "The proposed changes are evaluated within the steering committee that solves the questions relating to operation of the infrastructure, its performance, capacity and administration.",
+        "p3": "The capacity solution and entire delivery process are set up to ensure an optimal usage of financial and capacity resources over the whole service usage time, and to be able absorb planned as well as unplanned capacity requirements.",
         "p4": "Based on the mutually agreed and approved technical solution is then defined a price for the capacity unit with fixation from 3 to 5 years (GB, port, etalon etc.)."
       },
       "implementation": {

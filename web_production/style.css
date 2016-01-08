@@ -162,10 +162,10 @@ nav ul {
 
 .logo-inverted {
     float: left;
-    width: 256px;
+    width: 231px;
     height: 35px;
     background: url('logo-small.png');
-    background-size: 256px 35px;
+    background-size: 231px 35px;
     margin-top: 15px;
     background-repeat: no-repeat;
 }
@@ -276,10 +276,41 @@ p {
 }
 
 .down-cta {
-    height: 30px;
-    width: 40px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
     cursor: pointer;
     background: url('cta.png') no-repeat;
+    background-size: 30px 16px;
+    background-position: center 52%;
+	background-color: rgba(255,255,255,0);
+    position: absolute;
+    bottom: 8vh;
+    right: 0;
+    left: 0;
+    transition: background-color 0.3s;
+}
+
+.down-cta:hover{
+	background-color: rgba(255,255,255,0.25);
+    transition: background-color 0.3s;
+}
+
+.down-cta-b{
+	height: 60px;
+    width: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-position: center 52%;
+    background-color: rgba(255,255,255,0);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    background-image: url('cta.png');
+    background-repeat: no-repeat;
     background-size: 30px 16px;
     position: absolute;
     left: 50%;
@@ -287,6 +318,11 @@ p {
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+}
+
+.down-cta-b:hover{
+	background-color: rgba(255,255,255,0.25);
+    transition: background-color 0.3s;
 }
 
 .chief{
@@ -551,12 +587,14 @@ ul li {
 
 .new-button{
     width: 300px;
-    height: 50px;
+    height: 80px;
     float: none;
     display: block;
     margin: 0 auto;
-    position: relative;
-    top: 55vh;
+    position: absolute;
+    bottom: 8vh;
+    left: 0;
+    right: 0;
     cursor: pointer;
 }
 
@@ -564,6 +602,7 @@ ul li {
 	font-weight: 600;
 	color: #fff;
 	text-align: center;
+	font-size: 1.2em;
 }
 
 .button p {
@@ -730,6 +769,13 @@ ul li {
 	transition: 0.3s all;
 }
 
+.analyza-img:hover{
+	background: url('img/analyze_colored.png');
+	background-size: contain;
+	transition: background 0.3s;
+}
+
+
 .analyze-active-img {
 	background: url('img/analyze_colored.png');
 	background-size: 150px 150px;
@@ -747,6 +793,13 @@ ul li {
 .navrh-img {
 	background: url('img/measuring.png');
 	background-size: 150px 150px;
+	transition: background 0.3s;
+}
+
+.navrh-img:hover{
+	background: url('img/measuring_colored.png');
+	background-size: contain;
+	transition: background 0.3s;
 }
 
 .navrh-active-img {
@@ -764,6 +817,13 @@ ul li {
 .implementace-img {
 	background: url('img/implementation.png');
 	background-size: 150px 150px;
+	transition: background 0.3s;
+}
+
+.implementace-img:hover{
+	background: url('img/implementation_colored.png');
+	background-size: contain;
+	transition: background 0.3s;
 }
 
 .implementace-active-img {
@@ -775,12 +835,19 @@ ul li {
 	background: url('img/noise_round.png');
 	background-size: 150px 150px;
 	left: 11.5%;
-  top: 50%;
+	top: 50%;
 }
 
 .monitorovani-img {
 	background: url('img/monitoring.png');
 	background-size: 150px 150px;
+	transition: background 0.3s;
+}
+
+.monitorovani-img:hover{
+	background: url('img/monitoring_colored.png');
+	background-size: contain;
+	transition: background 0.3s;
 }
 
 .monitorovani-active-img {
@@ -1067,45 +1134,79 @@ ul li {
 
 .popup {
 	overflow-x: hidden;
-	overflow-y: auto;
-	width: 50%;
-	height: 60vh;
-	background: white;
-	position: fixed;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	        -ms-transform: translateX(-50%);
-	    transform: translateX(-50%);
-	top: 20%;
-	border-radius: 2px;
-	box-shadow: -1px 3px 94px 1px rgba(0,0,0,0.75);
+    overflow-y: auto;
+    width: 50%;
+    height: 80vh;
+    background: white;
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 10%;
+    border-radius: 2px;
+    box-shadow: -1px 3px 94px 1px rgba(0,0,0,0.75);
 }
 
 .popup h2 {
 	font-size: 26px;
 	width: 100%;
 	text-align: center;
-	color: #365f9d;
+	color: #60B86A;
 	margin-top: 10%;
 }
 
 .popup p {
 	margin: 0 auto;
-	text-align: justify;
+	text-align: left;
 	width: 70%;
 	padding-top: 2%;
-  line-height: 1.4em;
-  color: #464646;
+	line-height: 1.4em;
+	color: #464646;
 }
 
 .popup-last-p{
 	margin-bottom: 10% !important;
 }
 
+.popup-image{
+	width: 10vw;
+	height: 10vw;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+    opacity: 0.5;
+    top: -1vw;
+    left: -2vw;
+}
+
+.popup-image-great{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: 50%;
+    opacity: 0.25;
+    position: absolute;
+    background-position: center center;
+}
+
+.popup-image#img-popup-analysis{background-image: url('img/analyze_colored.png');}
+.popup-image#img-popup-des{background-image: url('img/measuring_colored.png');}
+.popup-image#img-popup-implementation{background-image: url('img/implementation_colored.png');}
+.popup-image#img-popup-monitoring{background-image: url('img/monitoring_colored.png');}
+
+.popup-image-great#img-popup-analysis{background-image: url('img/analyze_colored.png');}
+.popup-image-great#img-popup-des{background-image: url('img/measuring_colored.png');}
+.popup-image-great#img-popup-implementation{background-image: url('img/implementation_colored.png');}
+.popup-image-great#img-popup-monitoring{background-image: url('img/monitoring_colored.png');}
+
+
 .go-back-button {
-	position: relative;
-	left: 95%;
-	top: -20%;
+    position: absolute;
+    left: 95%;
+    top: 3%;
 	-webkit-transform: translateX(-50%);
 	        -ms-transform: translateX(-50%);
 	    transform: translateX(-50%);
@@ -1129,6 +1230,8 @@ ul li {
 }
 
 .circle-nadpis-nad  {
+	display: block;
+	opacity: 0;
 	position: absolute;
   z-index: 100;
   -webkit-transform: translateX(-50%);
@@ -1144,6 +1247,7 @@ ul li {
 	z-index: 100;
 	width: 210px;
   text-align: center;
+  transition: opacity 0.3s, font-weight 0.3s;
 }
 
 .position1 {
@@ -1221,6 +1325,12 @@ ul li {
 }
 
 .contact-info-map {
+	height: 200px;
+	opacity: 0.15;
+	background-image: url('img/logo-great-white.png');
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
 	float: left;
     width: 42%;
     text-align: left;
@@ -1261,6 +1371,7 @@ form {
 
 .strong-font {
 	font-weight: bold;
+	transition: font-weight 0.3s;
 }
 
 .inside-text-1 {
@@ -1382,7 +1493,7 @@ form {
 	display: block;
 	margin: 0 auto;
 
-	background-color: #f6f6f5;
+	background-color: rgba(0,0,0,0);
 	/*opacity: 0.15;
 
 	-webkit-filter: blur(1px);
@@ -1415,11 +1526,13 @@ form {
 	float: right;
 	font-size: 12px;
 	font-weight: bold;
+	text-align: center;
 }
 
 .timeline-caption#begin{
 	position: relative;
 	top: 0px;
+	left: 0.8em;
 }
 
 .timeline-point{
@@ -1496,9 +1609,9 @@ form {
     font-style: italic;
     font-size: 15px;
     position: relative;
-    bottom: 10px;
     right: 18px;
     color: #60b86a;
+    text-align: center;
 }
 
 #lang-selection{
@@ -1528,7 +1641,7 @@ form {
 	width: 100%;
 	height: 110px;
 
-	background-color: #60b86a;
+	background-color: #585858;
 	float: left;
 
 	color: white;
@@ -1569,6 +1682,7 @@ form {
 	height: 32px;
 	width: 32px;
 	background-size: contain;
+	opacity: 0.2;
 
     position: relative;
     top: 5px;
@@ -1642,7 +1756,7 @@ form {
     min-width: 40vw;
     max-height: 30vh;
     max-width: 40vw;
-    padding-top: 0px;
+    padding-top: 25px;
     padding-right: 25px;
     padding-left: 25px;
     background-color: #60b86a;
@@ -1655,6 +1769,12 @@ form {
     background-position: bottom;
     box-shadow: 0 6px 21px rgba(22, 105, 33, 0.68);
 }
+
+.billboard#first{
+	padding-bottom: 25px;
+}
+
+#billboard2{padding-top: 25px;}
 
 .billboard2{
 	/*height: 28vh;*/
@@ -1754,7 +1874,39 @@ form {
 	}
 }
 
+@media screen and (min-width: 1700px){
+		#lang-selection{
+		right: 10vw;
+	}
+}
+
+@media screen and (min-width: 1500px){
+	.billboard {
+	    min-height: 35vh;
+	    min-width: 30vw;
+	    max-height: 35vh;
+	    max-width: 35vw;
+	    padding-top: 0px;
+	    padding-right: 25px;
+	    padding-left: 25px;
+	    background-color: #60b86a;
+	    position: relative;
+	    left: 50vw;
+	    top: 26vh;
+	    background-image: url('img/billboard-icons.png');
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    background-position: bottom;
+	    box-shadow: 0 6px 21px rgba(22, 105, 33, 0.68);
+	}
+}
+
 @media screen and (max-width: 1460px) {
+	nav ul li{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	.billboard{
 		padding-bottom: 45px;
 	    min-height: 40vh;
@@ -1772,7 +1924,8 @@ form {
 	}
 
 	.new-button{
-		top: 34vh;
+		/*top: 0vh;
+		bottom: -40vh*/
 	}
 
 	.bubble-container{
@@ -1895,6 +2048,10 @@ form {
 
 /*  Subpage  */
 
+.whitespacer{letter-spacing: 0.5em; opacity: 0;}
+
+.bold-center{text-align: center; font-weight: 700;font-size: 21px;}
+
 #subpage-body{
 	background-color: #f8f9fe;
 }
@@ -1960,8 +2117,9 @@ form {
 }
 
 .subpage-bold{
-	font-size: 19px;
-    color: #333;
+	font-size: 21px;
+    color: #6E6E6E;
+    font-weight: 400;
 }
 
 .contact-box{
@@ -1987,10 +2145,10 @@ form {
 
 .contact-box li{
 	list-style: none;
-	font-size: 24px;
+	font-size: 18px;
     font-weight: 400;
     color: #999999;
-    line-height: 44px;
+    line-height: 32px;
     letter-spacing: 1px;
     text-shadow: none;
 }

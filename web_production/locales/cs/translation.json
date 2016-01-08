@@ -12,12 +12,12 @@
   			"home": "Domů",
         "about": "O společnosti",
   			"story": "Příběh",
-        "service": "Služba",
+        "service": "O službě",
   			"contact": "Kontakt"
   		},
   		"video1": {
   			"heading": "Proč platit za IT infrastrukturní kapacitu kterou nevyužijete? Nevíte? My také ne!",
-        "text1" : "Poskytujeme IT infrastrukturní kapacitní služby, které pružně reágují na vaše aktuální  kapacitní potřeby.",
+        "text1" : "Poskytujeme IT infrastrukturní kapacitní služby, které pružně reagují na vaše aktuální  kapacitní potřeby.",
         "text2": "Služby jsou řízeny on-line pomocí aplikace, která je k dispozici 24 hodin denně.",
   			"cta": "Příběh z IT oddělení",
   			"timeline-start": "Začátek příběhu",
@@ -60,7 +60,7 @@
         "desc": "Aktuální měsíční úspora našich zákazníků:"
       },
   		"service-cycle": {
-  			"scroll": "Skroluj dolů",
+  			"scroll": "Pro pokračování klikněte na ikonu nebo dále skrolujte.",
   			"life-cycle": "Eko-systém služby",
   			"step1-name": "Analýza",
   			"step2-name": "Návrh a optimalizace",
@@ -73,8 +73,9 @@
         "step4-desc": "Monitoring spotřeby kapacitních zdrojů skrz aplikaci Capacity monitor."
   		},
   		"email-gather": {
+        "button": "Odeslat",
   			"heading": "Zodpovíme všechny vaše dotazy.",
-  			"bite": "Nechte nám email, my se vám ozveme.",
+  			"bite": "Dejte nám email anebo telefon, my se vám ozveme.",
   			"bite2": "nebo nám zavolejte",
   			"tel": "+ 420 724 12 16 18"
   		},
@@ -90,7 +91,7 @@
       },
       "caption": {
         "chief": "IT ředitel:",
-        "manager": "IT manager:",
+        "manager": "IT admin:",
         "duster": "Uklízečka:"
       }
   	}	,
@@ -131,7 +132,11 @@
         "li9": "správou softwarových aktiv"
       },
       "contact": {
-        "name": "Kontakt"
+        "name": "Kontakt",
+        "billing1": "IČO: 04201094",
+        "billing2": "DIČ: CZ 04201094",
+        "billing3": "ID datové schránky: trd52mj",
+        "billing4": "Spisová značka v OR:  B 20769 vedená u Městského soudu v Praze"
       },
       "partners": {
         "name": "Partneři"
@@ -141,14 +146,14 @@
       "analysis":{
         "heading": "Analýza",
         "p1": "Důkladná, detailní analýza požadavků pro výkon, kapacitu a architekturu je důležitý základ, pro správné nastavení IT komponent a pro finančně efektivní fungování kapacitního systému.",
-        "p2": "a) Pro stálý monitoring požadavků na kapacitu používáme vlastní nástroj - Capacity Monitor. V případě poraktivních služeb,  In case of proactive services, upravujeme monitorovací nástroje a API, což nám pomáhá sbírat a analyzovat všechny potřebné informace. Ty jsou používánypro optimalizaci aktuálně požadované kapacity a správu nových kapacit.",
-        "p3": "b) Všechna nasbíraná data jsou analyzována týmem specialistů na podnikové kapacity, kteří - v souladu s ITIL principy - definují konfiguraci, nebo nutné změny v systému, s náhledem na definované kapacitní požadavky a aktuální spotřbu dat. Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty."
+        "p2": "Pro stálý monitoring požadavků na kapacitu používáme vlastní nástroj - Capacity Monitor. V případě poraktivních služeb,  In case of proactive services, upravujeme monitorovací nástroje a API, což nám pomáhá sbírat a analyzovat všechny potřebné informace. Ty jsou používánypro optimalizaci aktuálně požadované kapacity a správu nových kapacit.",
+        "p3": "Všechna nasbíraná data jsou analyzována týmem specialistů na podnikové kapacity, kteří - v souladu s ITIL principy - definují konfiguraci, nebo nutné změny v systému, s náhledem na definované kapacitní požadavky a aktuální spotřbu dat. Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty."
       },
       "designandoptimization":{
         "heading": "Návrh a optimalizace",
         "p1": "Při dimenzování cílové kapacity a návrhu technického řešení, se striktně držíme a respektujeme ujednané kapacitní požadavky (parametry služby) a důkladně pracujeme s nasbíranými daty. Hlavní cíl tohoto krokuje postupná optimalizace kapacitních zdrojův záměru zajištění satisfakce na straně klienta.",
-        "p2": "a) Navrhované změny jsou vyhodnoceny řídící komisí která otázky spadající do operací infrastruktury, její výkonnosti, kapacity a administrace.",
-        "p3": "b) Kapacitní řešení a celý proces zavedení služby jsou nastaveny k zajištění optimálního využití kapacitních i finančních zdrojů skrz celou dobu použití služby, a aby byla schopna zahrnout i neplánované kapacitní požadavky.",
+        "p2": "Navrhované změny jsou vyhodnoceny řídící komisí která otázky spadající do operací infrastruktury, její výkonnosti, kapacity a administrace.",
+        "p3": "Kapacitní řešení a celý proces zavedení služby jsou nastaveny k zajištění optimálního využití kapacitních i finančních zdrojů skrz celou dobu použití služby, a aby byla schopna zahrnout i neplánované kapacitní požadavky.",
         "p4": "Založena na vzájemně schválené a uzavřené dohodě, je následně definována cena za kapacitní jednotku s fixací od 3 do 5 let (GB, port, etalon etc.)"
       },
       "implementation": {

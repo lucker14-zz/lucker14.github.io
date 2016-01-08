@@ -49,22 +49,59 @@ $(document).ready(function() {
 
 	i18n.init({ lng: 'cs' }, function(err, t) { 
 		$('html').i18n();
+		setCookie('lang', 'cs', 30);
+		$('html').data('lang', 'cz');
 	});
 	
 	$('#switchEng').on('click', function(){
-		console.log('switch');
-		i18n.setLng('en',function(t){
-			$('html').i18n();
-		});
-		setCookie('lang', 'en', 30);	
+		if ($('html').data('lang') != 'en') {
+			console.log('switch');
+			i18n.setLng('en',function(t){
+				$('html').i18n();
+			});
+			setCookie('lang', 'en', 30);
+			$('html').data('lang', 'en');
+			moneyExchange('en');
+		};
 	});
 
 	$('#switchCes').on('click', function(){
-		console.log('switch');
-		i18n.setLng('cs',function(t){
-			$('html').i18n();
+		if ($('html').data('lang') != 'cz') {
+			console.log('switch');
+			i18n.setLng('cs',function(t){
+				$('html').i18n();
+			});
+			setCookie('lang', 'cs', 30);
+			$('html').data('lang', 'cz');
+			moneyExchange('cz');
+		};
+	});
+
+	$('.go-back-button').on('click', function() {
+		var thisButton = $(this);
+		var popup = thisButton.parent();
+		var popupWarp = popup.parent();
+
+		popupWarp.css('display', 'none');
+		$('html').css({
+			'overflow-x': 'hidden',
+			'overflow-y': 'auto'
 		});
-		setCookie('lang', 'cs', 30);	
+
+	});
+
+	var popupActive = false;
+
+	$('.service').on('click', function(e) {
+		e.stopPropagation();
+		$('html').css({
+			'overflow-x': 'hidden',
+			'overflow-y': 'hidden'
+		});
+		var warpId = '#popup-warp-' + $(this).data('id');
+		console.log(warpId)
+		$(warpId).css('display', 'block');
+		popupActive = true;
 	});
 });
 
@@ -91,10 +128,17 @@ function setCookie(cname, cvalue, exdays) {
 function Minutelly(){
 	var dataRndChange = Math.random() * 1000;
 	var cashRndChange = Math.random() * 200;
+	var currency;
+
+	if ($('html').data('lang') == "en") 
+		currency = ' €';
+	else
+		currency = ' Kč';
+
 
 	var rnd = Math.random() * 10;
 
-	if (rnd <= 2) {
+	if (rnd <= 3.5) {
 		dataRndChange *= -1;
 		cashRndChange *= -1;
 	};
@@ -108,8 +152,8 @@ function Minutelly(){
 	var newDataStr = String(newData);
 	var newCashStr = String(newCash);
 
-	newDataStr = chunk(newDataStr, 3).join(' ') + " MB";
-	newCashStr = chunk(newCashStr, 3).join(' ') + " Kč";
+	newDataStr = newDataStr.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " MB";
+	newCashStr = newCashStr.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")  + currency;
 
 	setTimeout(function(){
 		$('#proof-cash-val').html(newCashStr);
@@ -119,38 +163,82 @@ function Minutelly(){
 		$('#proof-storage-val').data('int', newData);
 
 		Minutelly();
-	}, 5000);
+	}, 60000);
 }
 
 //Denni vypocet increase pro socialproof, na vsech zarizenich stejne
 function Daily(){
-	var savedCashCurrent = 364114;
+	var currency;
 	var savedDataCurrent = 376727345;
 	var devDayUTS = 1450271988086;
-
 	var dataIncrease = (Date.now() - devDayUTS) / 5000;
-	var cashIncrease = (Date.now() - devDayUTS) / 20000;
 
 	var cashClear;
 	var dataClear;
+
+	if ($('html').data('lang') == "en"){
+		console.log('en');
+		currency = ' €';
+		var savedCashCurrent = 13485;
+		var cashIncrease = (Date.now() - devDayUTS) / 540000;	
+	} 
+	else{
+		console.log('cz');
+		currency = ' Kč';
+		var savedCashCurrent = 364114;	
+		var cashIncrease = (Date.now() - devDayUTS) / 20000;
+	}
+
+	// chunk(savedDataCurrent, 3).join(' ')
+
+	console.log(cashIncrease);
 
 	savedCashCurrent += cashIncrease;
 	savedCashCurrent = savedCashCurrent.toFixed(0);
 	cashClear = savedCashCurrent;
 	savedCashCurrent = String(savedCashCurrent);
-	savedCashCurrent = chunk(savedCashCurrent, 3).join(' ') + " Kč";
+	savedCashCurrent = savedCashCurrent.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + currency;
 
 	savedDataCurrent += dataIncrease;
 	savedDataCurrent = savedDataCurrent.toFixed(0);
 	dataClear = savedDataCurrent;
 	savedDataCurrent = String(savedDataCurrent);
-	savedDataCurrent = chunk(savedDataCurrent, 3).join(' ') + " MB";
+	savedDataCurrent = savedDataCurrent.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")  + " MB";
 
 	$('#proof-cash-val').html(savedCashCurrent);
 	$('#proof-cash-val').data('int', cashClear);
 
 	$('#proof-storage-val').html(savedDataCurrent);
 	$('#proof-storage-val').data('int', dataClear);
+}
+
+//change currency with language
+function moneyExchange (lang) {
+	console.log(lang);
+	var actual_val = $('#proof-cash-val').html();
+	console.log('actual_val1: ' + actual_val );
+	actual_val = actual_val.replace(',', '');
+	console.log('actual_val2: ' + actual_val );
+	actual_val = parseInt(actual_val);
+	console.log('actual_val3: ' + actual_val );
+
+	if (lang == 'en') {
+		actual_val = parseInt(actual_val / 27);
+		console.log('test: ' + actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+		console.log('actual_val4en: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+		actual_val = actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " €";
+		console.log('actual_val5en: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+	} else {
+		actual_val = parseInt(actual_val * 27);
+		console.log('test: ' + actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+		console.log('actual_val4cs: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+		actual_val =  actual_val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " Kč";
+		console.log('actual_val5cs: ' + actual_val );
+		$('#proof-cash-val').html(actual_val);
+	}	
 }
 
 //rezac textu

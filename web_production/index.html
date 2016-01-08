@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang=''>
 <head>
 	<meta charset="UTF-8">
 	<title data-i18n="title"></title>
@@ -43,7 +43,7 @@
 			<li class='lang-switch' id='switchEng'></li>
 		</ul>
 		<ul id='nav-menu'>
-			<li data-ele='#video-warp-1' data-i18n='html.nav.home' class="selected-menu click" data-jump="#video-warp-1"></li>
+			<li data-ele='#video-warp-1' data-i18n='html.nav.home' class="selected-menu click" data-jump="video-warp-1"></li>
 			<li data-ele='.story-container' data-i18n='html.nav.story' class="click" data-jump="video-warp-2"></li>
 			<li data-ele='#video-warp-8' data-i18n='html.nav.about' class="href-about"></li>
 			<li data-ele='#sluzba-click' data-i18n='html.nav.service' class="click" data-jump="sluzba-click"></li>
@@ -54,7 +54,7 @@
 <div class="video-warp" id="video-warp-1">
 	<video id="video1" src="video/s01t01.mp4" autoplay autobuffer  preload="auto" loop></video>
 	<div class="noise-first-bg"></div>
-	<div class='billboard'>
+	<div class='billboard' id='first'>
 		<div class="last-screen-warp first-screen">
 			<h2 id='first-billboard-heading' data-i18n='html.video1.heading' class="first-screen-nadpis" style='    line-height: 40px;color: white;font-size: 31px;font-weight: 200; text-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);'></h2><br>
 			<p data-i18n='html.video1.text1' class="popis-first-screen"></p>
@@ -64,7 +64,7 @@
 	<!-- <div class="button button-first"><p data-i18n='html.video1.cta'></p><div class="icon-button"></div></div> -->
 	<div class='new-button button-first'>
 		<p data-i18n='html.video1.cta'></p>
-		<div class="down-cta"></div>
+		<div class="down-cta-b"></div>
 	</div>
 	<div class='timeline-wrap'>
 	<p data-i18n='html.video1.timeline-start' class='timeline-caption' id='begin'></p>
@@ -184,7 +184,7 @@
 	<!-- <div class="button button-last button-first"><p data-i18n='html.last-screen.help3'></p><div class="icon-button"></div></div> -->
 	<div class='new-button button-first button-last'>
 		<p data-i18n='html.last-screen.help3'></p>
-		<div class="down-cta"></div>
+		<div class="down-cta-b"></div>
 	</div>
 </div>
 <div class="cycle-warp" id="sluzba-click">
@@ -242,7 +242,7 @@
 	</div>
 </div>
 <div class='box-noise'></div>
-<div class='proof'>
+<!-- <div class='proof'>
 	<div class='proof-part'>
 		<p class='proof-desc' data-i18n='html.proof.desc' style='float: none;display:block;margin: 0 auto; font-size: 18px;'></p>
 	</div>
@@ -258,7 +258,7 @@
 			<p  data-int='0' class='proof-placeholder' id='proof-storage-val'>1,902,168,909 MB</p>
 		</div>
 	</div>
-</div>
+</div> -->
 <div id="kontakt-click" class="black-background">
 	<div id='knowMore' class="nadpis-cycle nadpis-sluzba">
 		<h2 class="" style='float: none;display: block;margin: 0 auto;text-align: center;' data-i18n='html.email-gather.heading'></h2>
@@ -267,8 +267,8 @@
 		<p data-i18n='html.email-gather.bite' style="color:#60B86A;"></p>
 		<div class="warp-input">
 			<form id="formSubmit" action="/">
-				<input class="input-email" type="email" name="email" value="" placeholder="vas@email.cz">
-				<input type="submit" class="button-send" value="odeslat"></input>
+				<input class="input-email" type="email" name="email" value="" placeholder="email@server.com">
+				<input type="submit" class="button-send" data-i18n='html.email-gather.button'></input>
 			</form>
 		</div>
 		<p data-i18n='html.email-gather.bite2' class="gray-form"></p>
@@ -299,40 +299,63 @@
 				</ul>
 			</div>
 			<div class='contact-info-map'>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.914425962672!2d14.427884915203284!3d50.087889021304285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ead69b1ab1%3A0x4df51ffee31bfbbd!2sV+Celnici+1031%2F4%2C+110+00+Praha-Praha+1!5e0!3m2!1scs!2scz!4v1450779138631" width="400" height="200" frameborder="0" style="border:0; float:right;" allowfullscreen></iframe>
+				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.914425962672!2d14.427884915203284!3d50.087889021304285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ead69b1ab1%3A0x4df51ffee31bfbbd!2sV+Celnici+1031%2F4%2C+110+00+Praha-Praha+1!5e0!3m2!1scs!2scz!4v1450779138631" width="400" height="200" frameborder="0" style="border:0; float:right;" allowfullscreen></iframe> -->
 			</div>
 		</div>
 		<div class="logo-footer"></div>
 		<div class="Nineroads"></div>
 	</div>
+	<div class='proof'>
+		<div class='proof-part'>
+			<p class='proof-desc' data-i18n='html.proof.desc' style='float: none; display: block; margin: 0 auto;font-size: 22px;font-weight: 200;'></p>
+		</div>
+		<div class='proof-part'>
+			<div class='proof-container'>
+				<div class='proof-icon' id='proof-cash'></div>
+				<p data-int='0' class='proof-placeholder' id='proof-cash-val'>7,834,219 Kč</p>
+			</div>
+		</div>
+		<div class='proof-part'>
+			<div class='proof-container'>
+				<div class='proof-icon' id='proof-storage'></div>
+				<p  data-int='0' class='proof-placeholder' id='proof-storage-val'>1,902,168,909 MB</p>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="popup-warp" data-name='analysis' id='popup-warp-1'>
 	<div class="popup">
+		<div class='popup-image' id='img-popup-analysis'></div>
+		<div class='popup-image-great' id='img-popup-analysis'></div>
 		<h2 data-i18n='warps.analysis.heading'>Analysis</h2>
 		<div class="go-back-button">&#10005</div>
 		<p data-i18n='warps.analysis.p1'>A careful detailed analysis of requirements for IT performance, capacity and architecture makes up a critical basis for correct setup of capacity and performance parameters of the IT components, and for cost effective operation of the infrastructure capacity service.</p>
 
-		<p data-i18n='warps.analysis.p2'>a) For a continuous monitoring of the capacity demands, their trends and management we use our custom analytical application - the Capacity Monitor, which continuously monitors and evaluates key capacity parameters of the service. In case of proactive services, we utilize the monitoring tools and APIs provided by the vendors, which helps us to identify and collect all required inputs, which are used for optimization of currently consumed capacity and for management of new capacity requirements.</p>
+		<p><span class='whitespacer'>::</span>a) <span data-i18n='warps.analysis.p2'>For a continuous monitoring of the capacity demands, their trends and management we use our custom analytical application - the Capacity Monitor, which continuously monitors and evaluates key capacity parameters of the service. In case of proactive services, we utilize the monitoring tools and APIs provided by the vendors, which helps us to identify and collect all required inputs, which are used for optimization of currently consumed capacity and for management of new capacity requirements.</span></p>
 
-		<p class='popup-last-p' data-i18n='warps.analysis.p3'>b) All collected data is continuously analyzed by the team of senior experts, who - in accordance with ITIL principles - define the configuration or system changes to be done, with regard to defined capacity requirements, actual data consumption. When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real collected data.</p>
+		<p class='popup-last-p'><span class='whitespacer'>..</span>b) <span data-i18n='warps.analysis.p3'>All collected data is continuously analyzed by the team of senior experts, who - in accordance with ITIL principles - define the configuration or system changes to be done, with regard to defined capacity requirements, actual data consumption. When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real collected data.</span></p>
 	</div>
 </div>
 <div class="popup-warp" data-name='design-and-optimization' id='popup-warp-2'>
 	<div class="popup">
+		<div class='popup-image' id='img-popup-des'></div>
+		<div class='popup-image-great' id='img-popup-des'></div>
 		<h2 data-i18n='warps.designandoptimization.heading'>Design and optimization</h2>
 		<div class="go-back-button">&#10005</div>
 		<p data-i18n='warps.designandoptimization.p1'>When dimensioning of the target capacity and designing of the technical solution we strictly adhere and respect the mutually agreed capacity requirements (service parameters) and thoroughly work with real capacity and performance data gathered from the environment.
 		Main aim of this step is a continuous optimization of capacity resources utilization in order to ensure that the capacity requirements of the service consumer are always satisfied.</p>
 
-		<p data-i18n='warps.designandoptimization.p2'>a) The proposed changes are evaluated within the steering committee that solves the questions relating to operation of the infrastructure, its performance, capacity and administration.</p>
+		<p><span class='whitespacer'>..</span>a) <span data-i18n='warps.designandoptimization.p2'>The proposed changes are evaluated within the steering committee that solves the questions relating to operation of the infrastructure, its performance, capacity and administration.</span></p>
 
-		<p data-i18n='warps.designandoptimization.p3'>b) The capacity solution and entire delivery process are set up to ensure an optimal usage of financial and capacity resources over the whole service usage time, and to be able absorb planned as well as unplanned capacity requirements.</p>
+		<p><span class='whitespacer'>..</span>b) <span data-i18n='warps.designandoptimization.p3'>The capacity solution and entire delivery process are set up to ensure an optimal usage of financial and capacity resources over the whole service usage time, and to be able absorb planned as well as unplanned capacity requirements.</span></p>
 
 		<p class='popup-last-p' data-i18n='warps.designandoptimization.p4'>Based on the mutually agreed and approved technical solution is then defined a price for the capacity unit with fixation from 3 to 5 years (GB, port, etalon etc.).</p>
 	</div>
 </div>
 <div class="popup-warp" data-name='implementation' id='popup-warp-3'>
 	<div class="popup">
+		<div class='popup-image' id='img-popup-implementation'></div>
+		<div class='popup-image-great' id='img-popup-implementation'></div>
 		<h2 data-i18n='warps.implementation.heading'>Implementation</h2>
 		<div class="go-back-button">&#10005</div>
 		<p data-i18n='warps.implementation.p1'>A deployment of the capacity service is realized in a project form, with clearly defined milestones, deadlines and responsibilities. </p>
@@ -346,6 +369,8 @@
 </div>
 <div class="popup-warp" data-name='monitoring' id='popup-warp-4'>
 	<div class="popup">
+		<div class='popup-image' id='img-popup-monitoring'></div>
+		<div class='popup-image-great' id='img-popup-monitoring'></div>
 		<h2 data-i18n='warps.monitoring.heading'>Monitoring</h2>
 		<div class="go-back-button">&#10005</div>
 		<p data-i18n='warps.monitoring.p1'>A continuous monitoring of capacity resource consumption constitutes a key part of the efficient management of the capacity services. The capacity monitoring provided within the service provides the customers/service consumers with information on service status, actual and historical capacity consumption, future trends, and on related monthly costs for capacity.</p>
