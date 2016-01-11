@@ -455,7 +455,7 @@ function playVideo() {
 		if (lastPosition >= top && lastPosition <= endOffTop) {
 			if (videoArray[i].get(0).paused) {
 				videoArray[i].get(0).play();
-				timelineRender(i);
+				timelineRender(i + 1);
 				if (i == 6) {
 					setTimeout(function() {
 						$('#caption-duster, #bubble-duster').each(function() {
@@ -475,22 +475,25 @@ function playVideo() {
 
 //handluje zmenu class pointu na timeline pri scrollu
 function timelineRender (video_id) {
-	// console.log(step);
+	console.log('video_id: ' + video_id);
 
-	var id = '#timeline-point-' + (video_id + 1);
+	var fakeid = video_id - 1;
+	console.log('fakeid: ' + fakeid);
 
-	if ($(id).hasClass('actual') == false)
-		$(id).toggleClass('actual');
+	var id = '#timeline-point-' + (video_id);
+
 	if ($(id).hasClass('past'))
 		$(id).removeClass('past');
+	if ($(id).hasClass('actual') == false)
+		$(id).addClass('actual');
 
 	$('.timeline-point').each(function() {
-		if ($(this).data('id') > (video_id + 1)) {
+		if ($(this).data('id') > (fakeid)) {
 			if ($(this).hasClass('actual'))
 				$(this).removeClass('actual');
 			if ($(this).hasClass('past'))
 				$(this).removeClass('past');
-		} else if ($(this).data('id') < (video_id + 1)) {
+		} else if ($(this).data('id') < (fakeid)) {
 			if ($(this).hasClass('actual'))
 				$(this).removeClass('actual');
 			if ($(this).hasClass('past') == false)
@@ -899,7 +902,11 @@ $('.circle-img').on('click', function() {
 	var cycleWarpJumpScroll = $('.cycle-warp').height() / 12;
 
 	$('.circle-img').on('click', function() {
-		var jumpScroll = cycleWarpOffset + (cycleWarpJumpScroll * $(this).data('offset'));
+		if ($('.monitorovani-img').hasClass('monitorovani-active-img') && $(this).hasClass('analyza-noise-img')) {
+			var jumpScroll = cycleWarpOffset + (cycleWarpJumpScroll * 8.75);
+		} else {
+			var jumpScroll = cycleWarpOffset + (cycleWarpJumpScroll * $(this).data('offset'));
+		}
 		$("html").velocity("stop");
 		$("html").velocity("scroll", { offset: jumpScroll + 'px', mobileHA: false });
 	});
@@ -937,7 +944,7 @@ $(document).ready(function() {
 		};
 
 		if (i != 1 || i != videoWarpArray.length + 1) {
-			var ele = '<div class="timeline-point" data-id="' + (i+1) + '" id="timeline-point-'+ (i+1) +'"></div>';
+			var ele = '<div class="timeline-point" data-id="' + (i) + '" id="timeline-point-'+ (i+1) +'"></div>';
 
 			$('.timeline').append(ele);
 		};
@@ -983,7 +990,7 @@ $(document).ready(function() {
 
 		console.log(mineid + ' ' + step);
 
-		var perc = 82 - 11.2 * (mineid - 1);
+		var perc = 82 - 11.35 * (mineid);
 
 		var pointerOffset = ($('#timeline-point-2').offset().top + (step * mineid)) - $('.timeline-point').height() / 2;
 		$('.timeline-pointer').css('bottom', perc + '%');
