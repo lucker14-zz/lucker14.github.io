@@ -54,7 +54,8 @@
   		"last-screen": {
   			"help": "vám pomáhá vědět.",
   			"help2": "Vědět a řídit.",
-  			"help3": "Jak to funguje?"
+  			"help3": "Jak to funguje?",
+        "help4": "Kolik jsme ušetřili našim zákazníkům?"
   		},
       "proof": {
         "desc": "Aktuální měsíční úspora našich zákazníků:"
@@ -143,6 +144,7 @@
       }
     },
     "warps":{
+      "reload-text": "Pro nejlepší funkčnost stránky, prosím o znovunačtení",
       "analysis":{
         "heading": "Analýza",
         "p1": "Důkladná, detailní analýza požadavků pro výkon, kapacitu a architekturu je důležitý základ, pro správné nastavení IT komponent a pro finančně efektivní fungování kapacitního systému.",

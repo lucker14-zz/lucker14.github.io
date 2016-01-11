@@ -68,6 +68,15 @@ var lastVideo;
 
 var shaked = false;
 
+function displayRefreshPopup() {
+	$('html').css({
+		'overflow-x': 'hidden',
+		'overflow-y': 'hidden'
+	});
+	$('#popup-warp-5').css('display', 'block');
+	popupActive = true;
+}
+
 
 //Menici fce hodnot, aby se hybali
 function Minutelly(){
@@ -271,6 +280,9 @@ $( window ).resize(function() {
 	positionTimeline(count);
 
 	sendToMobile();
+
+	if ($('#popup-warp-5').css('display') != 'block') 
+		displayRefreshPopup();
 });
 
 //kdyz das refresh tak to skoci na top. Urcite nechat. Je to lepsi pro flow.
@@ -440,11 +452,22 @@ function playVideo() {
 		videoArray[i].get(0).pause();
 		var top = videoWarpArrayOffsets[i];
 		var endOffTop = top + videoWarpArrayHeight[i];
-
 		if (lastPosition >= top && lastPosition <= endOffTop) {
 			if (videoArray[i].get(0).paused) {
 				videoArray[i].get(0).play();
 				timelineRender(i);
+				if (i == 6) {
+					setTimeout(function() {
+						$('#caption-duster, #bubble-duster').each(function() {
+							$(this).css('opacity', '1');
+						});
+					}, 3500);
+					setTimeout(function() {
+						$('#last-caption, #bubble-last').each(function() {
+							$(this).css('opacity', '1');
+						});
+					}, 6000);
+				};
 			}
 		}
 	}
@@ -494,7 +517,7 @@ function onScroll(event){
 
 //kontroluje jestli se jeste ma zobrazit timeline
 function timelineCheck() {
-	var id = '#video-warp-' + videoWarpArray.length;
+	var id = '#video-warp-7';
 
 	var timelineOffset = $(id).offset().top + ($(id).height()) / 2;
 	var timelineStartOffset = $('#video-warp-2').offset().top / 1.5;
@@ -886,6 +909,13 @@ $('.circle-img').on('click', function() {
 
 $(document).ready(function() {
 
+	$('.box-noise').on('click', function() {
+		console.log('click');
+		// var proofOffset = $('#proof').offset().top;
+		$('html').velocity('stop');
+		$('html').velocity('scroll', { offset: $('#proof').offset().top + 'px', mobileHA: false });
+	});
+
 	$(document).on("scroll", onScroll);
 
 
@@ -897,17 +927,17 @@ $(document).ready(function() {
 	Minutelly();
 	sendToMobile();
 
-	var ofset = ($('.timeline').height() / (videoWarpArray.length + 1));
+	var ofset = ($('.timeline').height() / (videoWarpArray.length - 2));
 
-	for (var i = 1; i < videoWarpArray.length + 1; i++) {
-		var top = 0 + (ofset * (i-1) - (i-1) * 9);
+	for (var i = 1; i < videoWarpArray.length - 1; i++) {
+		var top = 0 + (ofset * 6);
 
 		if (i == 2) {
-			step = top + 9;
+			step = $('#timeline-point-2').css('margin-top');
 		};
 
 		if (i != 1 || i != videoWarpArray.length + 1) {
-			var ele = '<div class="timeline-point" data-id="' + i + '" id="timeline-point-'+ i +'"></div>';
+			var ele = '<div class="timeline-point" data-id="' + (i+1) + '" id="timeline-point-'+ (i+1) +'"></div>';
 
 			$('.timeline').append(ele);
 		};
@@ -922,14 +952,14 @@ $(document).ready(function() {
 
 	$('.timeline-wrap').append(pointer);
 
-	console.log($('#timeline-point-1').offset());
+	console.log($('#timeline-point-2').offset());
 	console.log($('.timeline-wrap').offset());
 
-	var pointerOffset = $('#timeline-point-1').offset().top - $('.timeline-point').height() * 0.5;
+	// var pointerOffset = $('#timeline-point-2').offset().top - $('.timeline-point').height() * 0.5;
 
-	$('.timeline-pointer').offset({top: pointerOffset});
+	// $('.timeline-pointer').offset({top: pointerOffset});
 
-	$('#timeline-point-1').toggleClass('actual');
+	$('#timeline-point-2').toggleClass('actual');
 
 	// na kliknuti pointu timliny posle na dane video
 
@@ -951,8 +981,13 @@ $(document).ready(function() {
 		$('.timeline-pointer').css('display', 'block');
 		$('.timeline-pointer-text').html('#' + $(this).data('id'));
 
-		var pointerOffset = ($('#timeline-point-1').offset().top + (step * mineid)) - $('.timeline-point').height() / 2;
-		$('.timeline-pointer').offset({top: pointerOffset});
+		console.log(mineid + ' ' + step);
+
+		var perc = 82 - 11.2 * (mineid - 1);
+
+		var pointerOffset = ($('#timeline-point-2').offset().top + (step * mineid)) - $('.timeline-point').height() / 2;
+		$('.timeline-pointer').css('bottom', perc + '%');
+		// $('.timeline-pointer').offset({top: pointerOffset});
 	});
 
 	$('.timeline-point').mouseleave( function() {
@@ -1046,10 +1081,10 @@ $(document).ready(function() {
 	 $('.cycle-warp').bind('DOMMouseScroll', function(e){
 	     if(e.originalEvent.detail < 0) {
 	         //scroll down
-	         console.log('Down1');
+	         // console.log('Down1');
 	     }else {
 	         //scroll up
-	         console.log('Up1');
+	         // console.log('Up1');
 	         skipScrollUp();
 	     }
 	 });
@@ -1058,13 +1093,13 @@ $(document).ready(function() {
 	 $('.cycle-warp').bind('mousewheel', function(e){
 	     if(e.originalEvent.wheelDelta < 0) {
 	         //scroll down
-	         console.log('Down2');
+	         // console.log('Down2');
 	     }else if(e.originalEvent.wheelDelta > 100) {
 	         //scroll up
-	         console.log('Up2');
+	         // console.log('Up2');
 	         skipScrollUp();
 	     }else if(e.originalEvent.wheelDelta = 0){
-	     	console.log('stay');
+	     	// console.log('stay');
 	     }
 	 });
 
@@ -1082,6 +1117,10 @@ $(document).ready(function() {
 	$('.circle-img').mouseleave(function() {
 		console.log('leave');
 		$(this).children('h4').css('opacity', '0').removeClass('strong-font');
+	});
+
+	$('.reload-icon').on('click', function() {
+		location.reload();
 	});
 
 });
@@ -1143,17 +1182,7 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + "; " + expires;
 }
 
-$(window).load(function() {
 
-
-
-	// if (getCookie('lang') == '') {
-	// 	setCookie('lang', 'cs', 356);
-	// 	console.log('cookie lang:' + getCookie('lang'));
-
-
-	// };
-});
 
 //prvni zapnuti rekurzivni funkce ktera checkuje scroll.
 loop();

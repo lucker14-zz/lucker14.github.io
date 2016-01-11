@@ -53,7 +53,8 @@
       "last-screen": {
         "help": "helps you know.",
         "help2": "To know and to think.",
-        "help3": "How it works?"
+        "help3": "How it works?",
+        "help4": "How much have we saved our customers?"
       },
       "proof": {
         "desc": "Actual monthly savings of our customers:"
@@ -146,6 +147,7 @@
       }
     },
     "warps":{
+      "reload-text": "For the best performence, please reload page",
       "analysis":{
         "heading": "Analysis",
         "p1": "A careful detailed analysis of requirements for IT performance, capacity and architecture makes up a critical basis for correct setup of capacity and performance parameters of the IT components, and for cost effective operation of the infrastructure capacity service",

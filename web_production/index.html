@@ -151,13 +151,13 @@
 	<div class='gradient invert'></div>
 	<video id="video7" src="video/s06t01.mp4" autobuffer  preload="auto" ></video>
 	<div class='bubble-container' id='bubble6'>
-		<span class='bubble-caption' data-i18n='html.caption.duster'></span>
-		<div class="bubble bubble-inverted-position" >
+		<span class='bubble-caption' id='caption-duster' data-i18n='html.caption.duster'></span>
+		<div class="bubble bubble-inverted-position" id='bubble-duster'>
 			<div class="triangle-small-bubble triangle-small-bubble-inverted"></div>
 			<p data-i18n='html.video7.bubble1' class="text-triangle duster"></p>
 		</div>
-		<span class='bubble-caption bubble-caption-second' data-i18n='html.caption.chief'></span>
-		<div class="bubble bubble-second bubble-inverted-position">
+		<span class='bubble-caption bubble-caption-second' id='last-caption' data-i18n='html.caption.chief'></span>
+		<div class="bubble bubble-second bubble-inverted-position" id='bubble-last'>
 			<div class="triangle-small-bubble triangle-small-bubble-inverted"></div>
 			<p data-i18n='html.video7.bubble2' class="text-triangle chief"></p>
 		</div>
@@ -241,24 +241,12 @@
 	</div>
 	</div>
 </div>
-<div class='box-noise'></div>
-<!-- <div class='proof'>
-	<div class='proof-part'>
-		<p class='proof-desc' data-i18n='html.proof.desc' style='float: none;display:block;margin: 0 auto; font-size: 18px;'></p>
+<div class='box-noise'>
+	<div class='button-additional'>
+		<p data-i18n='html.last-screen.help4'></p>
+		<div class="down-cta-c" data-jump='proof'></div>
 	</div>
-	<div class='proof-part'>
-		<div class='proof-container'>
-			<div class='proof-icon' id='proof-cash'></div>
-			<p data-int='0' class='proof-placeholder' id='proof-cash-val'>7,834,219 Kč</p>
-		</div>
-	</div>
-	<div class='proof-part'>
-		<div class='proof-container'>
-			<div class='proof-icon' id='proof-storage'></div>
-			<p  data-int='0' class='proof-placeholder' id='proof-storage-val'>1,902,168,909 MB</p>
-		</div>
-	</div>
-</div> -->
+</div>
 <div id="kontakt-click" class="black-background">
 	<div id='knowMore' class="nadpis-cycle nadpis-sluzba">
 		<h2 class="" style='float: none;display: block;margin: 0 auto;text-align: center;' data-i18n='html.email-gather.heading'></h2>
@@ -305,7 +293,7 @@
 		<div class="logo-footer"></div>
 		<div class="Nineroads"></div>
 	</div>
-	<div class='proof'>
+	<div class='proof' id='proof'>
 		<div class='proof-part'>
 			<p class='proof-desc' data-i18n='html.proof.desc' style='float: none; display: block; margin: 0 auto;font-size: 22px;font-weight: 200;'></p>
 		</div>
@@ -386,6 +374,12 @@
 		<p></p>
 
 		<p class='popup-last-p' data-i18n='warps.monitoring.p7'>These basic metrics represent just the key parameters of the service. There are other specific attributes and metrics monitored for each capacity service. Their utilization is dependent on the specific type of infrastructure capacity service.</p>
+	</div>
+</div>
+<div class="popup-warp" data-name='reload' id='popup-warp-5'>
+	<div class="popup" id='relaod-popup'>
+		<div class='reload-icon'></div>
+		<p class='reload-text' data-i18n='warps.reload-text'>For the best performence, please reload page</p>
 	</div>
 </div>
 <div class="preloading1"></div>
