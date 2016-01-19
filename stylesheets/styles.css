@@ -497,18 +497,21 @@ header .dropdown_menu a:hover {
   height: 18px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEUAAAD////////////////////////////////////////////////////////////////////////////YSWgTAAAAE3RSTlMAKkNLanmCmqy8ydTe5uvw9Pj5x0m19gAAAKlJREFUeNrd1LkOwyAQBFBjMMvhDdf//2tmXVCFTYrIUjKFp/Ar8EhmG2P0pqQDfBH13g+r5ADYgPdNyQ7w+4i5IYWjUdBcrzoVcYwPVFFRREW0f4eMtIpm21xa5bBChCZfmyS9RibgdTU4/ukp+/UEsPJQdyqEYaWzXe0UriVdufzi4DNBVq1GRYiTVTXEibxMbxWE1edOa5QYX3fS3/wIOvrowrj5EnsCVIAm/gkrmNEAAAAASUVORK5CYII=);
   background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
   top: 3px;
   right: 2px;
 }
 .heading .introduction aside .mac {
   background-size: contain;
+  background-repeat: no-repeat;
   width: 12px;
   height: 15px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAMAAACZf1ICAAAAt1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8QiqlJAAAAPXRSTlMABgwiLDdFTlJaX2Jnam5zeYGEhoyZnJ6jqLCytL7CxsfJzs/Q1tfd3+Pl5ujp6+zu7/Dx8vT29/j5+vv8PZOAswAAANlJREFUeAGF0e02w0AYxPGpUlVFvdS7omg10kgi23Rj7v+67BMc58iE39f9sPOcPxrGiduA1InJClpB8hXSM4MLKH0GK0hPDAaQHLk+ghYX9/hteLeIpiOY7Ycki6f7+LL1wloxGV3l/BR1YQZrCuUQQNdTWgJYUkp7wA6lFYIZpT0EBZU3GE/lFobS+b9v71Qmf/yXwjhKPQQLth9xTS2yQGyRnwAZNQtxyhbWvqSUIzijdACT6Z21zYoNvgMj5xzi2w1Nlc7nGWuX+DHOvXvsI9iduTI5hvkAnHGIg3lokdkAAAAASUVORK5CYII=);
 }
 .heading .introduction aside .win {
   background-size: contain;
+  background-repeat: no-repeat;
   width: 11px;
   height: 12px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAMAAAANxBKoAAAAxlBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////DTx3aAAAAQnRSTlMABw4VHCItMzk/REhOYmZudHd7gIOHio+SlJeanqGkqqyvsbO2ubu+wMLFxsjKy8/R09TV19ja3N3g4eLj5Ofo6eoV1aOXAAABGUlEQVR4Ae3T7U6zMBTA8bM9e5yoQBkOxqautOUFBjp00+lwrPd/UyY1TdQUVxI/mLj/598JhxMArXqGHdDbTXrIDS0/LNY1F921shPTw4vVds8/VCjYAFB2/9JIotZ9w/JxVj03DiwUUup/52hKS7GbCAFt1eXTjn/O/kZzmZbe8a+hP6uPmnX4qlzIW/QSSMQYpZQQEoYY4/l8boB1fTWbTYNgMvE9bzy+dF135DgIXUC34ixNkySOo4gxJh5hgBlMRP57nsxU7D2CgqurFDexIe5wQRuiX6yPmv2Q5p3+nXxdd9AAvVPLx/nDdq+lZUNzfJMsN40D+WEt+z8Ai5aPr1pa1j+zA1Ksah0tEy8VyqEKNJJDJXkDK06IOdrrY3oAAAAASUVORK5CYII=);
@@ -578,7 +581,7 @@ header .dropdown_menu a:hover {
   margin-top: 30px;
   margin-bottom: 12px;
   font-size: 32px;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 1em;
   text-align: left;
   position: relative;
@@ -948,7 +951,7 @@ header .dropdown_menu a:hover {
   color: #50545c;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 36px;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 40px;
   margin-top: 120px;
   text-align: justify;
@@ -968,7 +971,7 @@ header .dropdown_menu a:hover {
   z-index: 2;
 }
 .box .box-inner .template-icon-container {
-  width: 275px;
+  width: 240px;
   height: 10%;
   position: relative;
   z-index: 2;
@@ -1215,7 +1218,7 @@ header .dropdown_menu a:hover {
   color: white;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 20px;
   width: auto;
   letter-spacing: 2px;
@@ -1384,7 +1387,7 @@ header .dropdown_menu a:hover {
   color: #9ea3ae;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 30px;
   text-align: left;
   width: 87%;
@@ -2023,6 +2026,7 @@ footer .footer-part#footer-part-3 {
   }
   .template-caption {
     text-align: center!important;
+    margin-bottom: 20px;
   }
   .box .box-inner {
     width: auto;
@@ -2232,5 +2236,13 @@ footer .footer-part#footer-part-3 {
   }
   footer .footer-part .credits {
     margin: 40px 0 40px;
+  }
+}
+@media screen and (max-width: 370px) {
+  header .logo a {
+    left: -20px;
+  }
+  .box .buy-card {
+    width: 90vw;
   }
 }
