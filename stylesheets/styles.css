@@ -2024,7 +2024,7 @@ footer .footer-part#footer-part-3 {
   .box-inner p.white {
     text-align: center!important;
   }
-  .template-caption {
+  .box .box-inner p.template-caption {
     text-align: center!important;
     margin-bottom: 20px;
   }
