@@ -2011,6 +2011,8 @@ footer .footer-part#footer-part-3 {
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
             align-items: center;
+    position: relative;
+    top: -180px;
   }
   .template-icon-container {
     margin: 0 auto;
