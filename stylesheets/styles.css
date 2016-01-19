@@ -1395,11 +1395,6 @@ header .dropdown_menu a:hover {
 }
 .box .buy-card li {
   margin-bottom: 1em;
-  list-style: none;
-}
-.box .buy-card li:before {
-  content: '\00b7';
-  font-size: 100px;
 }
 .box .buy-card .download {
   width: 188px;
