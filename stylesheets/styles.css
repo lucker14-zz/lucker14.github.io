@@ -1194,8 +1194,7 @@ header .dropdown_menu a:hover {
 }
 .box .box-inner .testimonial-container .testimonial-img#ti1 {
   background-image: url('../img/testimonial-profile-1.png');
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
 }
 .box .box-inner .testimonial-container .testimonial-name {
   float: none;
@@ -2180,6 +2179,9 @@ footer .footer-part#footer-part-3 {
   }
   .bg-grad.secondary {
     height: 800px;
+  }
+  svg {
+    display: none;
   }
   footer {
     display: -webkit-box;
