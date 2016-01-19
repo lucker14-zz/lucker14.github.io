@@ -232,7 +232,7 @@ header {
     padding-top: 12px;
 
     color: #6593e8;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -302,7 +302,7 @@ header .dribbble-nav {
 }
 header .full-price {
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 9px;
@@ -319,7 +319,7 @@ header .buy-button#buy-button-top {
   margin-top: 14px;
   padding-top: 12px;
   color: #6593e8;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -548,7 +548,7 @@ header .dropdown_menu a:hover {
 }
 .heading .introduction .inside .compat p {
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -573,7 +573,7 @@ header .dropdown_menu a:hover {
   display: block;
   margin: 0 auto;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   max-width: 1030px;
   margin-top: 30px;
   margin-bottom: 12px;
@@ -634,7 +634,7 @@ header .dropdown_menu a:hover {
 .heading .introduction h2 {
   opacity: 0.7;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.1em;
@@ -658,7 +658,7 @@ header .dropdown_menu a:hover {
   border-radius: 20px;
   padding-top: 12px;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
@@ -765,14 +765,14 @@ header .dropdown_menu a:hover {
 }
 .heading .introduction .steps-container .step .step-heading .step-ring span {
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 9px;
 }
 .heading .introduction .steps-container .step .step-heading .step-caption {
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 9px;
@@ -946,7 +946,7 @@ header .dropdown_menu a:hover {
 }
 .box .box-inner p.great {
   color: #50545c;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 200;
   line-height: 40px;
@@ -956,7 +956,7 @@ header .dropdown_menu a:hover {
 .box .box-inner p.low {
   opacity: 0.6;
   color: #50545c;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-align: justify;
@@ -1162,7 +1162,7 @@ header .dropdown_menu a:hover {
 }
 .box .box-inner .tweets-heading {
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 40px;
 }
@@ -1201,7 +1201,7 @@ header .dropdown_menu a:hover {
   display: block;
   margin: 0 auto;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
@@ -1213,7 +1213,7 @@ header .dropdown_menu a:hover {
   margin: 0 auto;
   opacity: 0.8;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 200;
   line-height: 20px;
@@ -1229,7 +1229,7 @@ header .dropdown_menu a:hover {
   display: block;
   margin: 0 auto;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.5em;
@@ -1250,7 +1250,7 @@ header .dropdown_menu a:hover {
   height: auto;
   text-align: center;
   color: #50545c;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 300;
   line-height: 9px;
@@ -1262,7 +1262,7 @@ header .dropdown_menu a:hover {
   margin: 0 auto;
   text-align: center;
   color: #9ea3ae;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: 400;
   line-height: 22px;
@@ -1307,7 +1307,7 @@ header .dropdown_menu a:hover {
   height: auto;
   text-align: center;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2em;
   font-weight: 300;
   line-height: 1.5em;
@@ -1320,7 +1320,7 @@ header .dropdown_menu a:hover {
   height: auto;
   text-align: center;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.3em;
   font-weight: 300;
   line-height: 1.5em;
@@ -1359,7 +1359,7 @@ header .dropdown_menu a:hover {
   display: block;
   margin: 0 auto;
   color: #50545c;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
   /*@media screen and (min-width: 1600px) and (min-height: 800px){
@@ -1382,7 +1382,7 @@ header .dropdown_menu a:hover {
 }
 .box .buy-card ul {
   color: #9ea3ae;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 100;
   line-height: 30px;
@@ -1402,7 +1402,7 @@ header .dropdown_menu a:hover {
   box-shadow: 0 4px 0 rgba(239, 239, 239, 0.35);
   padding: 12px 12px 8px 12px;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -1445,7 +1445,7 @@ header .dropdown_menu a:hover {
 }
 .box .buy-card .btn-price-container .full-price {
   color: #6593e8;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 9px;
@@ -1493,7 +1493,7 @@ footer .footer-part .footer-icon#mail {
   right: 2px;
 }
 footer .footer-part .footer-text {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #afb6be;
@@ -1501,7 +1501,7 @@ footer .footer-part .footer-text {
   text-align: left;
 }
 footer .footer-part .footer-link {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: white;
@@ -1521,7 +1521,7 @@ footer .footer-part .source-logo {
 }
 footer .footer-part .footer-small-text {
   color: #afb6be;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
