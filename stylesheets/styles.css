@@ -1405,10 +1405,11 @@ header .dropdown_menu a:hover {
 }
 .box .buy-card .line {
   height: 1px;
-  width: 100%;
+  width: 340px;
   background-color: #cfd1d7;
   position: relative;
   top: 35px;
+  z-index: 10;
 }
 .box .buy-card ul {
   color: #9ea3ae;
@@ -1452,6 +1453,7 @@ header .dropdown_menu a:hover {
 }
 .box .buy-card .download#bot-button {
   text-align: center;
+  box-shadow: 0 4px 0 #e0e0e0 !important;
 }
 .box .buy-card .button-container {
   /*display: flex;
