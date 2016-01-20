@@ -443,12 +443,12 @@ header .dropdown_menu a:hover {
   color: white;
   font-size: 18px;
   font-weight: 400;
-  line-height: 9px;
+  line-height: 26px;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   position: relative;
-  top: 17%;
-  right: 43%;
+  top: 0%;
+  right: 53%;
 }
 .heading .hidden {
   opacity: 0;
