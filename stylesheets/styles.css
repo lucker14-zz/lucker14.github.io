@@ -2181,6 +2181,15 @@ footer .footer-part#footer-part-3 {
   .heading .introduction .download#top-button {
     margin-top: 0px;
   }
+  .heading .introduction .steps-container {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .heading .introduction .steps-container .step {
+    width: 32%;
+  }
   .bg-grad {
     height: 644px;
   }
