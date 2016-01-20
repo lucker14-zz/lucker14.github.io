@@ -438,6 +438,7 @@ header .dropdown_menu a:hover {
   height: 57px;
 }
 .heading .caption-price-top .caption-price-span {
+  width: 250px;
   text-align: center;
   font-family: chalkboard, Helvetica, sans-serif;
   color: white;
