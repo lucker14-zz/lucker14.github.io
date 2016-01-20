@@ -1243,23 +1243,40 @@ header {
         font-size: 30px;
         text-align: center;
 
+        letter-spacing: 0.5px;
+        position: relative;
+        top: -3px;
+
+
         /*@media screen and (min-width: 1600px) and (min-height: 800px){
           font-size: 42px;
         }*/
       }
 
       .socialkit-logo{
-        width: 124px;
-        height: 71px;
+        width: 148px;
+        height: 78px;
         background-image: url('../img/logo.png');
         background-size: contain;
         background-repeat: no-repeat;
+
+        min-width: 148px;
+        min-height: 78px;
+        position: relative;
+        top: 7px;
+        left: 7px;
 
         @media @small_screen{
           min-width: 124px;
           min-height: 71px;
           margin-top: 2vh;
         }
+      }
+
+      .line{
+        height: 1px;
+        width: 100%;
+        background-color: #cfd1d7;
       }
 
       ul{

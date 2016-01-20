@@ -1377,16 +1377,24 @@ header .dropdown_menu a:hover {
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
+  letter-spacing: 0.5px;
+  position: relative;
+  top: -3px;
   /*@media screen and (min-width: 1600px) and (min-height: 800px){
           font-size: 42px;
         }*/
 }
 .box .buy-card .socialkit-logo {
-  width: 124px;
-  height: 71px;
+  width: 148px;
+  height: 78px;
   background-image: url('../img/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
+  min-width: 148px;
+  min-height: 78px;
+  position: relative;
+  top: 7px;
+  left: 7px;
 }
 @media screen and (max-width: 1400px) and (min-width: 1024px) {
   .box .buy-card .socialkit-logo {
@@ -1394,6 +1402,11 @@ header .dropdown_menu a:hover {
     min-height: 71px;
     margin-top: 2vh;
   }
+}
+.box .buy-card .line {
+  height: 1px;
+  width: 100%;
+  background-color: #cfd1d7;
 }
 .box .buy-card ul {
   color: #9ea3ae;
