@@ -961,6 +961,7 @@ header {
       position: absolute;
       z-index: 3;
       right: 0px;
+      top: 0px;
 
       /*@media(min-aspect-ratio: 16/8){
         height: 78%;
@@ -2132,24 +2133,17 @@ footer{
   svg { display:none; } 
 }
 
+@-moz-document url-prefix() {
+    .box .box-inner .panel-shadow {
+        top: 546px;
+        right: 212px;
+    }
 
+    svg { 
+      display:none; 
+    } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .box #testimonials-outer-container.box-inner{
+      padding-top: 50px;
+    }
+}
