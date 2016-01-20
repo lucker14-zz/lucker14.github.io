@@ -445,7 +445,6 @@ header .dropdown_menu a:hover {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
-  /*transform: rotate(30deg);*/
   position: relative;
   top: 0%;
   right: 53%;
@@ -1428,6 +1427,7 @@ header .dropdown_menu a:hover {
   position: relative;
   top: 29px;
   z-index: 10;
+  opacity: 0.6;
 }
 .box .buy-card ul {
   color: #9ea3ae;
@@ -1472,6 +1472,13 @@ header .dropdown_menu a:hover {
 .box .buy-card .download#bot-button {
   text-align: center;
   box-shadow: 0 4px 0 #e0e0e0 !important;
+  position: relative;
+}
+.box .buy-card .download#bot-button:active {
+  top: 4px;
+  box-shadow: 0 0px #e0e0e0 !important;
+  /*background-color: #5675AD;*/
+  /*border: 2px solid #5675AD;*/
 }
 .box .buy-card .button-container {
   /*display: flex;

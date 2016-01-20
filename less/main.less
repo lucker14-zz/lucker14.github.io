@@ -343,7 +343,6 @@ header {
       font-size: 18px;
       font-weight: 400;
       line-height: 26px;
-      /*transform: rotate(30deg);*/
       position: relative;
       top: 0%;
       right: 53%;
@@ -1303,6 +1302,7 @@ header {
         position: relative;
         top: 29px;
         z-index: 10;
+        opacity: 0.6;
       }
 
       ul{
@@ -1351,6 +1351,14 @@ header {
         &#bot-button{
           text-align: center;
           box-shadow: 0 4px 0 #e0e0e0 !important;
+          position: relative;
+        }
+
+        &#bot-button:active{
+          top: 4px;
+          box-shadow: 0 0px #e0e0e0 !important;
+          /*background-color: #5675AD;*/
+          /*border: 2px solid #5675AD;*/
         }
       }
 
