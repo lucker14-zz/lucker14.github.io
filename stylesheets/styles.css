@@ -1407,16 +1407,20 @@ header .dropdown_menu a:hover {
   height: 1px;
   width: 100%;
   background-color: #cfd1d7;
+  position: relative;
+  top: 35px;
 }
 .box .buy-card ul {
   color: #9ea3ae;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 25px;
   text-align: left;
-  width: 87%;
+  width: 80%;
   padding-left: 21px;
+  position: relative;
+  top: 29px;
 }
 .box .buy-card li {
   margin-bottom: 1em;
