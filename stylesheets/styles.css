@@ -885,7 +885,7 @@ header .dropdown_menu a:hover {
 .box:nth-child(odd) {
   background: white;
 }
-.box #bottom-video {
+.box #bottom-video source {
   border-radius: 2px;
   box-shadow: 0 9px 8px rgba(0, 0, 0, 0.14);
 }
@@ -1560,7 +1560,8 @@ footer .footer-part .source-logo {
   background-repeat: no-repeat;
   background-position: center 70%;
 }
-footer .footer-part .footer-small-text {
+footer .footer-part .footer-small-text,
+footer .footer-part .snapchat-name {
   color: #afb6be;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 12px;
@@ -1575,6 +1576,17 @@ footer .footer-part .footer-small-text {
 footer .footer-part .credits {
   text-align: right;
   /*padding-right: 6vw;*/
+}
+footer .footer-part .snapchat-logo {
+  background-image: url('../img/snapchat_icon.png');
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+footer .footer-part .snapchat-name {
+  position: relative;
+  top: 10px;
+  right: 26px;
 }
 footer .footer-part .line-container {
   /*padding-left: 6vw;*/
@@ -2106,7 +2118,7 @@ footer .footer-part#footer-part-3 {
   .box#video-box {
     height: 400px;
   }
-  .box#video-box video {
+  .box#video-box source {
     height: 200px;
     width: 90vw;
     margin-bottom: 50px;
@@ -2278,6 +2290,18 @@ footer .footer-part#footer-part-3 {
     width: auto;
     height: auto;
   }
+  footer .footer-part#footer-part-3 {
+    position: relative;
+    top: 20px;
+  }
+  footer .footer-part#footer-part-3 .snapchat-logo {
+    background-image: url('../img/snap-ghost.png');
+    width: 60px;
+    height: 56px;
+    background-size: cover;
+    position: relative;
+    left: 10px;
+  }
   footer .footer-part .footer-small-text {
     width: 75%;
   }
@@ -2295,30 +2319,30 @@ footer .footer-part#footer-part-3 {
 }
 @media screen and (min-width: 600px) and (max-width: 999px) {
   .box .box-inner p {
-    max-width: 500px;
+    max-width: 500px !important;
   }
   .box .box-inner .project-tree {
-    width: 313px;
+    width: 313px !important;
   }
   .box#video-box {
-    height: 608px;
+    height: 608px !important;
   }
-  .box#video-box video {
-    height: 404px;
+  .box#video-box source {
+    height: 404px !important;
   }
   .box .box-inner .macbook {
-    height: 355px;
-    width: 611px;
+    height: 355px !important;
+    width: 611px !important;
   }
   .templates-big-macbook {
-    width: 350px;
-    height: 265px;
-    top: 46px;
-    left: 100px;
+    width: 350px !important;
+    height: 265px !important;
+    top: 46px !important;
+    left: 100px !important;
   }
   .box .box-inner .iphone {
-    left: 166px;
-    top: 140px;
+    left: 166px !important;
+    top: 140px !important;
   }
 }
 @supports (-ms-accelerator:true) {

@@ -770,8 +770,10 @@ header {
   }
 
   #bottom-video{
-    border-radius: 2px;
-    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.14);
+    source{
+      border-radius: 2px;
+      box-shadow: 0 9px 8px rgba(0, 0, 0, 0.14);
+    }
   }
 
   &#testimonials{
@@ -1420,7 +1422,7 @@ footer{
       background-position: center 70%;
     }
 
-    .footer-small-text{
+    .footer-small-text, .snapchat-name{
       color: #afb6be;
       font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
       font-size: 12px;
@@ -1436,6 +1438,19 @@ footer{
     .credits{
       text-align: right;
       /*padding-right: 6vw;*/
+    }
+
+    .snapchat-logo{
+      background-image: url('../img/snapchat_icon.png');
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+    }
+
+    .snapchat-name{
+      position: relative;
+      top: 10px;
+      right: 26px;
     }
 
     .line-container{
@@ -1945,7 +1960,7 @@ footer{
   .box#video-box{
     height: 400px;
 
-    video{
+    source{
       height: 200px;
       width: 90vw;
       margin-bottom: 50px;
@@ -2111,6 +2126,20 @@ footer{
       width: auto;
       height: auto;
 
+      &#footer-part-3{
+        position: relative;
+        top: 20px;
+
+        .snapchat-logo{
+          background-image: url('../img/snap-ghost.png');
+          width: 60px;
+          height: 56px;
+          background-size: cover;
+          position: relative;
+          left: 10px;
+        }
+      }
+
       .footer-small-text{
         width: 75%;
       }
@@ -2134,36 +2163,36 @@ footer{
 
 @media screen and (min-width: 600px) and (max-width: 999px){
   .box .box-inner p{
-    max-width: 500px;
+    max-width: 500px !important;
   }
 
   .box .box-inner .project-tree{
-    width: 313px;
+    width: 313px !important;
   }
 
   .box#video-box{
-    height: 608px;
+    height: 608px !important;
 
-    video{
-      height: 404px;
+    source{
+      height: 404px !important;
     }
   }
 
   .box .box-inner .macbook{
-    height: 355px;
-    width: 611px;
+    height: 355px !important;
+    width: 611px !important;
   }
 
   .templates-big-macbook{
-    width: 350px;
-    height: 265px;
-    top: 46px;
-    left: 100px;
+    width: 350px !important;
+    height: 265px !important;
+    top: 46px !important;
+    left: 100px !important;
   }
 
   .box .box-inner .iphone{
-    left: 166px;
-    top: 140px;
+    left: 166px !important;
+    top: 140px !important;
   }
 }
 
