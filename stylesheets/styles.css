@@ -435,7 +435,7 @@ header .dropdown_menu a:hover {
   height: 57px;
 }
 .heading .caption-price-top .caption-price-span {
-  font-family: chalkboard;
+  font-family: chalkboard, Helvetica, sans-serif;
   color: white;
   font-size: 18px;
   font-weight: 400;
@@ -2287,5 +2287,10 @@ footer .footer-part#footer-part-3 {
   }
   .box .buy-card {
     width: 90vw;
+  }
+}
+@supports (-ms-accelerator:true) {
+  svg {
+    display: none;
   }
 }
