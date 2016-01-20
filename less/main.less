@@ -342,7 +342,7 @@ header {
       font-size: 18px;
       font-weight: 400;
       line-height: 26px;
-      transform: rotate(30deg);
+      /*transform: rotate(30deg);*/
       position: relative;
       top: 0%;
       right: 53%;
@@ -793,19 +793,34 @@ header {
       width: 200px;
       height: 100px;
       position: absolute;
-      top: 0;
-      left: 50%;
+      top: 19px;
+      left: 115%;
       opacity: 1;
       transition: opacity 0.5s;
+      background-image: url('../img/arrow2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
 
-      &::after{
+      #countdown-timer-bottom{
+        position: relative;
+        top: 70px;
+        left: 13px;
+        text-align: center;
+        font-family: chalkboard, Helvetica, sans-serif;
+        color: white;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+
+      /*&::after{
         content: url('../img/arrow2.png');
         display: block;
         position: relative;
         left: 75%;
-        top: 595px;
+        top: 0px;
         transform: scale(0.5);
-      }
+      }*/
     }
   }
 

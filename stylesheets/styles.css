@@ -444,8 +444,7 @@ header .dropdown_menu a:hover {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  /*transform: rotate(30deg);*/
   position: relative;
   top: 0%;
   right: 53%;
@@ -908,20 +907,33 @@ header .dropdown_menu a:hover {
   width: 200px;
   height: 100px;
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: 19px;
+  left: 115%;
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  background-image: url('../img/arrow2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*&::after{
+        content: url('../img/arrow2.png');
+        display: block;
+        position: relative;
+        left: 75%;
+        top: 0px;
+        transform: scale(0.5);
+      }*/
 }
-.box#buy-box .caption-price-bot::after {
-  content: url('../img/arrow2.png');
-  display: block;
+.box#buy-box .caption-price-bot #countdown-timer-bottom {
   position: relative;
-  left: 75%;
-  top: 595px;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  top: 70px;
+  left: 13px;
+  text-align: center;
+  font-family: chalkboard, Helvetica, sans-serif;
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 26px;
 }
 .box .box-container {
   display: -webkit-box;
