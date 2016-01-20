@@ -1198,13 +1198,17 @@ header .dropdown_menu a:hover {
   background-size: contain;
   background-image: url('../img/elp.png');
   margin-bottom: 15px;
-  /*@media @small_screen{
-          width: 60px;
-          height: 60px;
-        }*/
 }
 .box .box-inner .testimonial-container .testimonial-img#ti1 {
   background-image: url('../img/testimonial-profile-1.png');
+  border-radius: 50%;
+}
+.box .box-inner .testimonial-container .testimonial-img#ti2 {
+  background-image: url('../img/testimonial-profile-2.png');
+  border-radius: 50%;
+}
+.box .box-inner .testimonial-container .testimonial-img#ti3 {
+  background-image: url('../img/testimonial-profile-3.png');
   border-radius: 50%;
 }
 .box .box-inner .testimonial-container .testimonial-name {
