@@ -573,7 +573,10 @@ header .dropdown_menu a:hover {
 }
 .heading .introduction h1 {
   float: none;
-  display: block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 0 auto;
   color: white;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
@@ -607,10 +610,10 @@ header .dropdown_menu a:hover {
 }
 .heading .introduction h1 .social-networks .network {
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
   -webkit-transition: bottom 0.3s, opacity 0.3s;
   transition: bottom 0.3s, opacity 0.3s;
-  opacity: 0;
+  opacity: 1;
 }
 .heading .introduction h1 .social-networks .network.show {
   bottom: 0;

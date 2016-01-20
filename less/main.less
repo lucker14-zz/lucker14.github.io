@@ -475,7 +475,9 @@ header {
     }
 
     h1{
-      .center;
+      float: none;
+      display: inline-flex;
+      margin: 0 auto;
       color: @white;
       font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
       max-width: 1030px;
@@ -502,9 +504,9 @@ header {
 
         .network{
           position: absolute;
-          bottom: 40px;
+          bottom: 0px;
           .transition(bottom .3s, opacity .3s);
-          opacity: 0;
+          opacity: 1;
 
           &.show {
             bottom: 0;
