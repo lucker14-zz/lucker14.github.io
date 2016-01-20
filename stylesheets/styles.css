@@ -975,7 +975,7 @@ header .dropdown_menu a:hover {
   color: #50545c;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 40px;
   margin-top: 120px;
   text-align: justify;
@@ -2134,7 +2134,7 @@ footer .footer-part#footer-part-3 {
   .box#video-box {
     height: 400px;
   }
-  .box#video-box source {
+  .box#video-box video {
     height: 200px;
     width: 90vw;
     margin-bottom: 50px;
@@ -2255,6 +2255,9 @@ footer .footer-part#footer-part-3 {
   .heading .introduction .steps-container .step {
     width: 32%;
   }
+  .box#buy-box .caption-price-bot {
+    display: none;
+  }
   .bg-grad {
     height: 644px;
   }
@@ -2281,7 +2284,7 @@ footer .footer-part#footer-part-3 {
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
-    height: auto;
+    height: 400px;
     background-color: #3b424a;
   }
   footer .footer-part#footer-part-1 {
