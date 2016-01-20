@@ -425,6 +425,7 @@ header .dropdown_menu a:hover {
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  z-index: 1000;
 }
 .heading .caption-price-top .arrow-top {
   background-image: url('../img/arrow.png');
@@ -880,6 +881,10 @@ header .dropdown_menu a:hover {
 }
 .box:nth-child(odd) {
   background: white;
+}
+.box #bottom-video {
+  border-radius: 2px;
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.14);
 }
 .box#testimonials {
   max-height: 760px;
