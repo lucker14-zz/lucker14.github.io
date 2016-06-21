@@ -453,7 +453,7 @@ header .dropdown_menu a:hover {
 #producthunt .info {
   float: right;
 }
-#producthunt .info h1 {
+#producthunt .info span {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   color: #fff;
   font-size: 30px;
@@ -656,6 +656,7 @@ header .dropdown_menu a:hover {
   line-height: 1em;
   text-align: left;
   position: relative;
+  right: 15px;
   /*@media @small_screen{
         margin: 0px 0 0px -385px;
         font-size: 30px;
@@ -990,11 +991,11 @@ header .dropdown_menu a:hover {
 }
 .proof-box .proofs-container .proof-cont span.proof-text {
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 21.5px;
+  font-size: 18px;
   color: white;
   font-weight: 100;
   text-align: center;
-  width: 70%;
+  width: 60%;
   line-height: 28px;
 }
 @media only screen and (max-width: 1000px) {
@@ -1003,14 +1004,14 @@ header .dropdown_menu a:hover {
   }
 }
 .update {
-  width: 74px;
-  height: 30px;
+  width: 86px;
+  height: 31px;
   background-size: cover;
   background-position: center;
-  background-image: url('data:image/png;base64,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');
+  background-image: url('../img/update_badge.png');
   position: relative;
-  bottom: 35px;
-  left: 260px;
+  bottom: 85px;
+  left: 50px;
 }
 @media screen and (max-width: 599px) {
   .update {
@@ -1023,6 +1024,7 @@ header .dropdown_menu a:hover {
 }
 .new-btn {
   background-color: #6593e8;
+  border: 2px solid #6593e8;
   border-radius: 20px;
   width: 230px;
   height: 40px;
@@ -1036,7 +1038,22 @@ header .dropdown_menu a:hover {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0px 4px 0px 0px #e0e0e0;
+  box-shadow: 0 4px 0 rgba(239, 239, 239, 0.35);
+}
+.new-btn:link,
+.new-btn:visited {
+  background-color: #6593e8;
+  color: white;
+}
+.new-btn:active,
+.new-btn:hover {
+  background-color: white;
+  color: white;
+  text-decoration: underline;
+}
+.new-btn:active {
+  top: 4px;
+  box-shadow: 0 0px #e0e0e0 !important;
 }
 @media screen and (max-width: 599px) {
   .new-btn {
@@ -1049,7 +1066,8 @@ header .dropdown_menu a:hover {
 }
 .new-btn > span {
   color: white;
-  font-size: 18px;
+  text-decoration: underline;
+  -size: 18px;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
 }
@@ -1288,7 +1306,7 @@ header .dropdown_menu a:hover {
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  text-align: justify;
+  text-align: left;
 }
 @media screen and (max-width: 1000px) {
   .box#snapchat-box #snapchat-box-container .snapchat-content .snap-text-container p.low {
@@ -1434,7 +1452,7 @@ header .dropdown_menu a:hover {
   height: 100%;
 }
 .box .box-inner p {
-  width: 400px;
+  width: 420px;
   margin-left: 50px;
 }
 .box .box-inner p.great {
@@ -1444,7 +1462,7 @@ header .dropdown_menu a:hover {
   font-weight: 300;
   line-height: 40px;
   margin-top: 120px;
-  text-align: justify;
+  text-align: left;
 }
 .box .box-inner p.low {
   opacity: 0.6;
@@ -1452,7 +1470,7 @@ header .dropdown_menu a:hover {
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  text-align: justify;
+  text-align: left;
 }
 .box .box-inner p.white {
   color: white;
