@@ -1,544 +1,72 @@
-<html>
-<head>
-<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Social Kit Pro - Photoshop plugin with social templates</title>
-  <script src="https://use.typekit.net/oaq5iio.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ludovit G | Young progressive art</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=false">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,100,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
 
-  <!--
-    Welcome to Source, brave developer!
-  -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
-  <link rel="manifest" href="favicon.ico/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff ">
-  <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff ">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@MadeBySource">
-  <meta name="twitter:creator" content="@MadeBySource">
-  <meta name="twitter:title" content="Check out handy social media templates for Photoshop. Including ads. All in Social Kit Pro plugin.">
-  <meta name="twitter:description" content="Preview, create and export pixel perfect pics for all of your social media channels.">
-  <meta name="twitter:image" content="http://socialkit.madebysource.com/img/new_SKP_OG_tag.png">
-  <meta name="twitter:url" content="http://socialkit.madebysource.com">
-  <meta name="description" content="Smart Photoshop extension with Up-to-Date social templates">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Source (https://madebysource.com/)">
-  <meta name="keywords" content="photoshop extension plugin social templates facebook twitter youtube google buttons source madebysource">
-  <meta property="og:title" content="Social Kit Pro">
-  <meta property="og:description" content="Preview, create and export pixel perfect pics for all of your social media channels.">
-  <meta property="og:image" content="http://socialkit.madebysource.com/img/new_SKP_OG_tag.png">
-  <meta property="og:type" content="product">
-  <meta property="og:url" content="http://socialkit.madebysource.com">
-  <meta property="og:site_name" content="Social Kit Pro - Photoshop plugin">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="stylesheets/styles.css">
-  <link rel="stylesheet" href="stylesheets/animate.css">
-  <link rel="shortcut icon" href="https://1771529460.rsc.cdn77.org/assets/img/favicon.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" href="fancy/source/jquery.fancybox.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="fancy/source/jquery.fancybox.pack.js"></script>
-  <link rel="stylesheet" href="fancy/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="fancy/source/helpers/jquery.fancybox-thumbs.js"></script>
-  <script src="lib/hacks.js"></script>
-  <script src="lib/tracking.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.6/hammer.min.js"></script>
-  <script src="https://1771529460.rsc.cdn77.org/libs.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
-  <script src="lib/main.js"></script>
-  <!-- // <script src="//load.sumome.com/" data-sumo-site-id="96fd2f97749832f03407ab97279191c56d51fa981ef6da9213b2533e602d5ba0" async="async"></script> -->
-  <script type="text/javascript">
-  /* <![CDATA[ */
-  var google_conversion_id = 1003415762;
-  var google_custom_params = window.google_tag_params;
-  var google_remarketing_only = true;
-  /* ]]> */
-  </script>
-  </script>
-  <noscript>
-  <div style="display:inline;">
-  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1003415762/?value=0&amp;guid=ON&amp;script=0"/>
-  </div>
-  </noscript>
-</head>
-<body>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-  <div class="videoClass" id="videoWarp">
-    <div class="video-popup">
-      <iframe width="1200" height="680" src="https://www.youtube.com/embed/5EnR2eH7pcY" autoplay="1" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-  <header id="sourceheader">
-      <div class="container">
-          <div class="logo">
-              <a href="https://madebysource.com/">Source</a> <span class='name'><strong>Social Kit</strong> Pro - Photoshop Plugin</span>
-          </div>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-          <div class="menu">
-          <div class="sociaaal">  
-              <a href="https://twitter.com/share" class="twitter-share-button" data-related="madebysource" data-hashtags="socialkitpro"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </div>
-          <div class="sociaaal">
-              <div class="fb-share-button" data-href="http://socialkit.madebysource.com/" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsocialkit.madebysource.com%2F&amp;src=sdkpreparse"></a></div>
-          </div>
-              <a href="https://madebysource.com/payment/socialkitkit-pro/" class='buy-button facebook' id='buy-button-top'>$39.99 - Buy now</a><!--
-              <a href="#" class='buy-button' id='buy-button-top-mobile' style='display: none;'>Buy now!</a> -->
-          </div>
-      </div>
-      <div class='blur-master facebook-nav'></div>
-  </header>
-
-  <div id="producthunt">
-    <img src="img/kitty.png">
-    <div class="info">
-      <span>Welcome Product Hunters!</span>
-      <p>We have a special offer just for you!<br>Get Social Kit Pro with 50% discount right meow!</p>
-    </div>
-  </div>
-
-	<div class='heading'>
-    <div class='bg-grad facebook'></div>
-    <div class='bg-grad twitter'></div>
-    <div class='bg-grad linkedin'></div>
-    <div class='bg-grad youtube'></div>
-    <div class='bg-grad google'></div>
-    <div class='bg-grad vkontakte'></div>
-    <div class='bg-grad instagram'></div>
-    <div class='bg-grad dribbble'></div>
-
-		<div class="introduction">
-		    <div class="bgs">
-		      <div class="bg facebook-bg show"></div>
-
-		      <div class="sketch facebook-sketch"></div>
-		    </div>
-          <img src="http://1771529460.rsc.cdn77.org/img/logo.png" class="socialkit-logo" alt="Social Kit logo">
-		      <aside>Works on <i class="mac" title="Mac OS 10.7-10.9"></i> and <i class="win" title="Windows XP-8"></i>, with <i class="ps-logo" title="Photoshop CC 2015+"></i> CC 2015+</aside>
-          <h1 class='desktop'><b>Social Kit&nbsp;</b><span>Pro – Photoshop templates for your</span>&nbsp;
-            <div class="mobile-headline">
-              <div class="social-networks">
-                <span class="network show">facebook</span>
-              </div>
-              <span>in a powerful plugin</span>
+        <!-- Add your site or application content here -->
+        
+        <section id="header">
+            <div class="content">
+                <a href="index.html" class="menu-item">
+                    <div >
+                        <p>LudovitG</p>
+                    </div>
+                </a>
+                <a href="art.html" class="menu-item">
+                    <div>
+                        <p>Art</p>
+                    </div>
+                </a>
+                <a href="buy.html" class="menu-item">
+                    <div>
+                        <p>Buy now</p>
+                    </div>
+                </a>
             </div>
-          </h1>
-          <h1 class='mobile' style='display: none;'><b>Social Kit </b> Pro<br>
-            <span> Get customizable templates for<div class="mobile-headline">
-              <span>your</span>
-              <div class="social-networks">
-                <span class="network show">facebook</span>
-              </div>
-              <span>graphics</span>
-            </div>
-            </span>&nbsp;
-          </h1>
-        <div class="inside" id="videoBtn">
-          <h2>Preview, create and export pixel perfect pics & ads for all of your social media channels.</h2>
-          <a href="javascript:;"  class='btn-link-container'>
-            <div class="download download-action" id='top-button'>
-              <div class='arrow-container'>
-                 <div class='button-arrow'></div>
-              </div>
-              <span>Show me how</span>
-            </div>
-          </a>
-          <!-- <div class='compat'>
-            <div class='icon' id='ps'></div>
-            <p>-</p>
-            <div class='icon' id='mac'></div>
-            <div class='icon' id='win'></div>
-          </div> -->
+        </section>
 
-          <!-- <div class='steps-container' id="slider">
-            <div class='step' id='step1'>
-              <div class='step-heading'>
-                <div class='step-ring'>
-                  <span>1.</span>
+        <section id="main">
+            <div class="content">
+                <div class="content-container">
+                    <div class="photo content-item">
+                        <div class="photo-self"></div>
+                    </div>
+                    <div class="lorem content-item">
+                        <h1>Neque porro quisquam est qui dolorem </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet nec dui sit amet ullamcorper. Aenean finibus molestie mattis. Cras metus ante, tincidunt vel consectetur sed, accumsan ac ipsum. Donec non ante non leo rutrum sollicitudin. Nullam laoreet lobortis placerat. Proin mollis libero a maximus scelerisque. In nec nibh quis risus vulputate blandit quis quis tellus.</p>
+                    </div>
                 </div>
-                <span class='step-caption'>Import your identity</span>
-              </div>
-              <div class='step-img-container'>
-                <div class='step-img' id='step1-img'></div>
-              </div>
             </div>
-            <div class='step' id='step2'>
-              <div class='step-heading'>
-                <div class='step-ring' style='margin-left: 0;'>
-                  <span>2.</span>
-                </div>
-                <span class='step-caption'>Preview on every social site right in PS</span>
-              </div>
-              <div class='step-img-container'>
-                <div class='step-img' id='step2-img-mac'>
-                  <div class="templates-small-mac facebook-small-mac"></div>
-                  <div class="templates-small-mac twitter-small-mac"></div>
-                  <div class="templates-small-mac youtube-small-mac"></div>
-                  <div class="templates-small-mac google-small-mac"></div>
-                  <div class="templates-small-mac vkontakte-small-mac"></div>
-                  <div class="templates-small-mac dribbble-small-mac"></div>
-                  <div class="templates-small-mac linkedin-small-mac"></div>
-                  <div class="templates-small-mac instagram-small-mac"></div>
-                </div>
-                <div class='step-img' id='step2-img-iphone'>
-                  <div class="templates-small-iphone facebook-small-iphone"></div>
-                  <div class="templates-small-iphone twitter-small-iphone"></div>
-                  <div class="templates-small-iphone youtube-small-iphone"></div>
-                  <div class="templates-small-iphone google-small-iphone"></div>
-                  <div class="templates-small-iphone vkontakte-small-iphone"></div>
-                  <div class="templates-small-iphone dribbble-small-iphone"></div>
-                  <div class="templates-small-iphone linkedin-small-iphone"></div>
-                  <div class="templates-small-iphone instagram-small-iphone"></div>
-                </div>
-              </div>
-            </div>
-            <div class='step' id='step3'>
-              <div class='step-heading'>
-                <div class='step-ring'>
-                  <span>3.</span>
-                </div>
-                <span class='step-caption'>Export what you need</span>
-              </div>
-              <div class='step-img-container'>
-                <div class='step-img' id='step3-img'></div>
-              </div>
-            </div>
-          </div> -->
+        </section>
 
-		    </div>
-      </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
-  </div>
-
-  <div class="box abs-box">
-    <div class="badge"></div>
-    <div class="box-container">
-      <div class="box-inner">
-        <p class="great" style='margin-top: 140px;'>Design beatiful social ads</p>
-        <div class="update"></div>
-        <p class="low" style='opacity:1; margin-top: 0px;'>
-4 pixel perfect mobile & desktop advertising templates. Includes carousel ads, sponsored posts and much more. All exported with one click.</p>
-        <p class="low" style='opacity:1;'><b>Do you want to see the ads templates?</b></p>
-        <div class="new-btn"><span>Show me ads templates</span></div>
-      </div>
-      <div class="box-inner">
-        <div class="img-abs"></div>
-      </div>
-    </div>
-    <a class='gal' rel='gal' href='img/ab_templates/ab_newsfeed_1.png'>Facebook newsfeed ads</a>
-    <a class='gal' rel='gal' href='img/ab_templates/Mobile_newsfeed.png'>Facebook mobile newsfeed</a>
-    <a class='gal' rel='gal' href='img/ab_templates/Carousel_Mobile_Newsfeed.png'>FB Carousel</a>
-    <a class='gal' rel='gal' href='img/ab_templates/Desktop_abs.png'>Twitter desktop ads</a>
-    <a class='gal' rel='gal' href='img/ab_templates/mobile_TW_2.png'>Twitter mobile template</a>
-    <a class='gal' rel='gal' href='img/ab_templates/linkedin_newsfeed_abs.png'>LinkedIn newsfeed ads</a>
-    <a class='gal' rel='gal' href='img/ab_templates/Abs_Carousel.png'>Instagram mobile carousel</a>
-  </div>
-
-  <div class='box first-box-warp'>
-    <div class="box-container first-box">
-      <div class='box-inner' style=" display: flex;flex-flow: row wrap;align-items: center;justify-content: center;">
-        <div class='photoshop-blured'></div>
-        <div class='photoshop-panel3'></div>
-      </div>
-      <div class='box-inner'>
-        <p class='great'>Seize&nbsp;the&nbsp;moment&nbsp;and&nbsp;update<br>your&nbsp;social&nbsp;graphics&nbsp;within<br>seconds</p>
-        <p class='low'>Speed up your workflow and react fast to current events with stunning cover pics all over your social media. <br><br> What's that? Your fans are reacting faster too now? You're welcome. <br> &#x1f44d;</p>
-      </div>
-    </div>
-  </div>
-
-  <div class='box mac-iphone-section second-box-warp'>
-    <div class="box-container macbook-container">
-      <div class='box-inner'>
-        <p class='great white'>Time for a social update? Time for <a href="#buy-box" id='to-card'><u style='text-decoration: none; border-bottom: 1px solid white;'><b> Social Kit</b> Pro</u></a></p>
-        <p class='low white' style='opacity: 1;'>Customizing templates is easy. Just import the cover photo into Social Kit Pro and see a live preview of Facebook right in your Photoshop. Pretty easy, right?</p>
-        <p class='low white template-caption'>Get the most out of templates for:</p>
-        <div class='template-icon-container'>
-          <div class='social-icon active-icon facebook' id='facebook' data-template='0'></div>
-          <div class='social-icon twitter' id='twitter' data-template='1'></div>
-          <div class='social-icon youtube' id='youtube' data-template='2'></div>
-          <div class='social-icon google' id='google' data-template='3'></div>
-          <div class='social-icon vkontakte' id='vkontakte' data-template='4'></div>
-          <div class='social-icon dribbble' id='dribbble' data-template='5'></div>
-          <div class='social-icon linkedin' id='linkedin' data-template='6'></div>
-          <div class='social-icon instagram' id='instagram' data-template='7'></div>
-        </div>
-      </div>
-      <div class='box-inner'>
-        <div class="mac-iphone-warp">
-          <div class='macbook'>
-            <div class="templates-big-macbook facebook-big-macbook"></div>
-            <div class="templates-big-macbook twitter-big-macbook"></div>
-            <div class="templates-big-macbook youtube-big-macbook"></div>
-            <div class="templates-big-macbook google-big-macbook"></div>
-            <div class="templates-big-macbook vkontakte-big-macbook"></div>
-            <div class="templates-big-macbook dribbble-big-macbook"></div>
-            <div class="templates-big-macbook linkedin-big-macbook"></div>
-            <div class="templates-big-macbook instagram-big-macbook"></div>
-          </div>
-          <div class='iphone'>
-            <div class="templates-big-iphone facebook-big-iphone"></div>
-            <div class="templates-big-iphone twitter-big-iphone"></div>
-            <div class="templates-big-iphone youtube-big-iphone"></div>
-            <div class="templates-big-iphone google-big-iphone"></div>
-            <div class="templates-big-iphone vkontakte-big-iphone"></div>
-            <div class="templates-big-iphone dribbble-big-iphone"></div>
-            <div class="templates-big-iphone linkedin-big-iphone"></div>
-            <div class="templates-big-iphone instagram-big-iphone"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='bg-grad secondary facebook'></div>
-    <div class='bg-grad secondary twitter'></div>
-    <div class='bg-grad secondary linkedin'></div>
-    <div class='bg-grad secondary youtube'></div>
-    <div class='bg-grad secondary google'></div>
-    <div class='bg-grad secondary vkontakte'></div>
-    <div class='bg-grad secondary instagram'></div>
-    <div class='bg-grad secondary dribbble'></div>
-
-    <svg width="10000" height="10000" style="  transform: scaleX(1);  position: relative;  top: -800px;">
-      <rect width="3000" height="3000" style="x: 1000;transform: rotate(-20deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-      <rect width="3000" height="3000" style="x: 1096;y: -1898;transform: rotate(50deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-    </svg>
-  </div>
-  <div class='box' style='align-items: initial;'>
-    <div class='box-container box-mobile-container' style='margin-top: 90px;'>
-      <div class='box-inner box-mobile-header'>
-        <div class='photoshop-panel4'>
-          <div class='panel-shadow'></div>
-          <div class='parallax' id='image1'></div>
-          <div class='parallax' id='image2'></div>
-          <div class='parallax' id='image3'></div>
-        </div>
-      </div>
-      <div class='box-inner'>
-        <p class='great' style='margin-top: 20px;'>Some call it a time saver, others a time machine</p>
-        <p class='low'>Measuring, designing, exporting, uploading, measuring again... that all is left in the past. Simply import your social media assets into the template (name, profile & cover photo) and you're all set to export in the right measures.</p>
-        <div class='project-tree'></div>
-      </div>
-    </div>
-  </div>
-
-<!--   <div class='box' id='testimonials'>
-    <div class='box-container testimonial-mobile'>
-      <div class='box-inner'>
-        <p class='great white testemonial-headline'>Much is said about Social Kit Pro.</p>
-        <p class='low white'>Much love actually.</p>
-      </div>
-      <div class='box-inner' id='testimonials-outer-container'>
-        <p class='tweets-heading' style='display: none;'>Tweets with <b>#SocialKitPro:</b></p>
-
-        <div class='testimonial-container' id='testi1' data-url='https://twitter.com/Matt_MGD/status/684430175048757248'>
-          <div class='testimonial-img' id='ti1'></div>
-          <p class='testimonial-name'>Matt Molloy</p>
-          <p class='testimonial-text'>“Download Social Kit by @MadeBySource. Never Google 'What dimensions are Facebook banners' ever again. #design”</p>
-          <p class='testimonial-position'>Graphic Designer</p>
-        </div>
-
-        <div class='testimonial-container' id='testi2' data-url='https://twitter.com/ddavidnathan/status/598507680865583104'>
-          <div class='testimonial-img' id='ti2'></div>
-          <p class='testimonial-name'>Dadid Nathan Davies</p>
-          <p class='testimonial-text'>“Super useful Photoshop plugin that generates social media profile PSD's! #socialkit #design #useful”</p>
-          <p class='testimonial-position'>Freelance Designer</p>
-        </div>
-
-        <div class='testimonial-container' id='testi3' data-url='https://twitter.com/digihackers/status/580676886562406401'>
-          <div class='testimonial-img' id='ti3'></div>
-          <p class='testimonial-name'>Shravan Bhat</p>
-          <p class='testimonial-text'>“Creating Sites like Facebook is not a big work anymore.. #socialkit #phpfox #socialengine etc..;)”</p>
-          <p class='testimonial-position'>CEO of digihackers</p>
-        </div>
-      </div>
-    </div>
-    <svg width="10000" height="10000" style="  transform: scaleX(1);  position: relative;  top: -800px;">
-      <rect width="3000" height="3000" style="x: 1090;y: -500;transform: rotate(10deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-      <rect width="3000" height="3000" style="x: 437;transform: rotate(-54deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-      <rect width="3000" height="3000" style="x: 1287;y: -1825;transform: rotate(50deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-    </svg>
-  </div>
-  <div class='box' id='video-box'>
-    <p class='video-heading'>How SocialKit actually works?</p>
-    <p class='video-subheading'>Great. Look:</p>
-    <div class='video-container'>
-      <video id='bottom-video' width="800" height="500" loop autoplay>
-        <source src="http://1771529460.rsc.cdn77.org/socialkit_video_only_small.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    </div>
-  </div> -->
-
-  <div class='box' id='buy-box'>
-    <div class="proof-box">
-      <h2 class='last-heading'>Let the numbers speak for themselves</h2>
-      <div class="proofs-container">
-        <div class="proof-cont">
-          <span class="proof-number">5 142</span>
-          <span class="proof-text">People bought the Social Kit Pro plugin.</span>
-        </div>
-        <div class="proof-cont">
-          <span class="proof-number">45 673</span>
-          <span class="proof-text">Exported profile & cover photos.</span>
-        </div>
-        <div class="proof-cont">
-          <span class="proof-number">15 462</span>
-          <span class="proof-text">Client profiles were edited.</span>
-        </div>
-      </div>
-    </div>
-    <p class='last-heading'>Enough said.</p>
-    <p class='last-subheading'>Now see Social Kit Pro in action on your own.</p>
-
-<div class='card-container'>
-
-
-    <div class='buy-card' id='buy-card'>
-      <p class='headig'><b>Social Kit</b> Pro</p>
-      <div class='socialkit-logo'></div>
-      <div class='line'></div>
-      <ul>
-        <li>Easily import your brand identity</li>
-        <li>Retina ready desktop/mobile templates</li>
-        <li>Export what you need with a single click</li>
-      </ul>
-      <div class='btn-price-container'>
-        <p class='full-price'>$39.99</p>
-        <div class='button-container'>
-          <a href="https://madebysource.com/payment/socialkitkit-pro/" class="download download-action"  id='bot-button'>$39.99 - Buy Now</a>
-        </div>
-      </div>
-      <aside>Works on <i class="mac" title="Mac OS 10.7-10.9"></i> and <i class="win" title="Windows XP-8"></i>, with <i class="ps-logo" title="Photoshop CC 2015+"></i> CC 2015+</aside>
-    </div>
-
-</div>
-
-    <svg width="10000" height="10000" style="  transform: scaleX(1);  position: relative;  top: -1030px;">
-      <rect width="3000" height="3000" style="x: -2620;y: -500;transform: rotate(53deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-      <rect width="3000" height="3000" style="x: -30;y: 111;transform: rotate(60deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-      <rect width="3000" height="3000" style="x: -2720;y: -1525;transform: rotate(6deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-      <rect width="3000" height="3000" style="x: 1509;y: -1825;transform: rotate(60deg);fill: rgba(255,255,255,0.1);stroke-width:0;stroke: rgba(0,0,0,0);"></rect>
-    </svg>
-  </div>
-<!-- 
-  <div class="box" id='snapchat-box'>
-    <div class="box-container" id='snapchat-box-container'>
-      <p class='video-heading'>Why to keep secrets?</p>
-      <p class='video-subheading'>No need.</p>
-      <div class='snapchat-content'>
-        <div class='qr-container'>
-          <div class='qr-code'>
-            <div class='qr-caption'>
-              <img src="img/snapchat-arrow.png" alt="" id='snapchat-arrow'>
-              <p id='qr-caption'>Scan this with your Snapchat</p>
-            </div>
-          </div>
-        </div>
-        <div class='snap-text-container'>
-          <p class='great'>Get useful tips and insights of our team!</p>
-          <p class='low'>We decided to share our know-how with you through Snapchat. Every day we give away useful tips for designers, developers and marketers.
-          <br><br>
-          Add <b>@madebysource</b> and become better in what you do. And it’s fun too!</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <footer>
-    <div class='footer-part' id='footer-part-1'>
-      <div class='line-container'>
-        <div class='footer-icon' id='presskit'></div>
-        <span class='footer-text' style='padding-left: 1em;'>Download</span>
-        <a class='footer-link' href="http://1771529460.rsc.cdn77.org/SocialKit_Pro_press_kit.zip" target="_blank">Press Kit</a>
-      </div>
-      <div class='line-container' style='margin-top: 1em;'>
-        <div class='footer-icon' id='mail'></div>
-        <span class='footer-text' style='padding-left: 0.8em;'>Support:</span>
-        <span class='footer-link'> team@madebysource.com</span>
-      </div>
-    </div>
-    <div class='footer-part'>
-      <div class='source-logo'></div>
-      <p class='footer-small-text' style='margin-top: 10px;'>Copyright 2016 Piffle, LLC</p>
-    </div>
-    <div class='footer-part' id='footer-part-3'>
-      <div class='footer-text-wrap'>
-        <div class='footer-text snap-wrap'>
-          <div class='snap-text-wrap'>
-            <p class='secrets'>Why to keep secrets?</p>
-            <p class='tips'>We share useful tips for designers and developers on Snapchat</p>
-            <p class='sch-name'>@madebysource</p>
-          </div>
-          <div class='snapchat-logo'></div>
-          <!-- <p class='snapchat-name'>@madebysource</p> -->
-        </div>
-      </div>
-    </div>
-  </footer>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-72687341-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','//connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '734613796561703');
-fbq('track', "PageView");</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=734613796561703&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-<script type="text/javascript">
-    adroll_adv_id = "MOMA7VXOBJHGJAUZB5BZI5";
-    adroll_pix_id = "JHGP3PW475H3JNGXFONW2V";
-    /* OPTIONAL: provide email to improve user identification */
-    /* adroll_email = "username@example.com"; */
-    (function () {
-        var _onload = function(){
-            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
-            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
-            var scr = document.createElement("script");
-            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-            scr.setAttribute('async', 'true');
-            scr.type = "text/javascript";
-            scr.src = host + "/j/roundtrip.js";
-            ((document.getElementsByTagName('head') || [null])[0] ||
-                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-        };
-        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
-        else {window.attachEvent('onload', _onload)}
-    }());
-</script>
-
-</body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>
