@@ -41,6 +41,7 @@ hr{
 h2 {
 	font-size: 27px;
 	margin-top: 0;
+	font-weight: 500;
 }
 
 p {
@@ -70,7 +71,7 @@ nav .container {
 	height: 100%;
 	position: fixed;
 	background-color: rgba(0,0,0,0.7);
-	z-index: 0.9;
+	z-index: 111;
 	display: none;
 }
 
@@ -81,11 +82,15 @@ nav .container {
 	top: 30%;
 	left: 50%;
 	margin-left: -430px;
-	background: #FFFFFF;
+	background: #6C5B7B;
 	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.03), 0px 0px 50px 0px rgba(0,0,0,0.41);
 	padding: 45px 0 45px 60px;
 	display: none;
-	z-index: 1;
+	z-index: 1111;
+}
+
+#popup-box p {
+	max-width: 100%;
 }
 
 #content-wraper {
@@ -185,12 +190,13 @@ nav .container {
 }
 
 .img-showcase {
-	background-image: url("img/preview.png");
-	width: 783px;
-	height: 503px;
+	background-image: url("img/avatar-photo-2.jpg");
+	width: 479px;
+	height: 478px;
 	position: absolute;
 	top: 25px;
-	right: -100px;
+	right: 60px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
 }
 
 .store {
@@ -232,7 +238,7 @@ nav .container {
 
 .img-preview {
 	float: left;
-	margin-top: 40px;
+	margin-top: 10px;
 	width: 450px;
 	height: 338px;
 	background-image: url("img/obalake.png");
@@ -241,11 +247,12 @@ nav .container {
 
 .buy {
 	background: #FFFFFF;
-	margin: 25px auto 0 auto;
+	margin: 65px auto 0 auto;
 	display: block;
 	padding: 0 20px 0 20px;
 	font-weight: 400;
 }
+
 
 h5 {
 	font-family: 'Open Sans', sans-serif;
@@ -351,6 +358,10 @@ input[type='submit']{
 	        align-items: flex-start;
 }
 
+.description-text {
+	margin-top: 0;
+}
+
 .description-container{
 	margin-top: 25px;
 	width: 100%;
@@ -371,9 +382,23 @@ input[type='submit']{
 
 .description {
 	font-weight: bold;
+	color: white;
 }
 
 .price {
 	text-align: right;
 	position: relative;
+}
+
+.type {
+	width: 250px;
+}
+
+.size {
+	margin-top: -10px;
+}
+
+.white-text {
+	color: white;
+	font-weight: 700;
 }
