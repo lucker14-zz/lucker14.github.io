@@ -1,0 +1,107 @@
+div.roadmap{
+    background: rgba(255,255,255,0.9);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.9) 0%, rgba(252,252,252,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.9)), color-stop(100%, rgba(252,252,252,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.9) 0%, rgba(252,252,252,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0.9) 0%, rgba(252,252,252,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.9) 0%, rgba(252,252,252,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(252,252,252,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc', GradientType=0 );
+    min-height: 630px;
+    height: auto;
+    position: relative;
+    div.content{
+        div.box-heading.box-heading--roadmap{
+            margin-top: 65px;
+            margin-bottom: 30px;
+            h3{
+                color: @dark_blue;
+            }
+        }
+        div.roadmap-grid{
+            width: 100%;
+            height: auto;
+            div.roadmap-line{
+                width: 580px;
+                height: 50px;
+                margin-bottom: 1px;
+                div.grid-block{
+                    height: 100%;
+                    &.grid-block--date{
+                        width: 115px;
+                    }
+                    &.grid-block--checkbox{
+                        width: 50px;
+                        border: 1px solid @dark_blue;
+                        &.grid-block--checkbox__active{
+                            background-color: @dark_blue;
+                            div.img--check{
+                                opacity: 1;
+                            }
+                        }
+                        div.img--check{
+                            width: 21px;
+                            height: 16px;
+                            background-image: url('/assets/check.png');
+                            opacity: 0;
+                        }
+                    }
+                    &.grid-block--text{
+                        width: 415px;
+                        justify-content: flex-start;
+                        padding-left: 20px;
+                    }
+                    p{
+                        color: @dark_blue;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        div.transparent{}
+    }
+    div.roller{
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 30px;
+        button{
+            border: 1px solid @dark_blue;
+            padding: 10px 20px;
+            font-family: 'Roboto';
+            font-size: 16px;
+            color: @dark_blue;
+            cursor: pointer;
+            text-transform: uppercase;
+            background-color: transparent;
+            width: 190px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.roadmap{
+        div.content{
+            div.roadmap-grid{
+                div.roadmap-line{
+                    width: 100%;
+                    div.grid-block{ 
+                        &.grid-block--date{
+                            width: 25%;
+                        }
+                        &.grid-block--text{
+                            width: 55%;
+                            padding-left: 10px;
+                        }
+                        p{
+                            font-size: 14px;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
