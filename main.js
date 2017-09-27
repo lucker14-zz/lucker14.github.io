@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(document).ready(function(){console.log("ready"),window.innerWidth<1023&&(console.log("should run"),$(".container--boxes").slick({prevArrow:"",nextArrow:""}))});
