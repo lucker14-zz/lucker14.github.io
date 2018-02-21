@@ -281,6 +281,12 @@ div.container--outer.hero div.container--inner {
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 }
 div.container--outer.hero div.container--inner div.text-content {
@@ -296,6 +302,17 @@ div.container--outer.hero div.container--inner div.text-content {
   div.container--outer.hero div.container--inner div.image-content {
     position: absolute;
     right: -130px;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.container--outer.hero div.container--inner div.image-content {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 430px) {
+  div.container--outer.hero div.container--inner div.image-content {
+    position: unset;
+    margin-top: 40px;
   }
 }
 div.container--outer.hero div.container--inner div.image-content div.image--pew {
@@ -314,8 +331,8 @@ div.container--outer.hero div.container--inner div.image-content div.image--pew 
 }
 @media screen and (max-width: 430px) {
   div.container--outer.hero div.container--inner div.image-content div.image--pew {
-    width: 100vw;
-    height: 63.74vw;
+    width: 95vw;
+    height: 67.4vw;
   }
 }
 
@@ -443,7 +460,7 @@ div.container--outer.how div.container--inner div.image-content div.image--app {
 @media screen and (max-width: 852px) {
   div.container--outer.how div.container--inner div.image-content div.image--app {
     width: 100vw;
-    height: 61.03vw;
+    height: 58.03vw;
   }
 }
 
@@ -1048,8 +1065,11 @@ div.container--outer.what div.container--inner div.image-content div.image--yt {
 }
 @media screen and (max-width: 391px) {
   div.container--outer.what div.container--inner div.image-content div.image--yt {
-    width: 100vw;
-    height: 184.48vw;
+    width: 95vw;
+    height: 161.48vw;
     margin-right: 0px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
   }
 }
