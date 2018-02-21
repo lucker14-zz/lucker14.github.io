@@ -1052,7 +1052,17 @@ div.container--outer.what div.container--inner {
 }
 div.container--outer.what div.container--inner div.text-content {
   margin: 0;
-  max-width: 567px;
+  max-width: 490px;
+}
+@media screen and (max-width: 999px) {
+  div.container--outer.what div.container--inner div.text-content {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 550px) {
+  div.container--outer.what div.container--inner div.text-content {
+    max-width: 100%;
+  }
 }
 div.container--outer.what div.container--inner div.image-content div.image--yt {
   margin-right: 105px;
@@ -1063,11 +1073,29 @@ div.container--outer.what div.container--inner div.image-content div.image--yt {
   box-shadow: 0 2px 10px 0 rgba(139,141,157,0.29), 0 12px 24px 0 rgba(53,53,53,0.05);
   border-radius: 4px;
 }
+@media screen and (max-width: 1050px) {
+  div.container--outer.what div.container--inner div.image-content div.image--yt {
+    margin-right: 65px;
+  }
+}
+@media screen and (max-width: 999px) {
+  div.container--outer.what div.container--inner div.image-content div.image--yt {
+    width: 37vw;
+    height: 64.65vw;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  div.container--outer.what div.container--inner div.image-content div.image--yt {
+    width: 391px;
+    height: 666px;
+    margin-right: 0px;
+  }
+}
 @media screen and (max-width: 391px) {
   div.container--outer.what div.container--inner div.image-content div.image--yt {
     width: 95vw;
     height: 161.48vw;
-    margin-right: 0px;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
