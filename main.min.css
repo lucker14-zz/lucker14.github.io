@@ -272,6 +272,7 @@ div.container--outer.hero {
 }
 div.container--outer.hero div.container--inner {
   position: relative;
+  padding-bottom: 200px;
 }
 @media screen and (max-width: 1280px) {
   div.container--outer.hero div.container--inner {
@@ -287,6 +288,7 @@ div.container--outer.hero div.container--inner {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    padding-bottom: 50px;
   }
 }
 div.container--outer.hero div.container--inner div.text-content {
@@ -298,9 +300,12 @@ div.container--outer.hero div.container--inner div.text-content {
     max-width: 280px;
   }
 }
+div.container--outer.hero div.container--inner div.image-content {
+  position: absolute;
+  right: -300px;
+}
 @media screen and (max-width: 1280px) {
   div.container--outer.hero div.container--inner div.image-content {
-    position: absolute;
     right: -130px;
   }
 }
@@ -316,23 +321,25 @@ div.container--outer.hero div.container--inner div.text-content {
   }
 }
 div.container--outer.hero div.container--inner div.image-content div.image--pew {
-  background-image: url("assets/video.png");
-  width: 835px;
-  height: 596px;
+  width: 1137px;
+  height: 711px;
   -webkit-box-shadow: 0 2px 10px 0 rgba(157,139,139,0.09), 0 12px 24px 0 rgba(53,53,53,0.05);
   box-shadow: 0 2px 10px 0 rgba(157,139,139,0.09), 0 12px 24px 0 rgba(53,53,53,0.05);
+  border-radius: 4px;
+}
+div.container--outer.hero div.container--inner div.image-content div.image--pew video {
   border-radius: 4px;
 }
 @media screen and (max-width: 1280px) {
   div.container--outer.hero div.container--inner div.image-content div.image--pew {
     width: 70vw;
-    height: 49.7vw;
+    height: 43.77vw;
   }
 }
 @media screen and (max-width: 430px) {
   div.container--outer.hero div.container--inner div.image-content div.image--pew {
-    width: 95vw;
-    height: 67.4vw;
+    width: 90vw;
+    height: 56.27vw;
   }
 }
 
@@ -395,7 +402,7 @@ div.container--outer.how div.container--inner div.text-content div.row-container
 }
 @media screen and (max-width: 900px) {
   div.container--outer.how div.container--inner div.text-content div.row-container {
-    width: 95vw;
+    width: 90vw;
   }
 }
 @media screen and (max-width: 750px) {
@@ -459,8 +466,8 @@ div.container--outer.how div.container--inner div.image-content div.image--app {
 }
 @media screen and (max-width: 852px) {
   div.container--outer.how div.container--inner div.image-content div.image--app {
-    width: 100vw;
-    height: 58.03vw;
+    width: 90vw;
+    height: 54.93vw;
   }
 }
 
@@ -695,6 +702,11 @@ li {
     padding: 50px 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .container--inner {
+    max-width: 90vw;
+  }
+}
 div.text-content,
 div.image-content {
   -webkit-box-orient: vertical;
@@ -723,6 +735,11 @@ div.text-content {
   width: 95vw;
   margin: 0 auto;
   float: none;
+}
+@media screen and (max-width: 600px) {
+  div.text-content {
+    max-width: 90vw;
+  }
 }
 div.image-content {
   position: relative;
@@ -925,6 +942,11 @@ li {
     padding: 50px 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .container--inner {
+    max-width: 90vw;
+  }
+}
 div.text-content,
 div.image-content {
   -webkit-box-orient: vertical;
@@ -953,6 +975,11 @@ div.text-content {
   width: 95vw;
   margin: 0 auto;
   float: none;
+}
+@media screen and (max-width: 600px) {
+  div.text-content {
+    max-width: 90vw;
+  }
 }
 div.image-content {
   position: relative;
@@ -1096,8 +1123,8 @@ div.container--outer.what div.container--inner div.image-content div.image--yt {
 }
 @media screen and (max-width: 391px) {
   div.container--outer.what div.container--inner div.image-content div.image--yt {
-    width: 95vw;
-    height: 161.48vw;
+    width: 90vw;
+    height: 153.29vw;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
