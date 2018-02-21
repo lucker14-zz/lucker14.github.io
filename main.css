@@ -68,7 +68,7 @@ div.container .btn.blue {
 div.container .btn p {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -76,7 +76,7 @@ div.container h1,
 div.container h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 10rem;
   color: $light_red;
   line-height: 118px;
   margin-bottom: 45px;
@@ -88,14 +88,14 @@ div.container h2.blue {
 @media screen and (max-width: 999px) {
   div.container h1,
   div.container h2 {
-    font-size: 64px;
+    font-size: 6.4rem;
     line-height: 78px;
   }
 }
 div.container p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: $black;
 }
 div.container p.blue {
@@ -104,7 +104,7 @@ div.container p.blue {
 div.container a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: $dark_blue;
 }
 div.container a.blue {
@@ -581,6 +581,7 @@ html {
   min-height: 100vh;
   width: 100%;
   min-width: 320px;
+  font-size: 10px;
 }
 * {
   font-family: "Roboto", sans-serif;
@@ -768,7 +769,7 @@ div.container h1,
 div.container h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 10rem;
   color: #ff4c4c;
   line-height: 118px;
   margin-bottom: 45px;
@@ -780,14 +781,14 @@ div.container h2.blue {
 @media screen and (max-width: 999px) {
   div.container h1,
   div.container h2 {
-    font-size: 64px;
+    font-size: 6.4rem;
     line-height: 78px;
   }
 }
 div.container p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #322c2c;
 }
 div.container p.blue {
@@ -796,7 +797,7 @@ div.container p.blue {
 div.container a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #0d2b65;
 }
 div.container a.blue {
@@ -810,6 +811,7 @@ html {
   min-height: 100vh;
   width: 100%;
   min-width: 320px;
+  font-size: 10px;
 }
 * {
   font-family: "Roboto", sans-serif;
