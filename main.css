@@ -352,7 +352,7 @@ div.container--outer.hero div.container--inner div.image-content {
     margin-top: 0px;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 430px) {
   div.container--outer.hero div.container--inner div.image-content {
     position: unset;
     margin-top: 40px;
@@ -368,29 +368,16 @@ div.container--outer.hero div.container--inner div.image-content div.image--pew 
 div.container--outer.hero div.container--inner div.image-content div.image--pew video {
   border-radius: 4px;
 }
-@media screen and (max-width: 620px) {
-  div.container--outer.hero div.container--inner div.image-content div.image--pew video {
-    display: none;
-  }
-}
-div.container--outer.hero div.container--inner div.image-content div.image--pew video.mobile {
-  display: none;
-}
-@media screen and (max-width: 620px) {
-  div.container--outer.hero div.container--inner div.image-content div.image--pew video.mobile {
-    display: block;
-  }
-}
 @media screen and (max-width: 1280px) {
   div.container--outer.hero div.container--inner div.image-content div.image--pew {
     width: 70vw;
     height: 43.77vw;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 430px) {
   div.container--outer.hero div.container--inner div.image-content div.image--pew {
     width: 90vw;
-    height: 160.13vw;
+    height: 56.27vw;
   }
 }
 
@@ -1136,10 +1123,10 @@ div.container--outer.what div.container--inner div.text-content {
 }
 @media screen and (max-width: 999px) {
   div.container--outer.what div.container--inner div.text-content {
-    max-width: 300px;
+    max-width: 295px;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   div.container--outer.what div.container--inner div.text-content {
     max-width: 100%;
   }
@@ -1165,7 +1152,7 @@ div.container--outer.what div.container--inner div.image-content div.image--yt {
     margin-right: 20px;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   div.container--outer.what div.container--inner div.image-content div.image--yt {
     width: 391px;
     height: 666px;
