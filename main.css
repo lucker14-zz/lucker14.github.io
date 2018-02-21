@@ -581,7 +581,7 @@ html {
   min-height: 100vh;
   width: 100%;
   min-width: 320px;
-  font-size: 10px;
+  font-size: 62.5%;
 }
 * {
   font-family: "Roboto", sans-serif;
@@ -811,7 +811,7 @@ html {
   min-height: 100vh;
   width: 100%;
   min-width: 320px;
-  font-size: 10px;
+  font-size: 62.5%;
 }
 * {
   font-family: "Roboto", sans-serif;
