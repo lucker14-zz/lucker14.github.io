@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>${{ index.title }}$</title>
+    <title>utip'em - podpoř svého YouTubera</title>
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -28,13 +28,14 @@
 
 
     <!-- OG tags -->
-    <meta name="og:description" content="${{ index.og_description }}$">
-    <meta property="og:title" content="${{ index.title }}$"/>
+    <meta name="og:description" content="Dej tip (dýško) videu který se ti líbí, dokonce i na telefonu. Stačí napsat
+komentář.">
+    <meta property="og:title" content="utip'em - podpoř svého YouTubera"/>
     <meta property="og:author" content="utip'em"/>
-    <meta name="og:url" content="${{ index.og_url }}$">
+    <meta name="og:url" content="https://utipem.cz/">
     <meta name="og:image" content="assets/app.jpg">
     <meta name="og:type" content="website">
-    <meta name="og:site_name" content="${{ index.og_site_name }}$">
+    <meta name="og:site_name" content="utipem.cz">
     <!-- END OG tags -->
 
     <!-- Hotjar Tracking Code for utipem.com -->
@@ -60,37 +61,38 @@
     </script>
 </head>
 <body>
+<!-- trace:src/index.html -->
     <div class="container container--outer hero">
         <div class="container container--inner logo-box">
             <div class="image logo absolute-background"></div>
         </div>
         <div class="container container--inner">
             <div class="text-content">
-                <h1>${{ index.hero_heading }}$</h1>
+                <h1>Podpoř cool video</h1>
                 <div class="container icon-box">
                     <div class="container icon-box__line">
                         <div class="icon icon--money-sign"></div>
-                        <p>${{ index.hero_p1 }}$</p>
+                        <p>Částkou jakou chceš</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--calendar"></div>
-                        <p>${{ index.hero_p2 }}$</p>
+                        <p>Plať až za 30 dní</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--bitcoin"></div>
-                        <p>${{ index.hero_p3 }}$</p>
+                        <p>Platba je jednoduchá a bezpečná</p>
                     </div>
                 </div>
-                <button class="btn" id="btn1"><p>${{ index.hero_btn }}$</p></button>
+                <button class="btn" id="btn1"><p>Dej dýško (tip) svému YouTuberovi</p></button>
             </div>
             <div class="image-content">
                 <div class="image image--pew">
                     <video width="100%" height="100%" autoplay muted loop id="id1">
-                      <source src="${{ index.hero_video_src }}$" type="video/mp4">
+                      <source src="https://1147256902.rsc.cdn77.org/assets/video_cs.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                     <video class="mobile-video hidden" width="100%" height="100%" muted controls id="id1b" poster='assets/poster1.png'>
-                      <source src="${{ index.hero_video_src }}$" type="video/mp4">
+                      <source src="https://1147256902.rsc.cdn77.org/assets/video_cs.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                     <!-- <video class="mobile" width="100%" height="100%" autoplay muted loop>
@@ -105,32 +107,32 @@
     <div class="container container--outer what">
         <div class="container container--inner">
             <div class="text-content">
-                <h2 class="blue">${{ index.what_heading }}$</h2>
+                <h2 class="blue">Zábavné? Užitečné? Tipni to.</h2>
                 <div class="container icon-box">
                     <div class="container icon-box__line">
                         <div class="icon icon--target"></div>
-                        <p>${{ index.what_p1 }}$</p>
+                        <p>Podpoř jen video, které se ti líbí</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--like"></div>
-                        <p>${{ index.what_p2 }}$</p>
+                        <p>Ukaž YouTuberům co je cool</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--comment"></div>
-                        <p>${{ index.what_p3 }}$</p>
+                        <p>Stačí napsat komentář (není potřeba nic instalovat)</p>
                     </div>
                 </div>
-                <button class="btn blue" id="btn2"><p>${{ index.what_btn }}$</p></button>
+                <button class="btn blue" id="btn2"><p>Napiš komentář s částkou. To je vše.</p></button>
             </div>
             <div class="image-content">
                 <div class="image image--yt">
                     <video class="mobile" width="100%" height="100%" autoplay loop muted id="id2">
-                        <source src="${{ index.what_video_src }}$" type="video/mp4">
+                        <source src="https://1147256902.rsc.cdn77.org/assets/video_mobile_cs.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
                     <video class="mobile mobile-video hidden" width="100%" height="100%" muted controls id="id2b" poster='assets/poster2.png'>
-                        <source src="${{ index.what_video_src }}$" type="video/mp4">
+                        <source src="https://1147256902.rsc.cdn77.org/assets/video_mobile_cs.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -140,27 +142,27 @@
     <div class="container container--outer how">
         <div class="container container--inner">
             <div class="text-content">
-                <h2>${{ index.how_heading }}$</h2>
+                <h2>Máš to pod kontrolou</h2>
                 <div class="container row-container">
                     <div class="container icon-box">
                         <div class="container icon-box__line">
                             <div class="icon icon--graph"></div>
-                            <p>${{ index.how_p1 }}$</p>
+                            <p>Všechny tipy vidíš v jednoduchém přehledu</p>
                         </div>
                         <div class="container icon-box__line">
                             <div class="icon icon--change"></div>
-                            <p>${{ index.how_p2 }}$</p>
+                            <p>Není problém tip (dýško) změnit</p>
                         </div>
                         <div class="container icon-box__line">
                             <div class="icon icon--lock"></div>
-                            <p>${{ index.how_p3 }}$</p>
+                            <p>Platba je jednoduchá a hlavně bezpečná</p>
                         </div>
                     </div>
-                    <button class="btn" id="btn3"><p>${{ index.how_btn }}$</p></button>
+                    <button class="btn" id="btn3"><p>Začni tipovat teď</p></button>
                 </div>
             </div>
             <div class="image-content">
-                <img class="image image--app" src="${{ index.how_img_src }}$">
+                <img class="image image--app" src="assets/app_cs.jpg">
             </div>
         </div>
     </div>
@@ -302,17 +304,18 @@
     <div class="container container--outer signup" id="signup-container">
         <div class="container container--inner">
             <div class="text-content">
-                <h2 class="blue">${{ index.signup_heading }}$</h2>
+                <h2 class="blue">Tipuj teď, plať pak</h2>
                 <div class="container--input">
                     <form>
-                        <input id="form-email" required type="email" placeholder="${{ index.signup_email_placeholder }}$">
+                        <input id="form-email" required type="email" placeholder="tvůj@email.cz">
                         <button class="btn blue" type='submit' id="email-submit">
-                            <p>${{ index.signup_btn }}$</p>
+                            <p>Přihlásit se</p>
                         </button>
                     </form>
-                    <p class="form--thanks-text">${{ index.signup_thanks }}$</p>
+                    <p class="form--thanks-text">Děkujeme! Dáme ti vědět, jak jen to bude možné.</p>
                     <p class='form--help-text'>
-                        ${{ index.signup_help }}$
+                        Právě probíhá Beta fáze s více než 2 300 uživateli na seznamu čekatelů
+<br><br> Prosím, buď trpělivý.
                     </p>
                 </div>
             </div>
@@ -321,16 +324,16 @@
             </div>
             <div class="container footer">
                 <div class="footer--heart-block absolute-background">
-                    <p class="blue">${{ index.footer_heart_part1 }}$</p>
+                    <p class="blue">Vyrobeno s </p>
                     <div class="image heart"></div>
-                    <p class="blue">${{ index.footer_heart_part2 }}$</p>
+                    <p class="blue"> v Praze</p>
                 </div>
                 <div class="container footer--content-half">
                     <a href="mailto:johan@utipem.com" class="blue">johan@utipem.com</a>
                 </div>
                 <div class="container footer--content-half end">
                     <div class="copyright">
-                        <p class="blue">${{ index.footer_copyright }}$</p>
+                        <p class="blue">© Všechna práva vyhrazena, 2018 utip’em</p>
                         <div class="image logo logo--small"></div>
                     </div>
                 </div>
