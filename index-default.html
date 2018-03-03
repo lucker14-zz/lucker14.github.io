@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>utip'em - support your favorite content creators</title>
+    <title>${{ index.title }}$</title>
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -28,14 +28,13 @@
 
 
     <!-- OG tags -->
-    <meta name="og:description" content="Tip any content you like even on mobile. Only by writing a comment.
-Show creators what you appreciate.">
-    <meta property="og:title" content="utip'em - support your favorite content creators"/>
+    <meta name="og:description" content="${{ index.og_description }}$">
+    <meta property="og:title" content="${{ index.title }}$"/>
     <meta property="og:author" content="utip'em"/>
-    <meta name="og:url" content="https://utipem.com/">
+    <meta name="og:url" content="${{ index.og_url }}$">
     <meta name="og:image" content="assets/app.jpg">
     <meta name="og:type" content="website">
-    <meta name="og:site_name" content="utipem.com">
+    <meta name="og:site_name" content="${{ index.og_site_name }}$">
     <!-- END OG tags -->
 
     <!-- Hotjar Tracking Code for utipem.com -->
@@ -61,38 +60,37 @@ Show creators what you appreciate.">
     </script>
 </head>
 <body>
-<!-- trace:src/index.html -->
     <div class="container container--outer hero">
         <div class="container container--inner logo-box">
             <div class="image logo absolute-background"></div>
         </div>
         <div class="container container--inner">
             <div class="text-content">
-                <h1>Support content u&nbsp;like.</h1>
+                <h1>${{ index.hero_heading }}$</h1>
                 <div class="container icon-box">
                     <div class="container icon-box__line">
                         <div class="icon icon--money-sign"></div>
-                        <p>Tip any amount you want</p>
+                        <p>${{ index.hero_p1 }}$</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--calendar"></div>
-                        <p>Pay the balance once a&nbsp;month</p>
+                        <p>${{ index.hero_p2 }}$</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--bitcoin"></div>
-                        <p>We accept both Crypto and Fiat</p>
+                        <p>${{ index.hero_p3 }}$</p>
                     </div>
                 </div>
-                <button class="btn" id="btn1"><p>Tip my favorite Youtuber</p></button>
+                <button class="btn" id="btn1"><p>${{ index.hero_btn }}$</p></button>
             </div>
             <div class="image-content">
                 <div class="image image--pew">
                     <video width="100%" height="100%" autoplay muted loop id="id1">
-                      <source src="https://1147256902.rsc.cdn77.org/assets/video.mp4" type="video/mp4">
+                      <source src="${{ index.hero_video_src }}$" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                     <video class="mobile-video hidden" width="100%" height="100%" muted controls id="id1b" poster='assets/poster1.png'>
-                      <source src="https://1147256902.rsc.cdn77.org/assets/video.mp4" type="video/mp4">
+                      <source src="${{ index.hero_video_src }}$" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                     <!-- <video class="mobile" width="100%" height="100%" autoplay muted loop>
@@ -107,32 +105,32 @@ Show creators what you appreciate.">
     <div class="container container--outer what">
         <div class="container container--inner">
             <div class="text-content">
-                <h2 class="blue">Funny? Useful? Leave a&nbsp;tip.</h2>
+                <h2 class="blue">${{ index.what_heading }}$</h2>
                 <div class="container icon-box">
                     <div class="container icon-box__line">
                         <div class="icon icon--target"></div>
-                        <p>Tip any content you like (even on mobile)</p>
+                        <p>${{ index.what_p1 }}$</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--like"></div>
-                        <p>Show creators what you appreciate</p>
+                        <p>${{ index.what_p2 }}$</p>
                     </div>
                     <div class="container icon-box__line">
                         <div class="icon icon--comment"></div>
-                        <p>Only by writing a comment (no extension needed)</p>
+                        <p>${{ index.what_p3 }}$</p>
                     </div>
                 </div>
-                <button class="btn blue" id="btn2"><p>Tip by writing a&nbsp;comment</p></button>
+                <button class="btn blue" id="btn2"><p>${{ index.what_btn }}$</p></button>
             </div>
             <div class="image-content">
                 <div class="image image--yt">
                     <video class="mobile" width="100%" height="100%" autoplay loop muted id="id2">
-                        <source src="https://1147256902.rsc.cdn77.org/assets/video_mobile.mp4" type="video/mp4">
+                        <source src="${{ index.what_video_src }}$" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
                     <video class="mobile mobile-video hidden" width="100%" height="100%" muted controls id="id2b" poster='assets/poster2.png'>
-                        <source src="https://1147256902.rsc.cdn77.org/assets/video_mobile.mp4" type="video/mp4">
+                        <source src="${{ index.what_video_src }}$" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -142,27 +140,27 @@ Show creators what you appreciate.">
     <div class="container container--outer how">
         <div class="container container--inner">
             <div class="text-content">
-                <h2>You are in control.</h2>
+                <h2>${{ index.how_heading }}$</h2>
                 <div class="container row-container">
                     <div class="container icon-box">
                         <div class="container icon-box__line">
                             <div class="icon icon--graph"></div>
-                            <p>See all your tips in a&nbsp;simple dashboard</p>
+                            <p>${{ index.how_p1 }}$</p>
                         </div>
                         <div class="container icon-box__line">
                             <div class="icon icon--change"></div>
-                            <p>Changed your mind about the tip? Edit it.</p>
+                            <p>${{ index.how_p2 }}$</p>
                         </div>
                         <div class="container icon-box__line">
                             <div class="icon icon--lock"></div>
-                            <p>Simple and secure payment</p>
+                            <p>${{ index.how_p3 }}$</p>
                         </div>
                     </div>
-                    <button class="btn" id="btn3"><p>Tip without commitment</p></button>
+                    <button class="btn" id="btn3"><p>${{ index.how_btn }}$</p></button>
                 </div>
             </div>
             <div class="image-content">
-                <img class="image image--app" src="assets/app.jpg">
+                <img class="image image--app" src="${{ index.how_img_src }}$">
             </div>
         </div>
     </div>
@@ -304,18 +302,17 @@ Show creators what you appreciate.">
     <div class="container container--outer signup" id="signup-container">
         <div class="container container--inner">
             <div class="text-content">
-                <h2 class="blue">Start&nbsp;now. Pay&nbsp;later.</h2>
+                <h2 class="blue">${{ index.signup_heading }}$</h2>
                 <div class="container--input">
                     <form>
-                        <input id="form-email" required type="email" placeholder="your@email.com">
+                        <input id="form-email" required type="email" placeholder="${{ index.signup_email_placeholder }}$">
                         <button class="btn blue" type='submit' id="email-submit">
-                            <p>Sign-up</p>
+                            <p>${{ index.signup_btn }}$</p>
                         </button>
                     </form>
-                    <p class="form--thanks-text">Thanks! We will let you know as soon as possible.</p>
+                    <p class="form--thanks-text">${{ index.signup_thanks }}$</p>
                     <p class='form--help-text'>
-                        We are currently in a beta run with more than 2 300 users on the waiting
-list.<br><br>Please be patient.
+                        ${{ index.signup_help }}$
                     </p>
                 </div>
             </div>
@@ -324,16 +321,16 @@ list.<br><br>Please be patient.
             </div>
             <div class="container footer">
                 <div class="footer--heart-block absolute-background">
-                    <p class="blue">Made with </p>
+                    <p class="blue">${{ index.footer_heart_part1 }}$</p>
                     <div class="image heart"></div>
-                    <p class="blue"> in Prague</p>
+                    <p class="blue">${{ index.footer_heart_part2 }}$</p>
                 </div>
                 <div class="container footer--content-half">
                     <a href="mailto:johan@utipem.com" class="blue">johan@utipem.com</a>
                 </div>
                 <div class="container footer--content-half end">
                     <div class="copyright">
-                        <p class="blue">© All rights reserved, 2018 utip’em</p>
+                        <p class="blue">${{ index.footer_copyright }}$</p>
                         <div class="image logo logo--small"></div>
                     </div>
                 </div>
