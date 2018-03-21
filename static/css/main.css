@@ -782,6 +782,9 @@ p {
 .section.valentines {
   padding-bottom: 0;
 }
+.section.who-wins {
+  padding-top: 0;
+}
 .section--small {
   padding-top: 20px;
 }
