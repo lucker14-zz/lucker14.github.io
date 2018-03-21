@@ -1,0 +1,57 @@
+.form
+
+    h5
+        color #828B99
+        max-width 600px
+        margin 0 auto
+
+    +e('form')
+        max-width 600px
+        margin 30px auto 0
+        flexbox()
+        justify-content space-between
+        flex-wrap wrap
+
+        @media (min-width $screen-xs)
+            margin-top 50px
+
+
+
+    +e('field')
+        flex(1 100%)
+        margin-bottom 10px
+
+        @media (min-width $screen-tn)
+            max-width 50%
+            flex(1 50%)
+            &:nth-of-type(1)
+                padding-right 5px
+            &:nth-of-type(2)
+                padding-left 5px
+        @media (min-width $screen-sm)
+            margin-bottom 20px
+            &:nth-of-type(1)
+                padding-right 15px
+            &:nth-of-type(2)
+                padding-left 15px
+
+        +m('cta')
+            margin-left auto
+            align-self flex-end
+            margin-bottom 0
+            margin-top 10px
+
+            @media (max-width $screen-xs - 1px)
+                max-width none
+                flex(1 100%)
+            @media (min-width $screen-tn)
+                margin-top 0
+            @media (min-width $screen-xs)
+                padding-left 5px
+            @media (min-width $screen-sm)
+                padding-left 15px
+
+        +m('invalid')
+            input
+                border-color $red
+

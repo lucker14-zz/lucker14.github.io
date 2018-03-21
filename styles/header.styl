@@ -1,0 +1,78 @@
+.header
+    position relative
+    background $brand-primary
+    color $white
+    padding-top 100px
+    padding-bottom 40px
+    text-align center
+
+    @media (min-width $screen-md)
+        text-align left
+    @media (min-width $screen-lg)
+        padding-top 120px
+        padding-bottom 80px
+    @media (min-width $screen-pc)
+        padding-top 180px
+        padding-bottom 160px
+
+
+    &:before
+        position absolute
+        pointer-events none
+        top 0
+        left 0
+        right 0
+        bottom 0
+        content ''
+        display block
+        z-index 1
+        background url("../img/pattern.svg") top left
+
+
+    +e('menu')
+        position absolute
+        top 0
+        left 0
+        right 0
+
+
+    +e('content')
+        position relative
+        z-index 3
+
+        h2
+            max-width 500px
+            margin 0 auto
+            @media (min-width $screen-md)
+                margin 0
+
+        h5
+            color $brand-primary-text
+            max-width 400px
+            margin 15px auto 30px
+            @media (min-width $screen-md)
+                margin 15px 0 40px
+
+        @media (min-width $screen-md)
+            padding-right 40px
+            max-width 50%
+
+
+    +e('image')
+        position relative
+        z-index 2
+        border-radius 0 0 0 80px
+        background $brand-primary url('../img/rome.jpg') left center no-repeat
+        background-size cover
+
+        @media (min-width $screen-md)
+            width 50%
+            right 0
+            top 0
+            bottom -30px
+            pointer-events none
+            position absolute
+        @media (min-width $screen-lg)
+            bottom -50px
+
+

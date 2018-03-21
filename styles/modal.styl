@@ -1,0 +1,105 @@
+.modal
+    font-size 0
+    min-width 300px
+    position fixed
+    text-align center
+    -webkit-overflow-scrolling touch
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index 1100
+    padding 0 15px
+    overflow auto
+    display none
+    opacity 0
+    max-width 100%
+    transition opacity $animation
+
+    &.show
+        display block
+
+    &.open
+        opacity 1
+
+    .modal-content
+        font-size $font-size
+        pointer-events auto
+        margin 70px auto
+        display inline-block
+        padding 40px 60px 70px
+        border-radius $border-radius
+        vertical-align middle
+        background $white
+        position relative
+        box-shadow 0 34px 35px -20px rgba(10, 2, 18, 0.67)
+
+
+    .modal-closer
+        position absolute
+        top -62px
+        right 0
+        z-index -1
+        display block
+        border 0
+        color $white
+        font-weight 400
+        line-height 66px
+        width 66px
+        height 66px
+        padding-right 6px
+        font-size 32px
+        overflow hidden
+        cursor pointer
+        &:hover:after
+            background lighten($green, 20%)
+        &:after
+            transition background $animation
+            content ''
+            pointer-events none
+            position absolute
+            z-index -1
+            border-radius 50%
+            width 122px
+            height 122px
+            background $green
+            top 0
+            right 0
+
+    &:before
+        content ''
+        height 100vh
+        display inline-block
+        vertical-align middle
+
+    @media (max-width $screen-xs - 1px)
+        padding 0 10px
+        pointer-events auto
+
+        .modal-content
+            padding 30px 20px
+            width 100%
+            .separator
+                margin-left -20px
+                margin-right -20px
+
+
+.section-modal-open
+    .section-modal-shadow
+        position fixed
+        visibility visible
+        opacity 0.8
+
+
+.section-modal-shadow
+    position absolute
+    z-index 1060
+    top 0
+    left 0
+    right 0
+    bottom 0
+    transition opacity $animation
+    pointer-events none
+    opacity 0
+    background #07010d
+    visibility hidden

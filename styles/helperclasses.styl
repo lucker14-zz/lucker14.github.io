@@ -1,0 +1,212 @@
+body
+    // helper classes
+    // ------------------------------------------------------------------------
+    // text
+    .text-uppercase
+        text-transform uppercase
+    .text-capitalize
+        text-transform capitalize
+    .nowrap
+        white-space nowrap
+    .ellipsis
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+    .zerofont
+        font-size 0
+    // text-align
+    .text-center
+        text-align center
+    .text-justify
+        text-align justify
+    .text-left
+        text-align left
+    .text-right
+        text-align right
+    // text-color
+    .text-primary
+        color $brand-primary
+    .text-primary-dark
+        color $black
+    .text-primary-light
+        color $brand-primary-text
+    .text-muted, .text-gray
+        color $gray
+    .text-success, .text-green, .text-success
+        color $green
+    .text-danger, .text-red, .text-error
+        color $red
+    .text-black
+        color $black
+    .text-white
+        color $white
+    .text-warning, .text-orange
+        color $orange
+    // text weight
+    .text-light
+        font-weight 300
+    .text-regular
+        font-weight 400
+    .text-semibold
+        font-weight 500
+    .text-bold
+        font-weight 700
+    .text-lowercase
+        text-transform lowercase
+    .text-uppercase
+        text-transform uppercase
+    .text-linethrough
+        text-decoration line-through
+    // position
+    .fixed
+        position fixed !important
+    .clearfix
+        clear both !important
+    .pull-left
+        float left !important
+    .pull-right
+        float right !important
+    .pull-none
+        float none !important
+    .inline
+        display inline-block
+    .vcenter
+        vertical-align middle
+    .vtop
+        vertical-align top
+    .vbottom
+        vertical-align bottom
+    .table
+        display table
+    .table-cell
+        display table-cell
+    .table-row
+        display table-row
+    .flex-center
+        // awesome flexbox!
+        display flex
+        justify-content space-between
+        align-items center
+        align-content center
+        flex-wrap wrap
+    // Proportions
+    // padding
+    .nopadding
+        padding 0 !important
+    .nohpadding
+        padding-left 0 !important
+        padding-right @padding-left
+    .novpadding
+        padding-top 0 !important
+        padding-bottom @padding-top
+    .nolpadding
+        padding-left 0 !important
+    .norpadding
+        padding-right 0 !important
+    .notpadding
+        padding-top 0 !important
+    .nobpadding
+        padding-bottom 0 !important
+    // margin
+    .nomargin
+        margin 0 !important
+    .nohmargin
+        margin-left 0 !important
+        margin-right @margin-left
+    .novmargin
+        margin-top 0 !important
+        margin-bottom @margin-top
+    .nolmargin
+        margin-left 0 !important
+    .normargin
+        margin-right 0 !important
+    .notmargin
+        margin-top 0 !important
+    .nobmargin
+        margin-bottom 0 !important
+    // border
+    .noborder
+        border: 0 !important
+    .nolborder
+        border-left: 0 !important
+    .norborder
+        border-right: 0 !important
+    .nobborder
+        border-bottom: 0 !important
+    .notborder
+        border-top: 0 !important
+    .circle
+        display inline-block
+        vertical-align middle
+        border-radius(50%)
+    .noshadow
+        box-shadow(none !important)
+
+    // Responsive hide/show classes
+    .hidden-pc
+        display block
+    .hidden-lg
+        display block
+    .hidden-md
+        display block
+    .hidden-sm
+        display block
+    .hidden-xs
+        display inherit
+    .hidden-tn
+        display block
+    .hidden-utn
+        display block
+    .visible-pc
+        display none
+    .visible-lg
+        display none
+    .visible-md
+        display none
+    .visible-sm
+        display none
+    .visible-xs
+        display none
+    .visible-tn
+        display none
+    .visible-utn
+        display none
+    .hidden
+        display none
+    .visible
+        display block
+    @media (max-width: $screen-pc - 1px)
+        .hidden-pc
+            display none !important
+        .visible-pc
+            display block
+    @media (max-width: $screen-lg - 1px)
+        .hidden-lg
+            display none !important
+        .visible-lg
+            display block
+    @media (max-width: $screen-md - 1px)
+        .hidden-md
+            display none !important
+        .visible-md
+            display block
+    @media (max-width: $screen-sm - 1px)
+        .hidden-sm
+            display none !important
+        .visible-sm
+            display block
+    @media (max-width: $screen-xs - 1px)
+        .hidden-xs
+            display none !important
+        .visible-xs
+            display block
+    @media (max-width: $screen-tn - 1px)
+        .hidden-tn
+            display none !important
+        .visible-tn
+            display block
+    @media (max-width: $screen-utn - 1px)
+        .hidden-utn
+            display none !important
+        .visible-utn
+            display block

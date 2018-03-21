@@ -1,0 +1,76 @@
+.section
+    padding-top 40px
+    padding-bottom 40px
+    text-align center
+
+    @media (min-width $screen-md)
+        padding-top 70px
+        padding-bottom 70px
+    @media (min-width $screen-lg)
+        padding-top 150px
+        padding-bottom 150px
+        
+    &.valentines
+        padding-bottom 0
+
+
+    +m('small')
+        padding-top 20px
+
+        @media (min-width $screen-sm)
+            padding-top 50px
+
+    +m('gray')
+        background #F7F8FC
+
+    +m('pattern')
+        position relative
+
+        @media (min-width $screen-lg)
+            padding-bottom 100px
+        @media (min-width $screen-sm)
+            &:before, &:after
+                content ''
+                pointer-events none
+                position absolute
+                top 0
+                left 0
+                right 0
+            &:after
+                height 100px
+                background $white
+                z-index 1
+            &:before
+                height 200px
+                background-image url('../img/pattern-background.svg')
+                background-position top center
+                background-repeat no-repeat
+                background-size 1360px auto
+                z-index 2
+        @media (min-width $screen-pc)
+            &:before
+                background-size 2560px auto
+
+        .container
+            position relative
+            z-index 3
+
+
+    +e('heading')
+        margin-bottom 15px
+
+        @media (min-width $screen-md)
+            margin-bottom 30px
+
+
+    a
+        color $brand-primary-button
+        text-decoration none
+        display inline-block
+        vertical-align baseline
+        border-bottom 1px solid alpha($brand-primary-button,80%)
+        transition border $animation
+
+        &:hover
+            border-bottom-color transparent
+
