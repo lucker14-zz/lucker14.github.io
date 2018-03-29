@@ -1220,7 +1220,8 @@ ul.nav a,
   top: 0;
 }
 div.container.container--outer.hero {
-  min-height: 66.04193139vw;
+  height: 66.04193139vw;
+  max-height: 93vh;
 }
 div.container.container--outer.hero div.absolute-background {
   background-image: url("assets/bg-hero.jpg");
