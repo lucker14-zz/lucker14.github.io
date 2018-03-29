@@ -267,19 +267,45 @@ nav .nav-logo {
     line-height: 30px;
     background-color: #5ad16a;
     text-decoration: none;
+    text-align: center;
     height: 60px;
     width: 240px;
-    padding-top: 18px;
+    padding-top: 23px;
     margin-bottom: 73px;
-    text-align: center;
-    -webkit-transition: .2s all;
-    transition: .2s all
+    -webkit-border-radius: 3px 3px 3px 24px;
+    -moz-border-radius: 3px 3px 3px 24px;
+    -ms-border-radius: 3px 3px 3px 24px;
+    -o-border-radius: 3px 3px 3px 24px;
+    border-radius: 3px 3px 3px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: normal;
 }
 
 .hero-section .hero-button:hover {
     -webkit-transition: .2s all;
     transition: .2s all;
-    background-color: #36c249
+    -webkit-border-radius: 3px 24px 3px 3px;
+    -moz-border-radius: 3px 24px 3px 3px;
+    -ms-border-radius: 3px 24px 3px 3px;
+    -o-border-radius: 3px 24px 3px 3px;
+    border-radius: 3px 24px 3px 3px;
+    background-color: #36c249;
 }
 
 .hero-section .hero-image {
@@ -639,20 +665,47 @@ img {
     color: #fff;
     font-size: 17px;
     font-weight: 600;
-    -webkit-transition: .1s background-color, 1s width, 1s padding, 1s margin;
-    transition: .1s background-color, 1s width, 1s padding, 1s margin;
     display: block;
     line-height: 64px;
     text-align: center;
     margin: 20px auto 0;
-    text-decoration: none
+    text-decoration: none;
+
+    -webkit-border-radius: 3px 3px 3px 24px;
+    -moz-border-radius: 3px 3px 3px 24px;
+    -ms-border-radius: 3px 3px 3px 24px;
+    -o-border-radius: 3px 3px 3px 24px;
+    border-radius: 3px 3px 3px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .register-container .submit-input:hover {
-    -webkit-transition: .1s background-color, 1s width, 1s padding, 1s margin;
-    transition: .1s background-color, 1s width, 1s padding, 1s margin;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     background-color: #36c249;
     cursor: pointer
+    -webkit-border-radius: 3px 24px 3px 3px;
+    -moz-border-radius: 3px 24px 3px 3px;
+    -ms-border-radius: 3px 24px 3px 3px;
+    -o-border-radius: 3px 24px 3px 3px;
+    border-radius: 3px 24px 3px 3px;
 }
 
 .register-container .inactive-button {
