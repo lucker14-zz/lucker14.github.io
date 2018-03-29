@@ -903,11 +903,43 @@ img {
     margin: 0 auto;
     margin-top: 120px;
     -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .15);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, .15)
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .15);
+
+    -webkit-border-radius: 3px 3px 3px 24px;
+    -moz-border-radius: 3px 3px 3px 24px;
+    -ms-border-radius: 3px 3px 3px 24px;
+    -o-border-radius: 3px 3px 3px 24px;
+    border-radius: 3px 3px 3px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .news-container .more-articles:hover {
-    background-color: #6ed77c
+    background-color: #6ed77c;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer
+    -webkit-border-radius: 3px 24px 3px 3px;
+    -moz-border-radius: 3px 24px 3px 3px;
+    -ms-border-radius: 3px 24px 3px 3px;
+    -o-border-radius: 3px 24px 3px 3px;
+    border-radius: 3px 24px 3px 3px;
 }
 
 .news-container .news-noinfo {
