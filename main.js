@@ -1,0 +1,1 @@
+"use strict";$(".more-articles").click(function(e){$(this).hide(),$(".hidden-articles").removeClass("hidden-articles"),setTimeout(function(){$(".news-item-hidden").removeClass("news-item-hidden")},100)});
