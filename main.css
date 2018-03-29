@@ -1554,6 +1554,7 @@ div.container.container--outer.what div.container.container--inner div.text-cont
 }
 div.container.container--outer.what div.container.container--inner div.text-content p {
   margin-bottom: 20px;
+  text-align: center;
 }
 div.container.container--outer.what div.container.container--inner h2 {
   margin-bottom: 20px;
@@ -1573,9 +1574,48 @@ div.container.container--outer.what div.container.container--inner div.content-h
   }
 }
 div.container.container--outer.what div.container.container--inner div.content-holder div.content-box {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  -o-box-pack: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  -o-box-pack: start;
+  box-pack: start;
+  -webkit-flex-pack: start;
+  -moz-flex-pack: start;
+  -ms-flex-pack: start;
+  -o-flex-pack: start;
+  flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  -o-box-align: start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  -o-box-align: start;
+  box-align: start;
+  -webkit-flex-align: start;
+  -moz-flex-align: start;
+  -ms-flex-align: start;
+  -o-flex-align: start;
+  flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
   background-color: rgba(255,255,255,0.6);
   padding: 20px;
   max-width: 100%;
+  min-height: 175px;
   -webkit-box-pack: start;
   -moz-box-pack: start;
   -ms-box-pack: start;
@@ -1605,8 +1645,109 @@ div.container.container--outer.what div.container.container--inner div.content-h
     min-height: 0px;
   }
 }
+@media screen and (max-width: 550px) {
+  div.container.container--outer.what div.container.container--inner div.content-holder div.content-box {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -ms-box-lines: multiple;
+    -o-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-flow: column wrap;
+    -moz-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    -o-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+}
+div.container.container--outer.what div.container.container--inner div.content-holder div.content-box div.text-content {
+  max-width: 80%;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-box-lines: multiple;
+  -o-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  -o-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  -o-box-pack: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  -o-box-pack: start;
+  box-pack: start;
+  -webkit-flex-pack: start;
+  -moz-flex-pack: start;
+  -ms-flex-pack: start;
+  -o-flex-pack: start;
+  flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  -o-box-align: start;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-box-align: start;
+  -o-box-align: start;
+  box-align: start;
+  -webkit-flex-align: start;
+  -moz-flex-align: start;
+  -ms-flex-align: start;
+  -o-flex-align: start;
+  flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 550px) {
+  div.container.container--outer.what div.container.container--inner div.content-holder div.content-box div.text-content {
+    max-width: 100%;
+  }
+}
+div.container.container--outer.what div.container.container--inner div.content-holder div.content-box div.text-content h3 {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+div.container.container--outer.what div.container.container--inner div.content-holder div.content-box img {
+  margin-right: 20px;
+}
+@media screen and (max-width: 550px) {
+  div.container.container--outer.what div.container.container--inner div.content-holder div.content-box img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
 div.container.container--outer.what div.container.container--inner div.content-holder div.content-box h3 {
-  margin: 30px 0;
   width: 100%;
   text-align: center;
 }
