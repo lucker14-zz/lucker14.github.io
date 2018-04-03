@@ -1231,6 +1231,12 @@ div.container.container--outer.hero {
   height: 66.04193139vw;
   max-height: 93vh;
 }
+@media screen and (max-width: 950px) {
+  div.container.container--outer.hero {
+    max-height: unset;
+    height: auto;
+  }
+}
 div.container.container--outer.hero div.absolute-background {
   background-image: url("assets/bg-hero.jpg");
   -webkit-background-size: cover;
