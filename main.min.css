@@ -1339,12 +1339,14 @@ div.container.container--outer.hero div.container.container--inner div.content-h
 @media screen and (max-width: 950px) {
   div.container.container--outer.hero div.container.container--inner div.content-holder.content-holder--hori div.content-box {
     width: 30%;
+    min-height: 270px;
   }
 }
 @media screen and (max-width: 750px) {
   div.container.container--outer.hero div.container.container--inner div.content-holder.content-holder--hori div.content-box {
     width: 100%;
     margin-bottom: 20px;
+    min-height: 245px;
   }
 }
 div.container.container--outer.hero div.container.container--inner div.content-holder.content-holder--hori div.content-box span.number {
@@ -1409,7 +1411,7 @@ div.container.container--outer.who-upper div.container.container--inner div.text
   font-size: 24px;
 }
 div.container.container--outer.who-upper div.container.container--inner div.text-container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 div.container.container--outer.references div.container.container--inner h1 {
   margin-bottom: 35px;
@@ -1590,7 +1592,7 @@ div.container.container--outer.what div.container.container--inner div.text-cont
   text-align: center;
 }
 div.container.container--outer.what div.container.container--inner h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 div.container.container--outer.what div.container.container--inner div.content-holder {
   width: auto;
@@ -1665,7 +1667,7 @@ div.container.container--outer.what div.container.container--inner div.content-h
   flex-flow: column wrap;
   padding: 20px;
   max-width: 100%;
-  min-height: 175px;
+  min-height: 320px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 850px) {
@@ -1767,7 +1769,7 @@ div.container.container--outer.what div.container.container--inner div.content-h
 div.container.container--outer.what div.container.container--inner div.content-holder div.content-box div.text-content h3 {
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 div.container.container--outer.what div.container.container--inner div.content-holder div.content-box img {
   margin-bottom: 20px;
@@ -1946,13 +1948,17 @@ div.container.container--outer.team div.container.container--inner div.content-h
   background-image: url("assets/team-photo/1802_iva.jpg");
 }
 div.container.container--outer.team div.container.container--inner div.content-holder div.content-box div.photo-box#barbora {
-  background-image: url("assets/team-photo/1802_barbora.jpg");
+  background-image: url("assets/team-photo/1802_bara.png");
 }
 div.container.container--outer.team div.container.container--inner div.content-holder div.content-box div.photo-box#sarka {
   background-image: url("assets/team-photo/1802_sarka_spatne_foto.jpg");
 }
 div.container.container--outer.team div.container.container--inner div.content-holder div.content-box div.photo-box#ty {
-  background-image: url("assets/ty.jpg");
+  background-image: url("assets/team-photo/1802_you.png");
+  background-color: #f4f4f4;
+  border-top: 1px solid #5e5f60;
+  border-left: 1px solid #5e5f60;
+  border-right: 1px solid #5e5f60;
 }
 div.container.container--outer.team div.container.container--inner div.content-holder div.content-box div.text-box--inner {
   width: 100%;
@@ -2117,6 +2123,15 @@ div.container.container--outer.popup div.container.container--inner div.popup di
     flex-flow: column wrap;
   }
 }
+div.container.container--outer.popup div.container.container--inner div.popup div.content-holder div.content-box.sliding {
+  max-height: 400px;
+  overflow: scroll;
+}
+@media screen and (max-width: 600px) {
+  div.container.container--outer.popup div.container.container--inner div.popup div.content-holder div.content-box.sliding {
+    max-height: 200px;
+  }
+}
 div.container.container--outer.popup div.container.container--inner div.popup div.content-holder div.content-box div.text-content {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
@@ -2176,31 +2191,6 @@ div.container.container--outer.popup div.container.container--inner div.popup di
   -o-align-items: flex-start;
   align-items: flex-start;
   padding: 20px;
-}
-@media screen and (max-width: 500px) {
-  div.container.container--outer.popup div.container.container--inner div.popup div.content-holder div.content-box div.text-content {
-    max-height: 200px;
-    overflow: scroll;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    -o-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    -o-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-lines: single;
-    -moz-box-lines: single;
-    -ms-box-lines: single;
-    -o-box-lines: single;
-    box-lines: single;
-    -webkit-flex-flow: column nowrap;
-    -moz-flex-flow: column nowrap;
-    -ms-flex-flow: column nowrap;
-    -o-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-  }
 }
 div.container.container--outer.popup div.container.container--inner div.popup div.content-holder div.content-box div.text-content h2 {
   text-align: left;
