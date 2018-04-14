@@ -49,7 +49,7 @@ jQuery.fn.fadeSlideShow = function(options) {
 		// set style for wrapper element
 		jQuery(this).css({
 			width: settings.width,
-			height: settings.height,
+			height: settings.height + 50,
 			position: 'absolute',
 			overflow: 'hidden'
 		});
@@ -58,7 +58,7 @@ jQuery.fn.fadeSlideShow = function(options) {
 		jQuery('> *',this).css({
 			position: 'absolute',
 			width: settings.width,
-			height: settings.height
+			height: settings.height + 50
 		});
 
 		// count number of slides
