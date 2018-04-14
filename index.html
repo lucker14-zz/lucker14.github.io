@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary">
 
     <link href="main.min.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
     <div class="container container--outer popup hidden">
@@ -55,7 +55,15 @@
     </div>
 
     <div class="container container--outer hero" id="hero">
-        <div class="absolute-background"></div>
+        <!-- <div class="absolute-background"></div> -->
+        <div class='absolute-background' id="slider">
+            <div class="image" >
+            </div>
+            <div class="image" >
+            </div>
+            <div class="image" >
+            </div>
+        </div>
         <div class="container container--inner">
             <img src="assets/logo.png" alt="MOTIVATE Consulting" id="logo">
         </div>
@@ -233,6 +241,9 @@
                 <br>${{ index.work_body1 }}$<br>${{ index.work_body2 }}$</p>
             </div>
             <div class="container content-holder content-holder--verti">
+                <div class="container content-box heading">
+                    <h2>${{ index.work_h2_1 }}$</h2>
+                </div>
                 <div class="container content-box">
                     <img src="assets/question.png" srcset="assets/question@2x.png 2x" alt="question" width="55" height="50">
                     <div class="container text-content">
@@ -255,7 +266,11 @@
                     </div>
                 </div>
             </div>
+            <div class="verti-line"></div>
             <div class="container content-holder content-holder--verti">
+                <div class="container content-box heading">
+                    <h2>${{ index.work_h2_2 }}$</h2>
+                </div>
                 <div class="container content-box">
                     <img src="assets/magnifier.png" srcset="assets/magnifier@2x.png 2x" alt="magnifier" width="57" height="54">
                     <div class="container text-content">
@@ -283,8 +298,8 @@
 
 
 
-    <div class="container container--outer offer first">
-        <div class="absolute-background"></div>
+    <div class="container container--outer offer first" data-parallax="scroll" data-bleed='50' data-speed='0.5' data-image-src="assets/bg-what.jpg">
+        <!-- <div class="absolute-background"></div> -->
         <div class="container container--inner">
             <h1>${{ index.offer_h1 }}$</h1>
             <h2>${{ index.offer_h2 }}$</h2>
@@ -301,10 +316,10 @@
                     <h3>${{ index.offer_box3_heading }}$</h3>
                     <p>${{ index.offer_box3_body }}$</p>
                 </div>
-                <div class="container content-box content-box--vertical-start">
+                <!-- <div class="container content-box content-box--vertical-start">
                     <h3>${{ index.offer_box4_heading }}$</h3>
                     <p>${{ index.offer_box4_body }}$</p>
-                </div>
+                </div> -->
                 <div class="container content-box content-box--vertical-start">
                     <h3>${{ index.offer_box5_heading }}$</h3>
                     <p>${{ index.offer_box5_body }}$</p>
@@ -503,6 +518,9 @@
     </div>
 </body>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="assets/fadeSlideShow.js"></script>
+    <script type="text/javascript" src="parallax.min.js"></script>
     <script>
         var popup_container = document.querySelector('.container--outer.popup')
 
@@ -537,15 +555,8 @@
         var body_text = document.querySelector('div.container--outer.popup div.popup p.body_text')
 
         function swapContent(e){
-            console.log(e.target.dataset.name)
-
             data.forEach(function(item, index){
-                console.log('searching')
-                console.log(item.alias)
-                console.log(e.target.dataset.name)
-                console.log('****')
                 if(item.alias == e.target.dataset.name && e.target.dataset.name != 'you'){
-                    console.log('found')
                     surename.innerHTML = item.surename
                     position.innerHTML = item.position
                     body_text.innerHTML = item.body_text
@@ -555,6 +566,7 @@
 
             if (popup_container.classList.contains('hidden') && e.target.dataset.name != 'you') 
                 popup_container.classList.remove('hidden')
+                $('.sliding').scrollTop(0)
         }
 
         var data = [{

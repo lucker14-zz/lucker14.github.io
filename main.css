@@ -113,6 +113,9 @@ li {
 div.absolute-background {
   position: absolute;
 }
+div.absolute-background #slider {
+  position: absolute !important;
+}
 div.container {
   display: -webkit-box;
   display: -moz-box;
@@ -1359,7 +1362,7 @@ div.container.container--outer.hero div.container.container--inner div.content-h
 }
 div.container.container--outer.who-upper {
   background-color: #daddda;
-  min-height: 680px;
+  min-height: 590px;
 }
 @media screen and (max-width: 600px) {
   div.container.container--outer.who-upper {
@@ -1378,13 +1381,23 @@ div.container.container--outer.who-upper {
 }
 div.container.container--outer.who-upper div.absolute-background {
   background-image: url("assets/bg-who.png");
-  -webkit-background-size: 1352px 680px;
-  -moz-background-size: 1352px 680px;
-  -ms-background-size: 1352px 680px;
-  -o-background-size: 1352px 680px;
-  background-size: 1352px 680px;
+  -webkit-background-size: 1260px 590px;
+  -moz-background-size: 1260px 590px;
+  -ms-background-size: 1260px 590px;
+  -o-background-size: 1260px 590px;
+  background-size: 1260px 590px;
   width: 1280px;
   height: 680px;
+}
+@media screen and (max-width: 1260px) {
+  div.container.container--outer.who-upper div.absolute-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
 }
 @media screen and (max-width: 750px) {
   div.container.container--outer.who-upper div.absolute-background {
@@ -1411,7 +1424,7 @@ div.container.container--outer.who-upper div.container.container--inner div.text
   font-size: 24px;
 }
 div.container.container--outer.who-upper div.container.container--inner div.text-container h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 div.container.container--outer.references div.container.container--inner h1 {
   margin-bottom: 35px;
@@ -1461,7 +1474,7 @@ div.container.container--outer.references div.container.container--inner div.con
   margin-bottom: 10px;
 }
 div.container.container--outer.what {
-  background-color: rgba(34,121,156,0.3);
+  background-color: #bed6e2;
 }
 div.container.container--outer.what div.container.container--inner {
   -webkit-box-orient: horizontal;
@@ -1594,11 +1607,21 @@ div.container.container--outer.what div.container.container--inner div.text-cont
 div.container.container--outer.what div.container.container--inner h2 {
   margin-bottom: 10px;
 }
+div.container.container--outer.what div.container.container--inner div.verti-line {
+  width: 1px;
+  height: 1100px;
+  background-color: #a1a1a1;
+}
+@media screen and (max-width: 850px) {
+  div.container.container--outer.what div.container.container--inner div.verti-line {
+    display: none;
+  }
+}
 div.container.container--outer.what div.container.container--inner div.content-holder {
   width: auto;
   max-width: 1120px;
   padding: 0 10px;
-  max-width: 50%;
+  max-width: 49%;
 }
 @media screen and (max-width: 850px) {
   div.container.container--outer.what div.container.container--inner div.content-holder {
@@ -1669,6 +1692,14 @@ div.container.container--outer.what div.container.container--inner div.content-h
   max-width: 100%;
   min-height: 320px;
   margin-bottom: 20px;
+}
+div.container.container--outer.what div.container.container--inner div.content-holder div.content-box.heading {
+  min-height: 0px;
+  width: 100%;
+}
+div.container.container--outer.what div.container.container--inner div.content-holder div.content-box.heading h2 {
+  width: 100%;
+  text-align: center;
 }
 @media screen and (max-width: 850px) {
   div.container.container--outer.what div.container.container--inner div.content-holder div.content-box {
@@ -1792,17 +1823,12 @@ div.container.container--outer.what div.container.container--inner div.content-h
   color: #3b3c3d;
 }
 div.container.container--outer.offer {
-  background-color: #daddda;
-  background-image: url("assets/bg-what-1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-}
-div.container.container--outer.offer background-repeat no-repeat.first {
-  background-image: url("assets/bg-what.jpg");
 }
 div.container.container--outer.offer div.absolute-background {
   width: 100%;
@@ -1873,7 +1899,7 @@ div.container.container--outer.offer div.container.container--inner div.content-
   margin-bottom: 10px;
 }
 div.container.container--outer.clients {
-  background-color: rgba(34,121,156,0.3);
+  background-color: #bed6e2;
 }
 div.container.container--outer.clients div.container--inner img {
   width: 800px;
@@ -1917,6 +1943,12 @@ div.container.container--outer.team div.container.container--inner div.content-h
   height: 250px;
   margin: 0 20px;
   margin-bottom: 40px;
+}
+div.container.container--outer.team div.container.container--inner div.content-holder div.content-box.person:hover:not(.empty) {
+  cursor: pointer;
+}
+div.container.container--outer.team div.container.container--inner div.content-holder div.content-box.person:hover:not(.empty) .text-box {
+  background-color: #647b86;
 }
 div.container.container--outer.team div.container.container--inner div.content-holder div.content-box.person--team div.text-box {
   border-top: 2px solid #ab2628;
@@ -2238,4 +2270,31 @@ div.container.container--outer.popup div.container.container--inner div.popup di
   div.container.container--outer.popup div.container.container--inner div.popup div.content-holder div.content-box:nth-child(2) {
     width: 100%;
   }
+}
+#slider {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+#slider div {
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+#slider div:first-child {
+  background-image: url("assets/rotator/01.jpg");
+}
+#slider div:nth-of-type(2) {
+  background-image: url("assets/rotator/02.jpg");
+}
+#slider div:last-child {
+  background-image: url("assets/rotator/03.jpg");
 }
