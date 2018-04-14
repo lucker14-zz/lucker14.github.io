@@ -1361,6 +1361,7 @@ div.container.container--outer.hero div.container.container--inner div.content-h
   text-align: center;
 }
 div.container.container--outer.who-upper {
+  background-color: transparent;
   min-height: 590px;
   -webkit-background-size: 1260px 590px;
   -moz-background-size: 1260px 590px;
@@ -1429,6 +1430,10 @@ div.container.container--outer.who-upper div.container.container--inner div.text
 }
 div.container.container--outer.who-upper div.container.container--inner div.text-container h2 {
   margin-bottom: 20px;
+}
+div.container.container--outer.references {
+  position: relative;
+  background-color: #fff;
 }
 div.container.container--outer.references div.container.container--inner h1 {
   margin-bottom: 35px;
