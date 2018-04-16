@@ -1361,13 +1361,14 @@ div.container.container--outer.hero div.container.container--inner div.content-h
   text-align: center;
 }
 div.container.container--outer.who-upper {
-  background-color: transparent;
+  background-color: #daddda;
   min-height: 590px;
   -webkit-background-size: 1260px 590px;
   -moz-background-size: 1260px 590px;
   -ms-background-size: 1260px 590px;
   -o-background-size: 1260px 590px;
   background-size: 1260px 590px;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 600px) {
   div.container.container--outer.who-upper {
@@ -2297,4 +2298,13 @@ div.container.container--outer.popup div.container.container--inner div.popup di
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+#slider div:first-child {
+  background-image: url("assets/rotator/01.jpg");
+}
+#slider div:nth-of-type(2) {
+  background-image: url("assets/rotator/02.jpg");
+}
+#slider div:last-child {
+  background-image: url("assets/rotator/03.jpg");
 }
