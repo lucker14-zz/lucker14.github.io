@@ -69,9 +69,9 @@ $(function () {
         if (isInViewport($('.event-criteria__items'), 100)) {
             $('.event-criteria__items').addClass('pop');
         }
-        if (isInViewport($('.event-promo__notification'), 100)) {
-            $('.event-promo__notification').addClass('show');
-        }
+        // if (isInViewport($('.event-promo__notification'), 100)) {
+        //     $('.event-promo__notification').addClass('show');
+        // }
         if (isInViewport($('.event-signup__form'), 100)) {
             $('.event-signup__col--people').addClass('show');
         }
