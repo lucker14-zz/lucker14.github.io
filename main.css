@@ -4414,7 +4414,7 @@ div.flex-ver-start {
 }
 .event-partners__col:nth-of-type(1) {
   padding-left: 0;
-  border-bottom: 1px solid #edeff3;
+  /*border-bottom: 1px solid #edeff3;*/
 }
 @media (min-width: 1220px) {
   .event-partners__col:nth-of-type(1) {
