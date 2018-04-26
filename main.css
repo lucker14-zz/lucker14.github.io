@@ -9222,6 +9222,17 @@ div.flex-ver-start {
   }
 }
 
-.logo-powered{
+.navigation__logo{
+  position: relative;
+}
+
+.logo-powered, .logo-powered a{
   color: #000;
+  font-style: italic;
+}
+
+.logo-powered{
+  position: absolute;
+  right: -35px;
+  bottom: -15px;
 }
