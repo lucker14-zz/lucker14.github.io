@@ -9236,5 +9236,11 @@ div.flex-ver-start {
   position: absolute;
   left: 353px;
   bottom: 30px;
-  width: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 1200px){
+  .logo-powered{
+    left: 240px;
+  }
 }
