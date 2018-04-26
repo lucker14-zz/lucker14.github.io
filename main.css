@@ -1142,6 +1142,14 @@ li {
   -ms-flex: 1 50%;
   flex: 1 50%;
 }
+.contact__person#jan{
+  opacity: 0;
+}
+@media screen and (max-width: 660px){
+  .contact__person#jan{
+    display: none;
+  }
+}
 .contact__person span {
   padding-bottom: 20px;
   display: block;
@@ -4415,7 +4423,6 @@ div.flex-ver-start {
 .event-partners__col:nth-of-type(1) {
   padding-left: 0;
   /*border-bottom: 1px solid #edeff3;*/
-  padding-bottom: 0;
 }
 @media (min-width: 1220px) {
   .event-partners__col:nth-of-type(1) {
@@ -4432,7 +4439,7 @@ div.flex-ver-start {
   padding-right: 0;
 }
 .event-partners__heading {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .event-partners__img {
   display: inline-block;
