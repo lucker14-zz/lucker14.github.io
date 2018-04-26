@@ -9227,11 +9227,12 @@ div.flex-ver-start {
 }
 
 .logo-powered, .logo-powered a{
-  color: #000;
   font-style: italic;
+  font-size: 14px;
 }
 
 .logo-powered{
+  color: #000;
   position: absolute;
   right: -35px;
   bottom: -15px;
