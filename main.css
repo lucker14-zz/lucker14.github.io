@@ -4403,8 +4403,8 @@ div.flex-ver-start {
 @media (min-width: 1220px) {
   .event-partners {
     flex-direction: row;
-    padding-top: 124px;
-    padding-bottom: 124px;
+    padding-top: 74px;
+    padding-bottom: 74px;
   }
 }
 .event-partners__col {
@@ -4431,7 +4431,8 @@ div.flex-ver-start {
     -webkit-flex: none;
     -ms-flex: none;
     flex: none;
-    border-right: 1px solid #edeff3;
+    /*border-right: 1px solid #edeff3;*/
+    width: 100%;
     border-bottom: 0;
   }
 }
@@ -4452,7 +4453,8 @@ div.flex-ver-start {
 @media (min-width: 1220px) {
   .event-partners__img--block {
     display: block;
-    margin: 0 0 27px;
+    margin: 0 50px 27px 0;
+    float: left;
   }
   .event-partners__img--block:last-child {
     margin-bottom: 0;
