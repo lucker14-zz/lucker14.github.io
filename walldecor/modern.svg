@@ -5,24 +5,24 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0" stroke-linecap="square" stroke-opacity="0.97265625">
-        <g id="modern" transform="translate(4.000000, 4.000000)" fill="#221D0D" stroke="#FFFFFF">
-            <rect id="rect3897-5" stroke-width="9.47261143" opacity="0.4649447" x="38.2191823" y="23.2191919" width="47.916479" height="45.7390597" rx="13.055488"></rect>
-            <rect id="rect3897-5-5" stroke-width="9.47261143" opacity="0.4649447" x="101.606274" y="56.7272565" width="47.916479" height="45.7390597" rx="13.055488"></rect>
-            <rect id="rect3897" stroke-width="7" opacity="0.64206657" x="0.241935484" y="6.77419355" width="30.7258065" height="38.9516129" rx="8.3716583"></rect>
-            <rect id="rect3897-3" stroke-width="7" opacity="0.64206657" x="90.1209677" y="0.362903226" width="30.7258065" height="38.9516129" rx="8.3716583"></rect>
-            <rect id="rect3897-38" stroke-width="7" opacity="0.64206657" x="65.4435484" y="56.25" width="30.7258065" height="38.9516129" rx="8.3716583"></rect>
-            <rect id="rect3897-9" stroke-width="1.7634958" opacity="0.78597783" x="0.143785645" y="54.8211871" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
-            <rect id="rect3897-9-8" stroke-width="3.50723839" opacity="0.78597783" x="61.8162677" y="24.0743226" width="19.1094" height="15.7223032" rx="5.2066126"></rect>
-            <rect id="rect3897-9-7" stroke-width="3.50723839" opacity="0.78597783" x="115.284015" y="50.4452903" width="19.1094" height="15.7223032" rx="5.2066126"></rect>
-            <rect id="rect3897-9-75" stroke-width="3.50723839" opacity="0.78597783" x="65.4453" y="89.3969032" width="19.1094" height="15.7223032" rx="5.2066126"></rect>
-            <rect id="rect3897-9-72" stroke-width="1.06489682" opacity="0.78597783" x="24.6618813" y="94.3393065" width="3.79989416" height="7.28913823" rx="1.0353322"></rect>
-            <rect id="rect3897-9-5" stroke-width="1.7634958" opacity="0.78597783" x="34.5167323" y="19.1357323" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
-            <rect id="rect3897-9-2" stroke-width="1.12835002" opacity="0.78597783" x="107.248844" y="102.361568" width="8.53901758" height="3.6417689" rx="1.82088445"></rect>
-            <rect id="rect3897-9-28" stroke-width="1.7634958" opacity="0.78597783" x="13.2264092" y="63.8937968" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
-            <rect id="rect3897-9-5-9" stroke-width="1.7634958" opacity="0.78597783" x="27.0167323" y="28.8131516" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
-            <rect id="rect3897-3-5" stroke-width="5.69882487" opacity="0.64206699" transform="translate(22.016125, 78.629030) rotate(-90.540629) translate(-22.016125, -78.629030) " x="9.93805261" y="62.210072" width="24.1561446" height="32.8379167" rx="6.581666"></rect>
-            <rect id="rect3897-9-72-8" stroke-width="1.16138148" opacity="0.78597783" x="114.229094" y="18.8554355" width="4.519665" height="7.28913823" rx="1.2314434"></rect>
-            <rect id="rect3897-9-72-0" stroke-width="1.16138148" opacity="0.78597783" x="123.149724" y="15.2264032" width="4.519665" height="7.28913823" rx="1.2314434"></rect>
+        <g id="modern" transform="translate(4.000000, 4.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+            <rect id="rect3897-5" stroke-width="9.47261143" x="38.2191823" y="23.2191919" width="47.916479" height="45.7390597" rx="13.055488"></rect>
+            <rect id="rect3897-5-5" stroke-width="9.47261143" x="101.606274" y="56.7272565" width="47.916479" height="45.7390597" rx="13.055488"></rect>
+            <rect id="rect3897" stroke-width="7" x="0.241935484" y="6.77419355" width="30.7258065" height="38.9516129" rx="8.3716583"></rect>
+            <rect id="rect3897-3" stroke-width="7" x="90.1209677" y="0.362903226" width="30.7258065" height="38.9516129" rx="8.3716583"></rect>
+            <rect id="rect3897-38" stroke-width="7" x="65.4435484" y="56.25" width="30.7258065" height="38.9516129" rx="8.3716583"></rect>
+            <rect id="rect3897-9" stroke-width="1.7634958" x="0.143785645" y="54.8211871" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
+            <rect id="rect3897-9-8" stroke-width="3.50723839" x="61.8162677" y="24.0743226" width="19.1094" height="15.7223032" rx="5.2066126"></rect>
+            <rect id="rect3897-9-7" stroke-width="3.50723839" x="115.284015" y="50.4452903" width="19.1094" height="15.7223032" rx="5.2066126"></rect>
+            <rect id="rect3897-9-75" stroke-width="3.50723839" x="65.4453" y="89.3969032" width="19.1094" height="15.7223032" rx="5.2066126"></rect>
+            <rect id="rect3897-9-72" stroke-width="1.06489682" x="24.6618813" y="94.3393065" width="3.79989416" height="7.28913823" rx="1.0353322"></rect>
+            <rect id="rect3897-9-5" stroke-width="1.7634958" x="34.5167323" y="19.1357323" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
+            <rect id="rect3897-9-2" stroke-width="1.12835002" x="107.248844" y="102.361568" width="8.53901758" height="3.6417689" rx="1.82088445"></rect>
+            <rect id="rect3897-9-28" stroke-width="1.7634958" x="13.2264092" y="63.8937968" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
+            <rect id="rect3897-9-5-9" stroke-width="1.7634958" x="27.0167323" y="28.8131516" width="11.2891176" height="6.72855" rx="3.0758717"></rect>
+            <rect id="rect3897-3-5" stroke-width="5.69882487" transform="translate(22.016125, 78.629030) rotate(-90.540629) translate(-22.016125, -78.629030) " x="9.93805261" y="62.210072" width="24.1561446" height="32.8379167" rx="6.581666"></rect>
+            <rect id="rect3897-9-72-8" stroke-width="1.16138148" x="114.229094" y="18.8554355" width="4.519665" height="7.28913823" rx="1.2314434"></rect>
+            <rect id="rect3897-9-72-0" stroke-width="1.16138148" x="123.149724" y="15.2264032" width="4.519665" height="7.28913823" rx="1.2314434"></rect>
         </g>
     </g>
 </svg>
