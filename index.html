@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet">
+
+    <title>Movie Night 🎞 #1 | Matrix</title>
+
+    <style>
+      body, html{
+        margin: 0; padding: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        height: 100%;
+      }
+
+
+      .background{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        background: #000;
+      }
+
+      #demo{
+        text-align: center;
+        color: white;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 72px;
+        margin: 0 7%;
+      }
+
+      #tel {
+        text-align: center;
+        color: #777;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 16px;
+        margin: 50px 7% 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <!-- Display the countdown timer in an element -->
+
+    <div class="background">
+      <p id="demo"></p>
+      <p id="tel"></p>
+    </div>
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 21, 2019 19:15:15").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = hours + "h "
+      + minutes + "m " + seconds + "s ";
+      document.getElementById("tel").innerHTML = "Comming up: Matrix (1999)";
+
+      // If the count down is finished, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "tImE foR Da mOviE! wHERe Tf iS @Peťan?!!";
+        document.getElementById("tel").innerHTML = "24/7 Hotline: +420 723 879 205";
+      }
+    }, 1000);
+    </script>
+
+  </body>
+</html>
