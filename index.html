@@ -84,10 +84,16 @@
       document.getElementById("tel").innerHTML = "Comming up: Matrix (1999)";
 
       // If the count down is finished, write some text 
+      // if (distance < 0) {
+      //   clearInterval(x);
+      //   document.getElementById("demo").innerHTML = "tImE foR Da mOviE! wHERe Tf iS @Peťan?!!";
+      //   document.getElementById("tel").innerHTML = "24/7 Hotline: +420 723 879 205";
+      // }
+
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "tImE foR Da mOviE! wHERe Tf iS @Peťan?!!";
-        document.getElementById("tel").innerHTML = "24/7 Hotline: +420 723 879 205";
+        document.getElementById("demo").innerHTML = "Beautiful evening with Matrix, thanks everyone! 😍";
+        document.getElementById("tel").innerHTML = "Next movie subject of poll";
       }
     }, 1000);
     </script>
